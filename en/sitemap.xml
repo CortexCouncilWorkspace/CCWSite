@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ccwlatam.cloud/CCW%20Repositories/</loc>
+         <lastmod>2024-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ccwlatam.cloud/Concepts/ERD_Diagram/</loc>
          <lastmod>2024-03-24</lastmod>
          <changefreq>daily</changefreq>
