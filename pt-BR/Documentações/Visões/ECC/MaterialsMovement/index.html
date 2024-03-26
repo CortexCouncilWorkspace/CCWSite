@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-39G1K9GM1S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-39G1K9GM1S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-39G1K9GM1S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -1454,18 +1464,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -1490,9 +1500,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#campos-da-tabelavisao-ainda-disponivel-apenas-em-ingles" class="md-nav__link">
+  <a href="#campos-da-tabelavisao" class="md-nav__link">
     <span class="md-ellipsis">
-      Campos da Tabela/Visão - (Ainda disponível apenas em inglês)
+      Campos da Tabela/Visão
     </span>
   </a>
   
@@ -5220,18 +5230,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5256,9 +5266,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#campos-da-tabelavisao-ainda-disponivel-apenas-em-ingles" class="md-nav__link">
+  <a href="#campos-da-tabelavisao" class="md-nav__link">
     <span class="md-ellipsis">
-      Campos da Tabela/Visão - (Ainda disponível apenas em inglês)
+      Campos da Tabela/Visão
     </span>
   </a>
   
@@ -5314,14 +5324,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="key-use-cases">Key Use Cases</h2>
+<h2 id="casos-de-uso">Casos de Uso</h2>
 <ul>
 <li>Pode ser usado para rastrear movimentos de estoque e níveis de estoque.</li>
 <li>Pode ser usado para analisar custos de material e lucratividade.</li>
 <li>Pode ser usado para identificar tendências e padrões no uso de material.</li>
 <li>Pode ser usado para apoiar processos de tomada de decisão relacionados ao gerenciamento e aquisição de estoque.</li>
 </ul>
-<h2 id="query-logic">Query Logic</h2>
+<h2 id="logica-da-query">Lógica da Query</h2>
 <p>A visão é criada usando uma junção esquerda entre a tabela MSEG e a tabela calendar_date_dim. A junção é executada no campo BUDAT_MKPF, que representa a data de lançamento do documento de material. A visão também inclui uma junção esquerda para a tabela currency_decimal para corrigir a casa decimal de valores para moedas não decimais. Além disso, uma junção esquerda para a tabela currency_conversion pode ser usada para converter os valores para uma moeda diferente.</p>
 <h2 id="possivel-relacao-com-transacoes-sap">Possível relação com transações SAP</h2>
 <table>
@@ -5356,222 +5366,275 @@
 </table>
 <h2 id="linhagem-de-dados">Linhagem de dados</h2>
 <p>Em desenvolvimento</p>
-<h2 id="campos-da-tabelavisao-ainda-disponivel-apenas-em-ingles">Campos da Tabela/Visão - (Ainda disponível apenas em inglês)</h2>
+<h2 id="campos-da-tabelavisao">Campos da Tabela/Visão</h2>
 <table>
 <thead>
 <tr>
 <th>Campo</th>
 <th>Descrição do Campo</th>
+<th>Descrição no Dicionário SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
 <td>Client</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfMaterialDocument_MBLNR</td>
 <td>Number of Material Document</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialDocumentYear_MJAHR</td>
 <td>Material Document Year</td>
+<td></td>
 </tr>
 <tr>
 <td>ItemInMaterialDocument_ZEILE</td>
 <td>Item in Material Document</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialNumber_MATNR</td>
 <td>Material Number</td>
+<td></td>
 </tr>
 <tr>
 <td>BatchNumber_CHARG</td>
 <td>Batch Number</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_WERKS</td>
 <td>Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>StorageLocation_LGORT</td>
 <td>Storage Location</td>
+<td></td>
 </tr>
 <tr>
 <td>MovementType_BWART</td>
 <td>Movement Type</td>
+<td></td>
 </tr>
 <tr>
 <td>StockType_INSMK</td>
 <td>Stock Type</td>
+<td></td>
 </tr>
 <tr>
 <td>Debit_CreditIndicator_SHKZG</td>
 <td>Debit/Credit Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>Quantity_MENGE</td>
 <td>Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseUnitOfMeasure_MEINS</td>
 <td>Base Unit of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>CurrencyKey_WAERS</td>
 <td>Currency Key</td>
+<td></td>
 </tr>
 <tr>
 <td>PurchaseOrderNumber_EBELN</td>
 <td>Purchase Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>VendorsAccountNumber_LIFNR</td>
 <td>Vendor's Account Number</td>
+<td></td>
 </tr>
 <tr>
 <td>SalesOrderNumber_KDAUF</td>
 <td>Sales Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>AccountNumberOfCustomer_KUNNR</td>
 <td>Account Number of Customer</td>
+<td></td>
 </tr>
 <tr>
 <td>Receiving_IssuingMaterial_UMMAT</td>
 <td>Receiving/Issuing Material</td>
+<td></td>
 </tr>
 <tr>
 <td>Receiving_Issuing_Batch_UMCHA</td>
 <td>Receiving/Issuing Batch</td>
+<td></td>
 </tr>
 <tr>
 <td>ItemNumberOfPurchasingDocument_EBELP</td>
 <td>Item Number of Purchasing Document</td>
+<td></td>
 </tr>
 <tr>
 <td>DocumentNumberOfAReferenceDocument_LFBNR</td>
 <td>Document Number of a Reference Document</td>
+<td></td>
 </tr>
 <tr>
 <td>ItemOfAReferenceDocument_LFPOS</td>
 <td>Item of a Reference Document</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderNumber_AUFNR</td>
 <td>Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>CompanyCode_BUKRS</td>
 <td>Company Code</td>
+<td></td>
 </tr>
 <tr>
 <td>ReceivingPlant_UMWRK</td>
 <td>Receiving Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>Receiving_IssuingStorageLocation_UMLGO</td>
 <td>Receiving/Issuing Storage Location</td>
+<td></td>
 </tr>
 <tr>
 <td>WarehouseNumber_LGNUM</td>
 <td>Warehouse Number</td>
+<td></td>
 </tr>
 <tr>
 <td>MovementTypeForWarehouseManagement_BWLVS</td>
 <td>Movement Type for Warehouse Management</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_PostingInWarehouseManagementSystem_XBLVS</td>
 <td>Indicator: Posting in Warehouse Management System</td>
+<td></td>
 </tr>
 <tr>
 <td>StockCategoryInTheWarehouseManagementSystem_BESTQ</td>
 <td>Stock Category in the Warehouse Management System</td>
+<td></td>
 </tr>
 <tr>
 <td>SpecialStockIndicator_SOBKZ</td>
 <td>Special Stock Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>MovementIndicator_KZBEW</td>
 <td>Movement Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>ReasonForMovement_GRUND</td>
 <td>Reason for Movement</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsReceipt_Non_Valuated_WEUNB</td>
 <td>Goods Receipt (Non-Valuated)</td>
+<td></td>
 </tr>
 <tr>
 <td>StorageType_LGTYP</td>
 <td>Storage Type</td>
+<td></td>
 </tr>
 <tr>
 <td>EquipmentNumber_EQUNR</td>
 <td>Equipment Number</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessArea_GSBER</td>
 <td>Business Area</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCenter_KOSTL</td>
 <td>Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>ProfitCenter_PRCTR</td>
 <td>Profit Center</td>
+<td></td>
 </tr>
 <tr>
 <td>WorkBreakdownStructureElement_PS_PSP_PNR</td>
 <td>Work Breakdown Structure Element</td>
+<td></td>
 </tr>
 <tr>
 <td>GLAccountNumber_SAKTO</td>
 <td>GL Account Number</td>
+<td></td>
 </tr>
 <tr>
 <td>Debit_CreditIndicatorInRevaluation_SHKUM</td>
 <td>Debit/Credit Indicator in Revaluation</td>
+<td></td>
 </tr>
 <tr>
 <td>ValuationType_BWTAR</td>
 <td>Valuation Type</td>
+<td></td>
 </tr>
 <tr>
 <td>ReceiptIndicator_KZZUG</td>
 <td>Receipt Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>PostingDate_BUDAT_MKPF</td>
 <td>Posting Date</td>
+<td></td>
 </tr>
 <tr>
 <td>YearOfPostingDate_BUDAT_MKPF</td>
 <td>Year of Posting Date</td>
+<td></td>
 </tr>
 <tr>
 <td>MonthOfPostingDate_BUDAT_MKPF</td>
 <td>Month of Posting Date</td>
+<td></td>
 </tr>
 <tr>
 <td>WeekOfPostingDate_BUDAT_MKPF</td>
 <td>Week of Posting Date</td>
+<td></td>
 </tr>
 <tr>
 <td>QuarterOfPostingDate_BUDAT_MKPF</td>
 <td>Quarter of Posting Date</td>
+<td></td>
 </tr>
 <tr>
 <td>WeekEndDateOfPostingDate_BUDAT_MKPF</td>
 <td>Week End Date of Posting Date</td>
+<td></td>
 </tr>
 <tr>
 <td>AmountInLocalCurrency_DMBTR</td>
 <td>Amount in Local Currency</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5582,11 +5645,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Esta página foi útil?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opinião!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opnião! Ajude-nos a melhorar esta página usando nosso sistema de comentários abaixo.   
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentários</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

@@ -48,6 +48,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-39G1K9GM1S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-39G1K9GM1S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-39G1K9GM1S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -5088,18 +5098,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5218,18 +5228,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5282,7 +5292,7 @@
 
 <h1 id="fiscal_period">fiscal_period</h1>
 <h2 id="arquivo-sql-de-origem-google-cloud-cortex-data-foundation">Arquivo SQL de origem - Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/fiscal_period.sql">fiscal_period</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/fiscal_period.sql">fiscal_period</a></p>
 <h2 id="visao-geral">Visão geral</h2>
 <p>Esta visão de relatório fornece uma classificação de registros com base na presença de valores nos campos Xkale e Xjabh da tabela t009.</p>
 <h2 id="fontes-de-dados">Fontes de Dados</h2>
@@ -5300,11 +5310,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="key-use-cases">Key Use Cases</h2>
+<h2 id="casos-de-uso">Casos de Uso</h2>
 <ul>
 <li>Identificar registros que atendem a critérios específicos para análise ou relatório posterior.</li>
 </ul>
-<h2 id="query-logic">Query Logic</h2>
+<h2 id="logica-da-query">Lógica da Query</h2>
 <p>A visão usa uma instrução IF aninhada para classificar os registros em três casos:</p>
 <ol>
 <li>CASE1: Registros com um campo Xkale não nulo.</li>
@@ -5334,368 +5344,124 @@
 <tr>
 <th>Campo</th>
 <th>Descrição do Campo</th>
+<th>Descrição no Dicionário SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>VendorAccountNumber_LIFNR</td>
-<td>Vendor Account Number</td>
-</tr>
-<tr>
 <td>Client_MANDT</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
-<td>PurchasingDocumentNumber_EBELN</td>
-<td>Purchasing Document Number</td>
+<td>ValuationArea_BWKEY</td>
+<td>Valuation Area</td>
+<td></td>
 </tr>
 <tr>
-<td>ItemNumberOfPurchasingDocument_EBELP</td>
-<td>Item Number Of Purchasing Document</td>
+<td>CompanyCode_BUKRS</td>
+<td>Company Code</td>
+<td></td>
 </tr>
 <tr>
-<td>SequentialNumberOfAccountAssignment_ZEKKN</td>
-<td>Sequential Number Of Account Assignment</td>
+<td>ValuationGroupingCode_BWMOD</td>
+<td>Valuation Grouping Code</td>
+<td></td>
 </tr>
 <tr>
-<td>TransactioneventType_VGABE</td>
-<td>Transactionevent Type</td>
+<td>NegativeStocksInValuationAreaAllowed_XBKNG</td>
+<td>Negative Stocks In Valuation Area Allowed</td>
+<td></td>
 </tr>
 <tr>
-<td>MaterialDocumentYear_GJAHR</td>
-<td>Material Document Year</td>
+<td>MaterialLedgerActivatedInValuationArea_MLBWA</td>
+<td>Material Ledger Activated In Valuation Area</td>
+<td></td>
 </tr>
 <tr>
-<td>NumberOfMaterialDocument_BELNR</td>
-<td>Number Of Material Document</td>
+<td>MaterialLedgerActivatedInValuationArea__compulsory___MLBWV</td>
+<td>Material Ledger Activated In Valuation Area (compulsory)</td>
+<td></td>
 </tr>
 <tr>
-<td>ItemInMaterialDocument_BUZEI</td>
-<td>Item In Material Document</td>
+<td>SalesPriceValuationActive_XVKBW</td>
+<td>Sales Price Valuation Active</td>
+<td></td>
 </tr>
 <tr>
-<td>PurchaseOrderHistoryCategory_BEWTP</td>
-<td>Purchase Order History Category</td>
+<td>ExplanationFacilityForMaterialLedgerActiveinactive_ERKLAERKOM</td>
+<td>Explanation Facility For Material Ledger Active/inactive</td>
+<td></td>
 </tr>
 <tr>
-<td>MovementType__inventoryManagement___BWART</td>
-<td>Movement Type</td>
+<td>RetailRevalutionProfile_UPROF</td>
+<td>Retail Revalution Profile</td>
+<td></td>
 </tr>
 <tr>
-<td>PostingDateInTheDocument_BUDAT</td>
-<td>Posting Date In The Document</td>
+<td>ProfileForValueBasedInventoryManagement_WBPRO</td>
+<td>Profile For Value Based Inventory Management</td>
+<td></td>
 </tr>
 <tr>
-<td>Quantity_MENGE</td>
-<td>Quantity</td>
+<td>MaterialPriceDetermination_Control_MLAST</td>
+<td>Material Price Determination Control</td>
+<td></td>
 </tr>
 <tr>
-<td>QuantityInPurchaseOrderPriceUnit_BPMNG</td>
-<td>Quantity In Purchase Order Price Unit</td>
+<td>PriceDeterminationIsBindingInValuationArea_MLASV</td>
+<td>Price Determination Is Binding In Valuation Area</td>
+<td></td>
 </tr>
 <tr>
-<td>CurrencyKey_WAERS</td>
-<td>Currency Key</td>
+<td>StockCorrectionTolerance_BDIFP</td>
+<td>Stock Correction Tolerance</td>
+<td></td>
 </tr>
 <tr>
-<td>GoodsReceiptBlockedStockInOrderUnit_WESBS</td>
-<td>Goods Receipt Blocked Stock In Order Unit</td>
+<td>PriceDifferencePostingInGrForSubcontractOder_XLBPD</td>
+<td>Price Difference Posting In Gr For Subcontract Oder</td>
+<td></td>
 </tr>
 <tr>
-<td>QuantityInGrBlockedStockInOrderPriceUnit_BPWES</td>
-<td>Quantity In Gr Blocked Stock In Order Price Unit</td>
+<td>PostPurchaseAccountWithReceiptValue_XEWRX</td>
+<td>Post Purchase Account With Receipt Value</td>
+<td></td>
 </tr>
 <tr>
-<td>DebitcreditIndicator_SHKZG</td>
-<td>Debitcredit Indicator</td>
+<td>TwoFiDocumentsWithPurchaseAccount_X2FDO</td>
+<td>Two Fi Documents With Purchase Account</td>
+<td></td>
 </tr>
 <tr>
-<td>ValuationType_BWTAR</td>
-<td>Valuation Type</td>
+<td>PriceRelease_PRSFR</td>
+<td>Price Release</td>
+<td></td>
 </tr>
 <tr>
-<td>deliveryCompleted_ELIKZ</td>
-<td>delivery Completed</td>
+<td>ActiveActualCostComponentSplit_MLCCS</td>
+<td>Active Actual Cost Component Split</td>
+<td></td>
 </tr>
 <tr>
-<td>ReferenceDocumentNumber_XBLNR</td>
-<td>Reference Document Number</td>
+<td>DelCostsToPriceDiffAcctWhenPurchAcctActive_XEFRE</td>
+<td>Del Costs To Price Diff Acct When Purch Acct Active</td>
+<td></td>
 </tr>
 <tr>
-<td>FiscalYearOfAReferenceDocument_LFGJA</td>
-<td>Fiscal Year Of A Reference Document</td>
+<td>StartOfValidityPeriodFDelCostsInPriceDiffAcct_EFREJ</td>
+<td>Start Of Validity Period F Del Costs In Price Diff Acct</td>
+<td></td>
 </tr>
 <tr>
-<td>DocumentNoOfAReferenceDocument_LFBNR</td>
-<td>Document No Of A Reference Document</td>
+<td>PriceReleaseFlexibleMaterialPrices_FMP_PRSFR</td>
+<td>Price Release Flexible Material Prices</td>
+<td></td>
 </tr>
 <tr>
-<td>ItemOfAReferenceDocument_LFPOS</td>
-<td>Item Of A Reference Document</td>
-</tr>
-<tr>
-<td>ReasonForMovement_GRUND</td>
-<td>Reason For Movement</td>
-</tr>
-<tr>
-<td>DayOnWhichAccountingDocumentWasEntered_CPUDT</td>
-<td>Day On Which Accounting Document Was Entered</td>
-</tr>
-<tr>
-<td>TimeOfEntry_CPUTM</td>
-<td>Time Of Entry</td>
-</tr>
-<tr>
-<td>ComplianceWithShippingInstructions_EVERE</td>
-<td>Compliance With Shipping Instructions</td>
-</tr>
-<tr>
-<td>InvoiceValueInForeignCurrency_REFWR</td>
-<td>Invoice Value In Foreign Currency</td>
-</tr>
-<tr>
-<td>MaterialNumber_MATNR</td>
-<td>Material Number</td>
-</tr>
-<tr>
-<td>Plant_WERKS</td>
-<td>Plant</td>
-</tr>
-<tr>
-<td>ReversalOfGrAllowedForGrBasedIvDespiteInvoice_XWSBR</td>
-<td>Reversal Of Gr Allowed For Gr Based Iv Despite Invoice</td>
-</tr>
-<tr>
-<td>SequentialNumberOfVendorConfirmation_ETENS</td>
-<td>Sequential Number Of Vendor Confirmation</td>
-</tr>
-<tr>
-<td>NumberOfTheDocumentCondition_KNUMV</td>
-<td>Number Of The Document Condition</td>
-</tr>
-<tr>
-<td>TaxOnSalespurchasesCode_MWSKZ</td>
-<td>Tax On Salespurchases Code</td>
-</tr>
-<tr>
-<td>QuantityInUnitOfMeasureFromDeliveryNote_LSMNG</td>
-<td>Quantity In Unit Of Measure From Delivery Note</td>
-</tr>
-<tr>
-<td>UnitOfMeasureFromDeliveryNote_LSMEH</td>
-<td>Unit Of Measure From Delivery Note</td>
-</tr>
-<tr>
-<td>MaterialNumber_EMATN</td>
-<td>Material Number</td>
-</tr>
-<tr>
-<td>LocalCurrencyKey_HSWAE</td>
-<td>Local Currency Key</td>
-</tr>
-<tr>
-<td>Quantity_BAMNG</td>
-<td>Quantity</td>
-</tr>
-<tr>
-<td>BatchNumber_CHARG</td>
-<td>Batch Number</td>
-</tr>
-<tr>
-<td>DocumentDateInDocument_BLDAT</td>
-<td>Document Date In Document</td>
-</tr>
-<tr>
-<td>CalculationOfValOpen_XWOFF</td>
-<td>Calculation Of Val Open</td>
-</tr>
-<tr>
-<td>UnplannedAccountAssignmentFromInvoiceVerification_XUNPL</td>
-<td>Unplanned Account Assignment From Invoice Verification</td>
-</tr>
-<tr>
-<td>NameOfPersonWhoCreatedTheObject_ERNAM</td>
-<td>Name Of Person Who Created The Object</td>
-</tr>
-<tr>
-<td>ServiceNumber_SRVPOS</td>
-<td>Service Number</td>
-</tr>
-<tr>
-<td>PackageNumberOfService_PACKNO</td>
-<td>Package Number Of Service</td>
-</tr>
-<tr>
-<td>LineNumberOfService_INTROW</td>
-<td>Line Number Of Service</td>
-</tr>
-<tr>
-<td>NumberOfPoAccountAssignment_BEKKN</td>
-<td>Number Of Po Account Assignment</td>
-</tr>
-<tr>
-<td>ReturnsIndicator_LEMIN</td>
-<td>Returns Indicator</td>
-</tr>
-<tr>
-<td>ClearingValueOnGrirAccountInPoCurrency_AREWB</td>
-<td>Clearing Value On Grir Account In Po Currency</td>
-</tr>
-<tr>
-<td>InvoiceAmountInPoCurrency_REWRB</td>
-<td>Invoice Amount In Po Currency</td>
-</tr>
-<tr>
-<td>SapRelease_SAPRL</td>
-<td>Sap Release</td>
-</tr>
-<tr>
-<td>Quantity_MENGE_POP</td>
-<td>Quantity</td>
-</tr>
-<tr>
-<td>QuantityInPurchaseOrderPriceUnit_BPMNG_POP</td>
-<td>Quantity In Purchase Order Price Unit</td>
-</tr>
-<tr>
-<td>AmountInLocalCurrency_DMBTR_POP</td>
-<td>Amount In Local Currency</td>
-</tr>
-<tr>
-<td>AmountInDocumentCurrency_WRBTR_POP</td>
-<td>Amount In Document Currency</td>
-</tr>
-<tr>
-<td>ValuatedGoodsReceiptBlockedStockInOrderUnit_WESBB</td>
-<td>Valuated Goods Receipt Blocked Stock In Order Unit</td>
-</tr>
-<tr>
-<td>QuantityInValuatedGrBlockedStockInOrderPriceUnit_BPWEB</td>
-<td>Quantity In Valuated Gr Blocked Stock In Order Price Unit</td>
-</tr>
-<tr>
-<td>AcceptanceAtOrigin_WEORA</td>
-<td>Acceptance At Origin</td>
-</tr>
-<tr>
-<td>GrirAccountClearingValueInLocalCurrency_AREWR_POP</td>
-<td>Grir Account Clearing Value In Local Currency</td>
-</tr>
-<tr>
-<td>ExchangeRateDifferenceAmount_KUDIF</td>
-<td>Exchange Rate Difference Amount</td>
-</tr>
-<tr>
-<td>RetentionAmountInDocumentCurrency_RETAMT_FC</td>
-<td>Retention Amount In Document Currency</td>
-</tr>
-<tr>
-<td>RetentionAmountInCompanyCodeCurrency_RETAMT_LC</td>
-<td>Retention Amount In Company Code Currency</td>
-</tr>
-<tr>
-<td>PostedRetentionAmountInDocumentCurrency_RETAMTP_FC</td>
-<td>Posted Retention Amount In Document Currency</td>
-</tr>
-<tr>
-<td>PostedSecurityRetentionAmountInCompanyCodeCurrency_RETAMTP_LC</td>
-<td>Posted Security Retention Amount In Company Code Currency</td>
-</tr>
-<tr>
-<td>MultipleAccountAssignment_XMACC</td>
-<td>Multiple Account Assignment</td>
-</tr>
-<tr>
-<td>ExchangeRate_WKURS</td>
-<td>Exchange Rate</td>
-</tr>
-<tr>
-<td>OriginOfAnInvoiceItem_INV_ITEM_ORIGIN</td>
-<td>Origin Of An Invoice Item</td>
-</tr>
-<tr>
-<td>Delivery_VBELN_ST</td>
-<td>Delivery</td>
-</tr>
-<tr>
-<td>DeliveryItem_VBELP_ST</td>
-<td>Delivery Item</td>
-</tr>
-<tr>
-<td>StockSegment_SGT_SCAT</td>
-<td>Stock Segment</td>
-</tr>
-<tr>
-<td>ProcedureForUpdatingTheScheduleLineQuantity_ET_UPD</td>
-<td>Procedure For Updating The Schedule Line Quantity</td>
-</tr>
-<tr>
-<td>DepreciationCompletionFlag_J_SC_DIE_COMP_F</td>
-<td>Depreciation Completion Flag</td>
-</tr>
-<tr>
-<td>CharacteristicValue1_WRF_CHARSTC1</td>
-<td>Characteristic Value1</td>
-</tr>
-<tr>
-<td>CharacteristicValue2_WRF_CHARSTC2</td>
-<td>Characteristic Value2</td>
-</tr>
-<tr>
-<td>CharacteristicValue3_WRF_CHARSTC3</td>
-<td>Characteristic Value3</td>
-</tr>
-<tr>
-<td>YearOfPostingDateInTheDocument_BUDAT</td>
-<td>Year Of Posting Date In The Document</td>
-</tr>
-<tr>
-<td>MonthOfPostingDateInTheDocument_BUDAT</td>
-<td>Month Of Posting Date In The Document</td>
-</tr>
-<tr>
-<td>WeekOfPostingDateInTheDocument_BUDAT</td>
-<td>Week Of Posting Date In The Document</td>
-</tr>
-<tr>
-<td>QuarterOfPostingDateInTheDocument_BUDAT</td>
-<td>Quarter Of Posting Date In The Document</td>
-</tr>
-<tr>
-<td>YearOfDocumentDateInDocument_BLDAT</td>
-<td>Year Of Document Date In Document</td>
-</tr>
-<tr>
-<td>MonthOfDocumentDateInDocument_BLDAT</td>
-<td>Month Of Document Date In Document</td>
-</tr>
-<tr>
-<td>WeekOfDocumentDateInDocument_BLDAT</td>
-<td>Week Of Document Date In Document</td>
-</tr>
-<tr>
-<td>QuarterOfDocumentDateInDocument_BLDAT</td>
-<td>Quarter Of Document Date In Document</td>
-</tr>
-<tr>
-<td>AmountInLocalCurrency_DMBTR</td>
-<td>Amount In Local Currency</td>
-</tr>
-<tr>
-<td>AmountInDocumentCurrency_WRBTR</td>
-<td>Amount In Document Currency</td>
-</tr>
-<tr>
-<td>GrirAccountClearingValueInLocalCurrency_AREWR</td>
-<td>Grir Account Clearing Value In Local Currency</td>
-</tr>
-<tr>
-<td>InvoiceValueEntered__inLocalCurrency___REEWR</td>
-<td>Invoice Value Entered</td>
-</tr>
-<tr>
-<td>ClearingValueOnGrirClearingAccount__transacCurrency___AREWW</td>
-<td>Clearing Value On Grir Clearing Account</td>
+<td>PriceReleaseGroup_FMP_PRFRGR</td>
+<td>Price Release Group</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5706,11 +5472,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Esta página foi útil?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opinião!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opnião! Ajude-nos a melhorar esta página usando nosso sistema de comentários abaixo.   
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentários</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

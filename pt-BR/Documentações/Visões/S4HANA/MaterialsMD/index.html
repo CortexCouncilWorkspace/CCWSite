@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-39G1K9GM1S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-39G1K9GM1S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-39G1K9GM1S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -3746,18 +3756,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5220,18 +5230,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5284,7 +5294,7 @@
 
 <h1 id="materialsmd">MaterialsMD</h1>
 <h2 id="arquivo-sql-de-origem-google-cloud-cortex-data-foundation">Arquivo SQL de origem - Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/MaterialsMD.sql">MaterialsMD</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/MaterialsMD.sql">MaterialsMD</a></p>
 <h2 id="visao-geral">Visão geral</h2>
 <p>Esta visão é uma visão de relatórios para sistemas SAP que fornece informações detalhadas sobre materiais.</p>
 <h2 id="fontes-de-dados">Fontes de Dados</h2>
@@ -5306,13 +5316,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="key-use-cases">Key Use Cases</h2>
+<h2 id="casos-de-uso">Casos de Uso</h2>
 <ul>
 <li>Pode ser usado para recuperar informações de material para fins de relatório.</li>
 <li>Pode ser usado para identificar materiais que atendem a critérios específicos.</li>
 <li>Pode ser usado para rastrear alterações nos dados do material ao longo do tempo.</li>
 </ul>
-<h2 id="query-logic">Query Logic</h2>
+<h2 id="logica-da-query">Lógica da Query</h2>
 <p>A visão une as tabelas MARA e MAKT nos campos MANDT e MATNR. Isso garante que a visão inclua apenas materiais que tenham descrições de texto correspondentes.</p>
 <h2 id="possivel-relacao-com-transacoes-sap">Possível relação com transações SAP</h2>
 <table>
@@ -5345,672 +5355,839 @@
 <tr>
 <th>Campo</th>
 <th>Descrição do Campo</th>
+<th>Descrição no Dicionário SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_Mandt</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialnumber_Matnr</td>
-<td>Materialnumber</td>
+<td>Material number</td>
+<td></td>
 </tr>
 <tr>
 <td>Createdon_Ersda</td>
-<td>Createdon</td>
+<td>Created on</td>
+<td></td>
 </tr>
 <tr>
 <td>Nameofpersonwhocreatedtheobject_Ernam</td>
-<td>Nameofpersonwhocreatedtheobject</td>
+<td>Name of person who created the object</td>
+<td></td>
 </tr>
 <tr>
 <td>Dateoflastchange_Laeda</td>
-<td>Dateoflastchange</td>
+<td>Date of last change</td>
+<td></td>
 </tr>
 <tr>
 <td>Nameofpersonwhochangedobject_Aenam</td>
-<td>Nameofpersonwhochangedobject</td>
+<td>Name of person who changed object</td>
+<td></td>
 </tr>
 <tr>
 <td>Maintenancestatusofcompletematerial_Vpsta</td>
-<td>Maintenancestatusofcompletematerial</td>
+<td>Maintenance status of complete material</td>
+<td></td>
 </tr>
 <tr>
 <td>Maintenancestatus_Pstat</td>
-<td>Maintenancestatus</td>
+<td>Maintenance status</td>
+<td></td>
 </tr>
 <tr>
 <td>Flagmaterialfordeletionatclientlevel_Lvorm</td>
-<td>Flagmaterialfordeletionatclientlevel</td>
+<td>Flag material for deletion at client level</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialtype_Mtart</td>
-<td>Materialtype</td>
+<td>Material type</td>
+<td></td>
 </tr>
 <tr>
 <td>Industrysector_Mbrsh</td>
-<td>Industrysector</td>
+<td>Industry sector</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialgroup_Matkl</td>
-<td>Materialgroup</td>
+<td>Material group</td>
+<td></td>
 </tr>
 <tr>
 <td>Oldmaterialnumber_Bismt</td>
-<td>Oldmaterialnumber</td>
+<td>Old material number</td>
+<td></td>
 </tr>
 <tr>
 <td>Baseunitofmeasure_Meins</td>
-<td>Baseunitofmeasure</td>
+<td>Base unit of measure</td>
+<td></td>
 </tr>
 <tr>
 <td>Orderunit_Bstme</td>
-<td>Orderunit</td>
+<td>Order unit</td>
+<td></td>
 </tr>
 <tr>
 <td>Documentnumberwithoutdocumentmanagementsystem_Zeinr</td>
-<td>Documentnumberwithoutdocumentmanagementsystem</td>
+<td>Document number without document management system</td>
+<td></td>
 </tr>
 <tr>
 <td>Documenttypewithoutdocumentmanagementsystem_Zeiar</td>
-<td>Documenttypewithoutdocumentmanagementsystem</td>
+<td>Document type without document management system</td>
+<td></td>
 </tr>
 <tr>
 <td>Documentversionwithoutdocumentmanagementsystem_Zeivr</td>
-<td>Documentversionwithoutdocumentmanagementsystem</td>
+<td>Document version without document management system</td>
+<td></td>
 </tr>
 <tr>
 <td>Pageformatofdocumentwithoutdocumentmanagementsystem_Zeifo</td>
-<td>Pageformatofdocumentwithoutdocumentmanagementsystem</td>
+<td>Page format of document without document management system</td>
+<td></td>
 </tr>
 <tr>
 <td>Documentchangenumberwithoutdocumentmanagementsystem_Aeszn</td>
-<td>Documentchangenumberwithoutdocumentmanagementsystem</td>
+<td>Document change number without document management system</td>
+<td></td>
 </tr>
 <tr>
 <td>Pagenumberofdocumentwithoutdocumentmanagementsystem_Blatt</td>
-<td>Pagenumberofdocumentwithoutdocumentmanagementsystem</td>
+<td>Page number of document without document management system</td>
+<td></td>
 </tr>
 <tr>
 <td>Numberofsheetswithoutdocumentmanagementsystem_Blanz</td>
-<td>Numberofsheetswithoutdocumentmanagementsystem</td>
+<td>Number of sheets without document management system</td>
+<td></td>
 </tr>
 <tr>
 <td>Productioninspectionmemo_Ferth</td>
-<td>Productioninspectionmemo</td>
+<td>Production inspection memo</td>
+<td></td>
 </tr>
 <tr>
 <td>Pageformatofproductionmemo_Formt</td>
-<td>Pageformatofproductionmemo</td>
+<td>Page format of production memo</td>
+<td></td>
 </tr>
 <tr>
 <td>Sizedimensions_Groes</td>
-<td>Sizedimensions</td>
+<td>Size dimensions</td>
+<td></td>
 </tr>
 <tr>
 <td>Basicmaterial_Wrkst</td>
-<td>Basicmaterial</td>
+<td>Basic material</td>
+<td></td>
 </tr>
 <tr>
 <td>Industrystandarddescriptionsuchasansioriso_Normt</td>
-<td>Industrystandarddescriptionsuchasansioriso</td>
+<td>Industry standard description such as ANSI or ISO</td>
+<td></td>
 </tr>
 <tr>
 <td>Laboratorydesignoffice_Labor</td>
-<td>Laboratorydesignoffice</td>
+<td>Laboratory design office</td>
+<td></td>
 </tr>
 <tr>
 <td>Purchasingvaluekey_Ekwsl</td>
-<td>Purchasingvaluekey</td>
+<td>Purchasing value key</td>
+<td></td>
 </tr>
 <tr>
 <td>Grossweight_Brgew</td>
-<td>Grossweight</td>
+<td>Gross weight</td>
+<td></td>
 </tr>
 <tr>
 <td>Netweight_Ntgew</td>
-<td>Netweight</td>
+<td>Net weight</td>
+<td></td>
 </tr>
 <tr>
 <td>Weightunit_Gewei</td>
-<td>Weightunit</td>
+<td>Weight unit</td>
+<td></td>
 </tr>
 <tr>
 <td>Volume_Volum</td>
 <td>Volume</td>
+<td></td>
 </tr>
 <tr>
 <td>Volumeunit_Voleh</td>
-<td>Volumeunit</td>
+<td>Volume unit</td>
+<td></td>
 </tr>
 <tr>
 <td>Containerrequirements_Behvo</td>
-<td>Containerrequirements</td>
+<td>Container requirements</td>
+<td></td>
 </tr>
 <tr>
 <td>Storageconditions_Raube</td>
-<td>Storageconditions</td>
+<td>Storage conditions</td>
+<td></td>
 </tr>
 <tr>
 <td>Temperatureconditionsindicator_Tempb</td>
-<td>Temperatureconditionsindicator</td>
+<td>Temperature conditions indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>Lowlevelcode_Disst</td>
-<td>Lowlevelcode</td>
+<td>Low level code</td>
+<td></td>
 </tr>
 <tr>
 <td>Transportationgroup_Tragr</td>
-<td>Transportationgroup</td>
+<td>Transportation group</td>
+<td></td>
 </tr>
 <tr>
 <td>Hazardousmaterialnumber_Stoff</td>
-<td>Hazardousmaterialnumber</td>
+<td>Hazardous material number</td>
+<td></td>
 </tr>
 <tr>
 <td>Division_Spart</td>
 <td>Division</td>
+<td></td>
 </tr>
 <tr>
 <td>Competitor_Kunnr</td>
 <td>Competitor</td>
+<td></td>
 </tr>
 <tr>
 <td>Europeanarticlenumber_Eannr</td>
-<td>Europeanarticlenumber</td>
+<td>European article number</td>
+<td></td>
 </tr>
 <tr>
 <td>Quantitynumberofgrgislipstobeprinted_Wesch</td>
-<td>Quantitynumberofgrgislipstobeprinted</td>
+<td>Quantity number of GRGI slips to be printed</td>
+<td></td>
 </tr>
 <tr>
 <td>Procurementrule_Bwvor</td>
-<td>Procurementrule</td>
+<td>Procurement rule</td>
+<td></td>
 </tr>
 <tr>
 <td>Sourceofsupply_Bwscl</td>
-<td>Sourceofsupply</td>
+<td>Source of supply</td>
+<td></td>
 </tr>
 <tr>
 <td>Seasoncategory_Saiso</td>
-<td>Seasoncategory</td>
+<td>Season category</td>
+<td></td>
 </tr>
 <tr>
 <td>Labeltype_Etiar</td>
-<td>Labeltype</td>
+<td>Label type</td>
+<td></td>
 </tr>
 <tr>
 <td>Labelform_Etifo</td>
-<td>Labelform</td>
+<td>Label form</td>
+<td></td>
 </tr>
 <tr>
 <td>Deactivated_Entar</td>
 <td>Deactivated</td>
+<td></td>
 </tr>
 <tr>
 <td>Internationalarticlenumbereanupc_Ean11</td>
-<td>Internationalarticlenumbereanupc</td>
+<td>International article number EAN/UPC</td>
+<td></td>
 </tr>
 <tr>
 <td>Categoryofinternationalarticlenumberean_Numtp</td>
-<td>Categoryofinternationalarticlenumberean</td>
+<td>Category of international article number EAN</td>
+<td></td>
 </tr>
 <tr>
 <td>Length_Laeng</td>
 <td>Length</td>
+<td></td>
 </tr>
 <tr>
 <td>Width_Breit</td>
 <td>Width</td>
+<td></td>
 </tr>
 <tr>
 <td>Height_Hoehe</td>
 <td>Height</td>
+<td></td>
 </tr>
 <tr>
 <td>Unitofdimensionforlengthwidthheight_Meabm</td>
-<td>Unitofdimensionforlengthwidthheight</td>
+<td>Unit of dimension for length, width, height</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductHierarchy_Prdha</td>
 <td>Product Hierarchy</td>
+<td></td>
 </tr>
 <tr>
 <td>Stocktransfernetchangecosting_Aeklk</td>
-<td>Stocktransfernetchangecosting</td>
+<td>Stock transfer net change costing</td>
+<td></td>
 </tr>
 <tr>
 <td>Cadindicator_Cadkz</td>
-<td>Cadindicator</td>
+<td>CAD indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>Qminprocurementisactive_Qmpur</td>
-<td>Qminprocurementisactive</td>
+<td>Qmin procurement is active</td>
+<td></td>
 </tr>
 <tr>
 <td>Allowedpackagingweight_Ergew</td>
-<td>Allowedpackagingweight</td>
+<td>Allowed packaging weight</td>
+<td></td>
 </tr>
 <tr>
 <td>Unitofweightallowedpackagingweight_Ergew</td>
-<td>Unitofweightallowedpackagingweight</td>
+<td>Unit of weight allowed packaging weight</td>
+<td></td>
 </tr>
 <tr>
 <td>Allowedpackagingvolume_Ervol</td>
-<td>Allowedpackagingvolume</td>
+<td>Allowed packaging volume</td>
+<td></td>
 </tr>
 <tr>
 <td>Volumeunitallowedpackagingvolume_Ervoe</td>
-<td>Volumeunitallowedpackagingvolume</td>
+<td>Volume unit allowed packaging volume</td>
+<td></td>
 </tr>
 <tr>
 <td>Excessweighttoleranceforhandlingunit_Gewto</td>
-<td>Excessweighttoleranceforhandlingunit</td>
+<td>Excess weight tolerance for handling unit</td>
+<td></td>
 </tr>
 <tr>
 <td>Excessvolumetoleranceofthehandlingunit_Volto</td>
-<td>Excessvolumetoleranceofthehandlingunit</td>
+<td>Excess volume tolerance of the handling unit</td>
+<td></td>
 </tr>
 <tr>
 <td>Variablepurchaseorderunitactive_Vabme</td>
-<td>Variablepurchaseorderunitactive</td>
+<td>Variable purchase order unit active</td>
+<td></td>
 </tr>
 <tr>
 <td>Revisionlevelhasbeenassignedtothematerial_Kzrev</td>
-<td>Revisionlevelhasbeenassignedtothematerial</td>
+<td>Revision level has been assigned to the material</td>
+<td></td>
 </tr>
 <tr>
 <td>Configurablematerial_Kzkfg</td>
-<td>Configurablematerial</td>
+<td>Configurable material</td>
+<td></td>
 </tr>
 <tr>
 <td>Batchmanagementrequirementindicator_Xchpf</td>
-<td>Batchmanagementrequirementindicator</td>
+<td>Batch management requirement indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>Packagingmaterialtype_Vhart</td>
-<td>Packagingmaterialtype</td>
+<td>Packaging material type</td>
+<td></td>
 </tr>
 <tr>
 <td>Maximumlevelbyvolume_Fuelg</td>
-<td>Maximumlevelbyvolume</td>
+<td>Maximum level by volume</td>
+<td></td>
 </tr>
 <tr>
 <td>Stackingfactor_Stfak</td>
-<td>Stackingfactor</td>
+<td>Stacking factor</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialgrouppackagingmaterials_Magrv</td>
-<td>Materialgrouppackagingmaterials</td>
+<td>Material group packaging materials</td>
+<td></td>
 </tr>
 <tr>
 <td>Authorizationgroup_Begru</td>
-<td>Authorizationgroup</td>
+<td>Authorization group</td>
+<td></td>
 </tr>
 <tr>
 <td>Validfromdate_Datab</td>
-<td>Validfromdate</td>
+<td>Valid from date</td>
+<td></td>
 </tr>
 <tr>
 <td>Deletiondate_Liqdt</td>
-<td>Deletiondate</td>
+<td>Deletion date</td>
+<td></td>
 </tr>
 <tr>
 <td>Seasonyear_Saisj</td>
-<td>Seasonyear</td>
+<td>Season year</td>
+<td></td>
 </tr>
 <tr>
 <td>Pricebandcategory_Plgtp</td>
-<td>Pricebandcategory</td>
+<td>Price band category</td>
+<td></td>
 </tr>
 <tr>
 <td>Emptiesbillofmaterial_Mlgut</td>
-<td>Emptiesbillofmaterial</td>
+<td>Empties bill of material</td>
+<td></td>
 </tr>
 <tr>
 <td>Externalmaterialgroup_Extwg</td>
-<td>Externalmaterialgroup</td>
+<td>External material group</td>
+<td></td>
 </tr>
 <tr>
 <td>Crossplantconfigurablematerial_Satnr</td>
-<td>Crossplantconfigurablematerial</td>
+<td>Cross-plant configurable material</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialcategory_Attyp</td>
-<td>Materialcategory</td>
+<td>Material category</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicatormaterialcanbecoproduct_Kzkup</td>
-<td>Indicatormaterialcanbecoproduct</td>
+<td>Indicator material can be co-product</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicatorthematerialhasafollowupmaterial_Kznfm</td>
-<td>Indicatorthematerialhasafollowupmaterial</td>
+<td>Indicator the material has a follow-up material</td>
+<td></td>
 </tr>
 <tr>
 <td>Pricingreferencematerial_Pmata</td>
-<td>Pricingreferencematerial</td>
+<td>Pricing reference material</td>
+<td></td>
 </tr>
 <tr>
 <td>Crossplantmaterialstatus_Mstae</td>
-<td>Crossplantmaterialstatus</td>
+<td>Cross-plant material status</td>
+<td></td>
 </tr>
 <tr>
 <td>Crossdistributionchainmaterialstatus_Mstav</td>
-<td>Crossdistributionchainmaterialstatus</td>
+<td>Cross-distribution chain material status</td>
+<td></td>
 </tr>
 <tr>
 <td>Datefromwhichthecrossplantmaterialstatusisvalid_Mstde</td>
-<td>Datefromwhichthecrossplantmaterialstatusisvalid</td>
+<td>Date from which the cross-plant material status is valid</td>
+<td></td>
 </tr>
 <tr>
 <td>Datefromwhichthexdistrchainmaterialstatusisvalid_Mstdv</td>
-<td>Datefromwhichthexdistrchainmaterialstatusisvalid</td>
+<td>Date from which the x-distr. chain material status is valid</td>
+<td></td>
 </tr>
 <tr>
 <td>Taxclassificationofthematerial_Taklv</td>
-<td>Taxclassificationofthematerial</td>
+<td>Tax classification of the material</td>
+<td></td>
 </tr>
 <tr>
 <td>Catalogprofile_Rbnrm</td>
-<td>Catalogprofile</td>
+<td>Catalog profile</td>
+<td></td>
 </tr>
 <tr>
 <td>Minimumremainingshelflife_Mhdrz</td>
-<td>Minimumremainingshelflife</td>
+<td>Minimum remaining shelf life</td>
+<td></td>
 </tr>
 <tr>
 <td>Totalshelflife_Mhdhb</td>
-<td>Totalshelflife</td>
+<td>Total shelf life</td>
+<td></td>
 </tr>
 <tr>
 <td>Storagepercentage_Mhdlp</td>
-<td>Storagepercentage</td>
+<td>Storage percentage</td>
+<td></td>
 </tr>
 <tr>
 <td>Contentunit_Inhme</td>
-<td>Contentunit</td>
+<td>Content unit</td>
+<td></td>
 </tr>
 <tr>
 <td>Netcontents_Inhal</td>
-<td>Netcontents</td>
+<td>Net contents</td>
+<td></td>
 </tr>
 <tr>
 <td>Comparisonpriceunit_Vpreh</td>
-<td>Comparisonpriceunit</td>
+<td>Comparison price unit</td>
+<td></td>
 </tr>
 <tr>
 <td>Grosscontents_Inhbr</td>
-<td>Grosscontents</td>
+<td>Gross contents</td>
+<td></td>
 </tr>
 <tr>
 <td>Quantityconversionmethod_Cmeth</td>
-<td>Quantityconversionmethod</td>
+<td>Quantity conversion method</td>
+<td></td>
 </tr>
 <tr>
 <td>Internalobjectnumber_Cuobf</td>
-<td>Internalobjectnumber</td>
+<td>Internal object number</td>
+<td></td>
 </tr>
 <tr>
 <td>Environmentallyrelevant_Kzumw</td>
-<td>Environmentallyrelevant</td>
+<td>Environmentally relevant</td>
+<td></td>
 </tr>
 <tr>
 <td>Productallocationdeterminationprocedure_Kosch</td>
-<td>Productallocationdeterminationprocedure</td>
+<td>Product allocation determination procedure</td>
+<td></td>
 </tr>
 <tr>
 <td>Pricingprofileforvariants_Sprof</td>
-<td>Pricingprofileforvariants</td>
+<td>Pricing profile for variants</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialqualifiesfordiscountinkind_Nrfhg</td>
-<td>Materialqualifiesfordiscountinkind</td>
+<td>Material qualifies for discount in kind</td>
+<td></td>
 </tr>
 <tr>
 <td>Manufacturerpartnumber_Mfrpn</td>
-<td>Manufacturerpartnumber</td>
+<td>Manufacturer part number</td>
+<td></td>
 </tr>
 <tr>
 <td>Manufacturernumber_Mfrpn</td>
-<td>Manufacturernumber</td>
+<td>Manufacturer number</td>
+<td></td>
 </tr>
 <tr>
 <td>Numberinventorymanagedmaterial_Bmatn</td>
-<td>Numberinventorymanagedmaterial</td>
+<td>Number inventory managed material</td>
+<td></td>
 </tr>
 <tr>
 <td>Mfrpartprofile_Mprof</td>
-<td>Mfrpartprofile</td>
+<td>Mfr part profile</td>
+<td></td>
 </tr>
 <tr>
 <td>Unitsofmeasureusage_Kzwsm</td>
-<td>Unitsofmeasureusage</td>
+<td>Units of measure usage</td>
+<td></td>
 </tr>
 <tr>
 <td>Rolloutinaseason_Saity</td>
-<td>Rolloutinaseason</td>
+<td>Rollout in a season</td>
+<td></td>
 </tr>
 <tr>
 <td>Dangerousgoodsindicatorprofile_Profl</td>
-<td>Dangerousgoodsindicatorprofile</td>
+<td>Dangerous goods indicator profile</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicatorhighlyviscous_Ihivi</td>
-<td>Indicatorhighlyviscous</td>
+<td>Indicator highly viscous</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicatorinbulkliquid_Iloos</td>
-<td>Indicatorinbulkliquid</td>
+<td>Indicator in bulk liquid</td>
+<td></td>
 </tr>
 <tr>
 <td>Levelofexplicitnessforserialnumber_Serlv</td>
-<td>Levelofexplicitnessforserialnumber</td>
+<td>Level of explicitness for serial number</td>
+<td></td>
 </tr>
 <tr>
 <td>Packagingmaterialisclosedpackaging_Kzgvh</td>
-<td>Packagingmaterialisclosedpackaging</td>
+<td>Packaging material is closed packaging</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicatorapprovedbatchrecordrequired_Xgchp</td>
-<td>Indicatorapprovedbatchrecordrequired</td>
+<td>Indicator approved batch record required</td>
+<td></td>
 </tr>
 <tr>
 <td>Assigneffectivityparametervaluesoverridechangenumbers_Kzeff</td>
-<td>Assigneffectivityparametervaluesoverridechangenumbers</td>
+<td>Assign effectivity parameter values override change numbers</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialcompletionlevel_Compl</td>
-<td>Materialcompletionlevel</td>
+<td>Material completion level</td>
+<td></td>
 </tr>
 <tr>
 <td>Periodindicatorforshelflifeexpirationdate_Iprkz</td>
-<td>Periodindicatorforshelflifeexpirationdate</td>
+<td>Period indicator for shelf life expiration date</td>
+<td></td>
 </tr>
 <tr>
 <td>Roundingruleforcalculationofsled_Rdmhd</td>
-<td>Roundingruleforcalculationofsled</td>
+<td>Rounding rule for calculation of SLED</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicatorproductcompositionprintedonpackaging_Przus</td>
-<td>Indicatorproductcompositionprintedonpackaging</td>
+<td>Indicator product composition printed on packaging</td>
+<td></td>
 </tr>
 <tr>
 <td>Generalitemcategorygroup_Mtpos_Mara</td>
-<td>Generalitemcategorygroup</td>
+<td>General item category group</td>
+<td></td>
 </tr>
 <tr>
 <td>Genericmaterialwithlogisticalvariants_Bflme</td>
-<td>Genericmaterialwithlogisticalvariants</td>
+<td>Generic material with logistical variants</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialislocked_Matfi</td>
-<td>Materialislocked</td>
+<td>Material is locked</td>
+<td></td>
 </tr>
 <tr>
 <td>Relevantforconfigurationmanagement_Cmrel</td>
-<td>Relevantforconfigurationmanagement</td>
+<td>Relevant for configuration management</td>
+<td></td>
 </tr>
 <tr>
 <td>Assortmentlisttype_Bbtyp</td>
-<td>Assortmentlisttype</td>
+<td>Assortment list type</td>
+<td></td>
 </tr>
 <tr>
 <td>Expirationdate_Sled_Bbd</td>
-<td>Expirationdate</td>
+<td>Expiration date</td>
+<td></td>
 </tr>
 <tr>
 <td>Globaltradeitemnumbervariant_Gtin_Variant</td>
-<td>Globaltradeitemnumbervariant</td>
+<td>Global trade item number variant</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialnumberofthegenericmaterialinprepackmaterials_Gennr</td>
-<td>Materialnumberofthegenericmaterialinprepackmaterials</td>
+<td>Material number of the generic material in prepack materials</td>
+<td></td>
 </tr>
 <tr>
 <td>Referencematerialformaterialspackedinsameway_Rmatp</td>
-<td>Referencematerialformaterialspackedinsameway</td>
+<td>Reference material for materials packed in same way</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicatorglobaldatasynchronizationrelevant_Gds_Relevant</td>
-<td>Indicatorglobaldatasynchronizationrelevant</td>
+<td>Indicator global data synchronization relevant</td>
+<td></td>
 </tr>
 <tr>
 <td>Acceptanceatorigin_Weora</td>
-<td>Acceptanceatorigin</td>
+<td>Acceptance at origin</td>
+<td></td>
 </tr>
 <tr>
 <td>Standardhutype_Hutyp_Dflt</td>
-<td>Standardhutype</td>
+<td>Standard HU type</td>
+<td></td>
 </tr>
 <tr>
 <td>Pilferable_Pilferable</td>
 <td>Pilferable</td>
+<td></td>
 </tr>
 <tr>
 <td>Warehousestoragecondition_Whstc</td>
-<td>Warehousestoragecondition</td>
+<td>Warehouse storage condition</td>
+<td></td>
 </tr>
 <tr>
 <td>Warehousematerialgroup_Whmatgr</td>
-<td>Warehousematerialgroup</td>
+<td>Warehouse material group</td>
+<td></td>
 </tr>
 <tr>
 <td>Handlingindicator_Hndlcode</td>
-<td>Handlingindicator</td>
+<td>Handling indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>Relevantforhazardoussubstances_Hazmat</td>
-<td>Relevantforhazardoussubstances</td>
+<td>Relevant for hazardous substances</td>
+<td></td>
 </tr>
 <tr>
 <td>Handlingunittype_Hutyp</td>
-<td>Handlingunittype</td>
+<td>Handling unit type</td>
+<td></td>
 </tr>
 <tr>
 <td>Variabletareweight_Tare_Var</td>
-<td>Variabletareweight</td>
+<td>Variable tare weight</td>
+<td></td>
 </tr>
 <tr>
 <td>Maximumallowedcapacityofpackagingmaterial_Maxc</td>
-<td>Maximumallowedcapacityofpackagingmaterial</td>
+<td>Maximum allowed capacity of packaging material</td>
+<td></td>
 </tr>
 <tr>
 <td>Overcapacitytoleranceofthehandlingunit_Maxc_Tol</td>
-<td>Overcapacitytoleranceofthehandlingunit</td>
+<td>Overcapacity tolerance of the handling unit</td>
+<td></td>
 </tr>
 <tr>
 <td>Maximumpackinglengthofpackagingmaterial_Maxl</td>
-<td>Maximumpackinglengthofpackagingmaterial</td>
+<td>Maximum packing length of packaging material</td>
+<td></td>
 </tr>
 <tr>
 <td>Maximumpackingwidthofpackagingmaterial_Maxb</td>
-<td>Maximumpackingwidthofpackagingmaterial</td>
+<td>Maximum packing width of packaging material</td>
+<td></td>
 </tr>
 <tr>
 <td>Maximumpackingheightofpackagingmaterial_Maxh</td>
-<td>Maximumpackingheightofpackagingmaterial</td>
+<td>Maximum packing height of packaging material</td>
+<td></td>
 </tr>
 <tr>
 <td>Unitofmeasureformaximumpackinglengthwidthheight_Maxdim_Uom</td>
-<td>Unitofmeasureformaximumpackinglengthwidthheight</td>
+<td>Unit of measure for maximum packing length, width, height</td>
+<td></td>
 </tr>
 <tr>
 <td>Countryoforiginofmaterial_Herkl</td>
-<td>Countryoforiginofmaterial</td>
+<td>Country of origin of material</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialfreightgroup_Mfrgr</td>
-<td>Materialfreightgroup</td>
+<td>Material freight group</td>
+<td></td>
 </tr>
 <tr>
 <td>Quarantineperiod_Qqtime</td>
-<td>Quarantineperiod</td>
+<td>Quarantine period</td>
+<td></td>
 </tr>
 <tr>
 <td>Timeunitforquarantineperiod_Qqtimeuom</td>
-<td>Timeunitforquarantineperiod</td>
+<td>Time unit for quarantine period</td>
+<td></td>
 </tr>
 <tr>
 <td>Qualityinspectiongroup_Qgrp</td>
-<td>Qualityinspectiongroup</td>
+<td>Quality inspection group</td>
+<td></td>
 </tr>
 <tr>
 <td>Serialnumberprofile_Serial</td>
-<td>Serialnumberprofile</td>
+<td>Serial number profile</td>
+<td></td>
 </tr>
 <tr>
 <td>Formname_Ps_Smartform</td>
-<td>Formname</td>
+<td>Form name</td>
+<td></td>
 </tr>
 <tr>
 <td>Ewmcwlogisticsunitofmeasure_Logunit</td>
-<td>Ewmcwlogisticsunitofmeasure</td>
+<td>Ewmcw logistics unit of measure</td>
+<td></td>
 </tr>
 <tr>
 <td>Ewmcwmaterialisacatchweightmaterial_Cwqrel</td>
-<td>Ewmcwmaterialisacatchweightmaterial</td>
+<td>Ewmcw material is a catch weight material</td>
+<td></td>
 </tr>
 <tr>
 <td>Ewmcwcatchweightprofileforenteringcwquantity_Cwqproc</td>
-<td>Ewmcwcatchweightprofileforenteringcwquantity</td>
+<td>Ewmcw catch weight profile for entering CW quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>Ewmcatchweighttolerancegroupforewm_Cwqtolgr</td>
-<td>Ewmcatchweighttolerancegroupforewm</td>
+<td>Ewm catch weight tolerance group for EWM</td>
+<td></td>
 </tr>
 <tr>
 <td>Adjustmentprofile_Adprof</td>
-<td>Adjustmentprofile</td>
+<td>Adjustment profile</td>
+<td></td>
 </tr>
 <tr>
 <td>Idforanintellectualpropertycrmproduct_Ipmipproduct</td>
-<td>Idforanintellectualpropertycrmproduct</td>
+<td>Id for an intellectual property CRM product</td>
+<td></td>
 </tr>
 <tr>
 <td>Variantpriceallowedformaterialmaster_Allow_Pmat_Igno</td>
-<td>Variantpriceallowedformaterialmaster</td>
+<td>Variant price allowed for material master</td>
+<td></td>
 </tr>
 <tr>
 <td>Medium_Medium</td>
 <td>Medium</td>
+<td></td>
 </tr>
 <tr>
 <td>Physicalcommodity_Commodity</td>
-<td>Physicalcommodity</td>
+<td>Physical commodity</td>
+<td></td>
 </tr>
 <tr>
 <td>Brand_Brand_Id</td>
 <td>Brand</td>
+<td></td>
 </tr>
 <tr>
 <td>Language_Spras</td>
 <td>Language</td>
+<td></td>
 </tr>
 <tr>
 <td>Materialtext_Maktx</td>
-<td>Materialtext</td>
+<td>Material text</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -6021,11 +6198,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Esta página foi útil?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opinião!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opnião! Ajude-nos a melhorar esta página usando nosso sistema de comentários abaixo.   
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentários</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-FTV80RFCXY"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-FTV80RFCXY",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-FTV80RFCXY",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -5284,7 +5294,7 @@
 
 <h1 id="vendorperformance">VendorPerformance</h1>
 <h2 id="archivo-sql-de-origen-google-cloud-cortex-data-foundation">Archivo SQL de origen: Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/VendorPerformance.sql">VendorPerformance</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/VendorPerformance.sql">VendorPerformance</a></p>
 <h2 id="descripcion-general">Descripción general</h2>
 <p>Esta vista proporciona un análisis integral de los datos de órdenes de compra de los sistemas SAP, incluyendo métricas de rendimiento del proveedor, información de facturas y datos detallados a nivel de artículo. Combina datos de múltiples tablas para proporcionar una vista holística de las órdenes de compra, permitiendo a los usuarios analizar tendencias, identificar áreas de mejora y tomar decisiones informadas.</p>
 <h2 id="fuentes-de-datos">Fuentes de datos</h2>
@@ -5394,260 +5404,324 @@
 <tr>
 <th>Campo</th>
 <th>Descripción del campo</th>
+<th>Descripción del Diccionario SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
-<td>Client (Mandant)</td>
+<td>Client ID</td>
+<td></td>
 </tr>
 <tr>
 <td>DocumentNumber_EBELN</td>
-<td>Document Number</td>
+<td>Purchase Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>Item_EBELP</td>
-<td>Item</td>
+<td>Purchase Order Item Number</td>
+<td></td>
 </tr>
 <tr>
 <td>PurchasingDocumentDate_BEDAT</td>
-<td>Purchasing Document Date</td>
+<td>Purchase Order Date</td>
+<td></td>
 </tr>
 <tr>
 <td>NetOrderValueinPOCurrency_NETWR</td>
-<td>Net Order Valuein PO Currency</td>
+<td>Net Order Value in Purchase Order Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>CurrencyKey_WAERS</td>
-<td>Currency Key</td>
+<td>Purchase Order Currency Key</td>
+<td></td>
 </tr>
 <tr>
 <td>ItemDeliveryDate_EINDT</td>
 <td>Item Delivery Date</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderDateOfScheduleLine_BEDAT</td>
-<td>Order Date Of Schedule Line</td>
+<td>Order Date of Schedule Line</td>
+<td></td>
 </tr>
 <tr>
 <td>PostingDateInTheDocument_BUDAT</td>
-<td>Posting Date In The Document</td>
+<td>Posting Date in the Document</td>
+<td></td>
 </tr>
 <tr>
 <td>AmountInLocalCurrency_DMBTR</td>
-<td>Amount In Local Currency</td>
+<td>Amount in Local Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>POOrderHistoryCurrencyKey_WAERS</td>
-<td>PO Order History Currency Key</td>
+<td>Purchase Order History Currency Key</td>
+<td></td>
 </tr>
 <tr>
 <td>POQuantity_MENGE</td>
-<td>PO Quantity</td>
+<td>Purchase Order Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>UoM_MEINS</td>
-<td>Uo M</td>
+<td>Unit of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>NetPrice_NETPR</td>
 <td>Net Price</td>
+<td></td>
 </tr>
 <tr>
 <td>CreatedOn_AEDAT</td>
 <td>Created On</td>
+<td></td>
 </tr>
 <tr>
 <td>Status_STATU</td>
 <td>Status</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialNumber_MATNR</td>
 <td>Material Number</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialType_MTART</td>
 <td>Material Type</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialGroup_MATKL</td>
 <td>Material Group</td>
+<td></td>
 </tr>
 <tr>
 <td>PurchasingOrganization_EKORG</td>
 <td>Purchasing Organization</td>
+<td></td>
 </tr>
 <tr>
 <td>PurchasingGroup_EKGRP</td>
 <td>Purchasing Group</td>
+<td></td>
 </tr>
 <tr>
 <td>VendorAccountNumber_LIFNR</td>
 <td>Vendor Account Number</td>
+<td></td>
 </tr>
 <tr>
 <td>Company_BUKRS</td>
 <td>Company</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_WERKS</td>
 <td>Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>YearOfPurchasingDocumentDate_BEDAT</td>
-<td>Year Of Purchasing Document Date</td>
+<td>Year of Purchasing Document Date</td>
+<td></td>
 </tr>
 <tr>
 <td>MonthOfPurchasingDocumentDate_BEDAT</td>
-<td>Month Of Purchasing Document Date</td>
+<td>Month of Purchasing Document Date</td>
+<td></td>
 </tr>
 <tr>
 <td>WeekOfPurchasingDocumentDate_BEDAT</td>
-<td>Week Of Purchasing Document Date</td>
+<td>Week of Purchasing Document Date</td>
+<td></td>
 </tr>
 <tr>
 <td>FiscalYear</td>
 <td>Fiscal Year</td>
+<td></td>
 </tr>
 <tr>
 <td>FiscalPeriod</td>
 <td>Fiscal Period</td>
+<td></td>
 </tr>
 <tr>
 <td>InvoiceQuantity</td>
 <td>Invoice Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>InvoiceAmountInSourceCurrency</td>
-<td>Invoice Amount In Source Currency</td>
+<td>Invoice Amount in Source Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>InvoiceDate</td>
 <td>Invoice Date</td>
+<td></td>
 </tr>
 <tr>
 <td>YearOfInvoiceDate</td>
-<td>Year Of Invoice Date</td>
+<td>Year of Invoice Date</td>
+<td></td>
 </tr>
 <tr>
 <td>MonthOfInvoiceDate</td>
-<td>Month Of Invoice Date</td>
+<td>Month of Invoice Date</td>
+<td></td>
 </tr>
 <tr>
 <td>WeekOfInvoiceDate</td>
-<td>Week Of Invoice Date</td>
+<td>Week of Invoice Date</td>
+<td></td>
 </tr>
 <tr>
 <td>InvoiceCount</td>
 <td>Invoice Count</td>
+<td></td>
 </tr>
 <tr>
 <td>PurchasingOrganizationText_EKOTX</td>
 <td>Purchasing Organization Text</td>
+<td></td>
 </tr>
 <tr>
 <td>PurchasingGroupText_EKNAM</td>
 <td>Purchasing Group Text</td>
+<td></td>
 </tr>
 <tr>
 <td>CountryKey_LAND1</td>
-<td>Country Key</td>
+<td>Vendor Country Key</td>
+<td></td>
 </tr>
 <tr>
 <td>NAME1</td>
-<td>NAME1</td>
+<td>Vendor Name</td>
+<td></td>
 </tr>
 <tr>
 <td>CompanyText_BUTXT</td>
 <td>Company Text</td>
+<td></td>
 </tr>
 <tr>
 <td>FiscalyearVariant_PERIV</td>
-<td>Fiscalyear Variant</td>
+<td>Fiscal Year Variant</td>
+<td></td>
 </tr>
 <tr>
 <td>LanguageKey_SPRAS</td>
 <td>Language Key</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialText_MAKTX</td>
 <td>Material Text</td>
+<td></td>
 </tr>
 <tr>
 <td>DescriptionOfMaterialType_MTBEZ</td>
-<td>Description Of Material Type</td>
+<td>Description of Material Type</td>
+<td></td>
 </tr>
 <tr>
 <td>VendorCycleTimeInDays</td>
-<td>Vendor Cycle Time In Days</td>
+<td>Vendor Cycle Time in Days</td>
+<td></td>
 </tr>
 <tr>
 <td>RejectedQuantity</td>
 <td>Rejected Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsReceiptQuantity</td>
 <td>Goods Receipt Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsReceiptAmountInSourceCurrency</td>
-<td>Goods Receipt Amount In Source Currency</td>
+<td>Goods Receipt Amount in Source Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>ExchangeRate_UKURS</td>
 <td>Exchange Rate</td>
+<td></td>
 </tr>
 <tr>
 <td>TargetCurrency_TCURR</td>
 <td>Target Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>AmountInTargetCurrency_DMBTR</td>
-<td>Amount In Target Currency</td>
+<td>Amount in Target Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>NetPriceInTargetCurrency_NETPR</td>
-<td>Net Price In Target Currency</td>
+<td>Net Price in Target Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>NetOrderValueinTargetCurrency_NETWR</td>
-<td>Net Order Valuein Target Currency</td>
+<td>Net Order Value in Target Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsReceiptAmountInTargetCurrency</td>
-<td>Goods Receipt Amount In Target Currency</td>
+<td>Goods Receipt Amount in Target Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>InvoiceAmountInTargetCurrency</td>
-<td>Invoice Amount In Target Currency</td>
+<td>Invoice Amount in Target Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>IsDelivered</td>
-<td>Is Delivered</td>
+<td>Delivery Status</td>
+<td></td>
 </tr>
 <tr>
 <td>IsRejected</td>
-<td>Is Rejected</td>
+<td>Vendor Quality (Rejection)</td>
+<td></td>
 </tr>
 <tr>
 <td>VendorOnTimeDelivery</td>
 <td>Vendor On Time Delivery</td>
+<td></td>
 </tr>
 <tr>
 <td>VendorInFullDelivery</td>
-<td>Vendor In Full Delivery</td>
+<td>Vendor InFull Delivery</td>
+<td></td>
 </tr>
 <tr>
 <td>VendorOnTimeInFullDelivery</td>
 <td>Vendor On Time In Full Delivery</td>
+<td></td>
 </tr>
 <tr>
 <td>VendorInvoiceAccuracy</td>
 <td>Vendor Invoice Accuracy</td>
+<td></td>
 </tr>
 <tr>
 <td>PastDueOrOpenItems</td>
-<td>Past Due Or Open Items</td>
+<td>Past Due and Open</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5658,11 +5732,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        ¿Fue útil esta página?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios! Ayúdanos a mejorar esta página utilizando nuestro sistema de comentarios a continuación.                                                    
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentarios</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

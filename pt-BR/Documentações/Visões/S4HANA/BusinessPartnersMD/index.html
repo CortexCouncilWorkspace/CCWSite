@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-39G1K9GM1S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-39G1K9GM1S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-39G1K9GM1S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -3074,18 +3084,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5220,18 +5230,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5284,7 +5294,7 @@
 
 <h1 id="businesspartnersmd">BusinessPartnersMD</h1>
 <h2 id="arquivo-sql-de-origem-google-cloud-cortex-data-foundation">Arquivo SQL de origem - Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/BusinessPartnersMD.sql">BusinessPartnersMD</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/BusinessPartnersMD.sql">BusinessPartnersMD</a></p>
 <h2 id="visao-geral">Visão geral</h2>
 <p>Esta visão fornece uma perspectiva abrangente de relatórios sobre parceiros de negócios SAP, consolidando dados das tabelas BUT000 e BUT020. Ela oferece uma ampla gama de atributos relacionados à identificação, classificação, informações de contato, detalhes legais e organizacionais e muito mais dos Parceiros de Negócios.</p>
 <h2 id="fontes-de-dados">Fontes de Dados</h2>
@@ -5310,14 +5320,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="key-use-cases">Key Use Cases</h2>
+<h2 id="casos-de-uso">Casos de Uso</h2>
 <ul>
 <li>Recupere informações detalhadas sobre Parceiros de Negócios para fins de relatório e análise.</li>
 <li>Identifique e segmente Parceiros de Negócios com base em vários critérios, como setor da indústria, forma legal ou localização.</li>
 <li>Apoie as atividades de gerenciamento de relacionamento com o cliente (CRM) fornecendo insights sobre as preferências dos Parceiros de Negócios, canais de comunicação e contatos importantes.</li>
 <li>Facilite a integração e harmonização de dados em diferentes sistemas SAP e fontes de dados externas.</li>
 </ul>
-<h2 id="query-logic">Query Logic</h2>
+<h2 id="logica-da-query">Lógica da Query</h2>
 <p>A visão combina dados das tabelas BUT000 e BUT020 usando um INNER JOIN nos campos PARTNER e CLIENT. Além disso, ela se junta à tabela AddressesMD para enriquecer as informações relacionadas ao endereço dos Parceiros de Negócios. A consulta recupera um conjunto abrangente de atributos, incluindo detalhes de identificação, informações de contato, dados legais e organizacionais e informações de endereço.</p>
 <h2 id="possivel-relacao-com-transacoes-sap">Possível relação com transações SAP</h2>
 <table>
@@ -5350,396 +5360,494 @@
 <tr>
 <th>Campo</th>
 <th>Descrição do Campo</th>
+<th>Descrição no Dicionário SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>CLIENT_CLIENT</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNERNumber_PARTNER</td>
-<td>Business PARTNER Number</td>
+<td>Business Partner Number</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNERCategory_TYPE</td>
-<td>Business PARTNER Category</td>
+<td>Business Partner Category</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNERType_BPKIND</td>
-<td>Business PARTNER Type</td>
+<td>Business Partner Type</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNERGrouping_BU_GROUP</td>
-<td>Business PARTNER Grouping</td>
+<td>Business Partner Grouping</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNERNumberInExternalSystem_BPEXT</td>
-<td>Business PARTNER Number In External System</td>
+<td>Business Partner Number in External System</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchTerm1ForBusinessPARTNER_BU_SORT1</td>
-<td>Search Term1 For Business PARTNER</td>
+<td>Search Term 1 for Business Partner</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchTerm2ForBusinessPARTNER_BU_SORT2</td>
-<td>Search Term2 For Business PARTNER</td>
+<td>Search Term 2 for Business Partner</td>
+<td></td>
 </tr>
 <tr>
 <td>DataOriginTypes_SOURCE</td>
 <td>Data Origin Types</td>
+<td></td>
 </tr>
 <tr>
 <td>FormOfAddress_TITLE</td>
-<td>Form Of Address</td>
+<td>Form of Address</td>
+<td></td>
 </tr>
 <tr>
 <td>CentralArchivingFlag_XDELE</td>
 <td>Central Archiving Flag</td>
+<td></td>
 </tr>
 <tr>
 <td>CentralBlockForBusinessPARTNER_XBLCK</td>
-<td>Central Block For Business PARTNER</td>
+<td>Central Block for Business Partner</td>
+<td></td>
 </tr>
 <tr>
 <td>AuthorizationGroup_AUGRP</td>
 <td>Authorization Group</td>
+<td></td>
 </tr>
 <tr>
 <td>Salutation_TITLE_LET</td>
 <td>Salutation</td>
+<td></td>
 </tr>
 <tr>
 <td>LogicalSystem_BU_LOGSYS</td>
 <td>Logical System</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNER_ContactPermission_CONTACT</td>
-<td>Business PARTNER</td>
+<td>Business Partner Contact Permission</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_NotReleased_NOT_RELEASED</td>
-<td>Indicator</td>
+<td>Indicator Not Released</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_NotLegallyCompetent_NOT_LG_COMPETENT</td>
-<td>Indicator</td>
+<td>Indicator Not Legally Competent</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNERPrintFormat_PRINT_MODE</td>
-<td>Business PARTNER Print Format</td>
+<td>Business Partner Print Format</td>
+<td></td>
 </tr>
 <tr>
 <td>DummyFunctionInLength1_BP_EEW_DUMMY</td>
-<td>Dummy Function In Length1</td>
+<td>Dummy Function in Length 1</td>
+<td></td>
 </tr>
 <tr>
 <td>Bp_LegalFormOfOrganization_LEGAL_ENTY</td>
-<td>Bp</td>
+<td>Legal Form of Organization</td>
+<td></td>
 </tr>
 <tr>
 <td>IndustrySector_IND_SECTOR</td>
 <td>Industry Sector</td>
+<td></td>
 </tr>
 <tr>
 <td>LegalEntityOfOrganization_LEGAL_ORG</td>
-<td>Legal Entity Of Organization</td>
+<td>Legal Entity of Organization</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOrganizationFounded_FOUND_DAT</td>
 <td>Date Organization Founded</td>
+<td></td>
 </tr>
 <tr>
 <td>LiquidationDateOfOrganization_LIQUID_DAT</td>
-<td>Liquidation Date Of Organization</td>
+<td>Liquidation Date of Organization</td>
+<td></td>
 </tr>
 <tr>
 <td>InternationalLocationNumber__part1___LOCATION_1</td>
-<td>International Location Number</td>
+<td>International Location Number (part 1)</td>
+<td></td>
 </tr>
 <tr>
 <td>InternationalLocationNumber__part2___LOCATION_2</td>
-<td>International Location Number</td>
+<td>International Location Number (part 2)</td>
+<td></td>
 </tr>
 <tr>
 <td>CheckDigitForTheInternationalLocationNumber_LOCATION_3</td>
-<td>Check Digit For The International Location Number</td>
+<td>Check Digit for the International Location Number</td>
+<td></td>
 </tr>
 <tr>
 <td>LastNameOfBusinessPARTNER__person___NAME_LAST</td>
-<td>Last Name Of Business PARTNER</td>
+<td>Last Name of Business Partner (person)</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstNameOfBusinessPARTNER__person___NAME_FIRST</td>
-<td>First Name Of Business PARTNER</td>
+<td>First Name of Business Partner (person)</td>
+<td></td>
 </tr>
 <tr>
 <td>OtherLastNameOfAPerson_NAME_LST2</td>
-<td>Other Last Name Of A Person</td>
+<td>Other Last Name of a Person</td>
+<td></td>
 </tr>
 <tr>
 <td>NameAtBirthOfBusinessPARTNER_NAME_LAST2</td>
-<td>Name At Birth Of Business PARTNER</td>
+<td>Name at Birth of Business Partner</td>
+<td></td>
 </tr>
 <tr>
 <td>MiddleNameOrSecondForenameOfAPerson_NAMEMIDDLE</td>
-<td>Middle Name Or Second Forename Of A Person</td>
+<td>Middle Name or Second Forename of a Person</td>
+<td></td>
 </tr>
 <tr>
 <td>AcademicTitle_Key_TITLE_ACA1</td>
-<td>Academic Title</td>
+<td>Academic Title (Key)</td>
+<td></td>
 </tr>
 <tr>
 <td>SecondAcademicTitle_TITLE_ACA2</td>
 <td>Second Academic Title</td>
+<td></td>
 </tr>
 <tr>
 <td>NameSupplement_TITLE_ROYL</td>
 <td>Name Supplement</td>
+<td></td>
 </tr>
 <tr>
 <td>NamePrefix__key___PREFIX1</td>
-<td>Name Prefix</td>
+<td>Name Prefix (key)</td>
+<td></td>
 </tr>
 <tr>
 <td>Name2Prefix__key___PREFIX2</td>
-<td>Name2 Prefix</td>
+<td>Name 2 Prefix (key)</td>
+<td></td>
 </tr>
 <tr>
 <td>FullName_NAME1_TEXT</td>
 <td>Full Name</td>
+<td></td>
 </tr>
 <tr>
 <td>NicknameOfBusinessPARTNER__person___NICKNAME</td>
-<td>Nickname Of Business PARTNER</td>
+<td>Nickname of Business Partner (person)</td>
+<td></td>
 </tr>
 <tr>
 <td>middleInitial_INITIALS</td>
-<td>middle Initial</td>
+<td>Middle Initial</td>
+<td></td>
 </tr>
 <tr>
 <td>NameFormat_NAMEFORMAT</td>
 <td>Name Format</td>
+<td></td>
 </tr>
 <tr>
 <td>CountryForNameFormatRule_NAMCOUNTRY</td>
-<td>Country For Name Format Rule</td>
+<td>Country for Name Format Rule</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNER_CorrespondenceLanguage_LANGU_CORR</td>
-<td>Business PARTNER</td>
+<td>Business Partner Correspondence Language</td>
+<td></td>
 </tr>
 <tr>
 <td>Selection_BusinessPARTNERIsMale_XSEXM</td>
-<td>Selection</td>
+<td>Selection Business Partner Is Male</td>
+<td></td>
 </tr>
 <tr>
 <td>Selection_BusinessPARTNERIsFemale_XSEXF</td>
-<td>Selection</td>
+<td>Selection Business Partner Is Female</td>
+<td></td>
 </tr>
 <tr>
 <td>BirthplaceOfBusinessPARTNER_BIRTHPL</td>
-<td>Birthplace Of Business PARTNER</td>
+<td>Birthplace of Business Partner</td>
+<td></td>
 </tr>
 <tr>
 <td>MaritalStatusOfBusinessPARTNER_MARST</td>
-<td>Marital Status Of Business PARTNER</td>
+<td>Marital Status of Business Partner</td>
+<td></td>
 </tr>
 <tr>
 <td>NameOfEmployerOfANaturalPerson_EMPLO</td>
-<td>Name Of Employer Of A Natural Person</td>
+<td>Name of Employer of a Natural Person</td>
+<td></td>
 </tr>
 <tr>
 <td>Occupationgroup_JOBGR</td>
-<td>Occupationgroup</td>
+<td>Occupation Group</td>
+<td></td>
 </tr>
 <tr>
 <td>Nationality_NATIO</td>
 <td>Nationality</td>
+<td></td>
 </tr>
 <tr>
 <td>ObsoleteField_CNTAX</td>
 <td>Obsolete Field</td>
+<td></td>
 </tr>
 <tr>
 <td>CtryOfOrigin_NonResCompanies_CNDSC</td>
-<td>Ctry Of Origin</td>
+<td>Country of Origin (Non-Res Companies)</td>
+<td></td>
 </tr>
 <tr>
 <td>Selection_SexOfBusinessPARTNERIsNotKnown_XSEXU</td>
-<td>Selection</td>
+<td>Selection Sex of Business Partner Is Not Known</td>
+<td></td>
 </tr>
 <tr>
 <td>ObsoleteField_XUBNAME</td>
 <td>Obsolete Field</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNER_Language_BU_LANGU</td>
-<td>Business PARTNER</td>
+<td>Business Partner Language</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOfBirthOfBusinessPARTNER_BIRTHDT</td>
-<td>Date Of Birth Of Business PARTNER</td>
+<td>Date of Birth of Business Partner</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOfDeathOfBusinessPARTNER_DEATHDT</td>
-<td>Date Of Death Of Business PARTNER</td>
+<td>Date of Death of Business Partner</td>
+<td></td>
 </tr>
 <tr>
 <td>PersonnelNumber_PERNO</td>
 <td>Personnel Number</td>
+<td></td>
 </tr>
 <tr>
 <td>ObsoleteField_CHILDREN</td>
 <td>Obsolete Field</td>
+<td></td>
 </tr>
 <tr>
 <td>ObsoleteField_MEM_HOUSE</td>
 <td>Obsolete Field</td>
+<td></td>
 </tr>
 <tr>
 <td>GroupType_PARTGRPTYP</td>
 <td>Group Type</td>
+<td></td>
 </tr>
 <tr>
 <td>Name1__group___NAME_GRP1</td>
-<td>Name1</td>
+<td>Name 1 (group)</td>
+<td></td>
 </tr>
 <tr>
 <td>Name2__group___NAME_GRP2</td>
-<td>Name2</td>
+<td>Name 2 (group)</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchHelpField1__name1lastName___MC_NAME1</td>
-<td>Search Help Field1</td>
+<td>Search Help Field 1 (name1lastName)</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchHelpField2__name2firstName___MC_NAME2</td>
-<td>Search Help Field2</td>
+<td>Search Help Field 2 (name2firstName)</td>
+<td></td>
 </tr>
 <tr>
 <td>UserWhoCreatedTheObject_CRUSR</td>
-<td>User Who Created The Object</td>
+<td>User Who Created the Object</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOnWhichTheObjectWasCreated_CRDAT</td>
-<td>Date On Which The Object Was Created</td>
+<td>Date On Which the Object Was Created</td>
+<td></td>
 </tr>
 <tr>
 <td>TimeAtWhichTheObjectWasCreated_CRTIM</td>
-<td>Time At Which The Object Was Created</td>
+<td>Time At Which the Object Was Created</td>
+<td></td>
 </tr>
 <tr>
 <td>LastUserToChangeObject_CHUSR</td>
-<td>Last User To Change Object</td>
+<td>Last User to Change Object</td>
+<td></td>
 </tr>
 <tr>
 <td>DateWhenObjectWasLastChanged_CHDAT</td>
 <td>Date When Object Was Last Changed</td>
+<td></td>
 </tr>
 <tr>
 <td>TimeAtWhichObjectWasLastChanged_CHTIM</td>
 <td>Time At Which Object Was Last Changed</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNERGuid_PARTNER_GUID</td>
-<td>Business PARTNER Guid</td>
+<td>Business Partner Guid</td>
+<td></td>
 </tr>
 <tr>
 <td>AddressNumber_ADDRCOMM</td>
 <td>Address Number</td>
+<td></td>
 </tr>
 <tr>
 <td>PlannedChangeDocumentsForPARTNERWereConverted_TD_SWITCH</td>
-<td>Planned Change Documents For PARTNER Were Converted</td>
+<td>Planned Change Documents for PARTNER Were Converted</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_BusinessPARTNERIsAlsoAnOrganizationalCenter_IS_ORG_CENTRE</td>
-<td>Indicator</td>
+<td>Indicator Business Partner Is Also an Organizational Center</td>
+<td></td>
 </tr>
 <tr>
 <td>UuidInXForm__binary___DB_KEY</td>
-<td>Uuid In X Form</td>
+<td>Uuid In XForm (binary)</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidityStartBUT000BpData_VALID_FROM</td>
 <td>Validity Start BUT000 Bp Data</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidityEndBUT000BpData_VALID_TO</td>
 <td>Validity End BUT000 Bp Data</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNERIsANaturalPersonUnderTheTaxLaws_NATPERS</td>
-<td>Business PARTNER Is A Natural Person Under The Tax Laws</td>
+<td>Business Partner Is a Natural Person Under the Tax Laws</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPARTNERReleased_PAR_REL</td>
-<td>Business PARTNER Released</td>
+<td>Business Partner Released</td>
+<td></td>
 </tr>
 <tr>
 <td>SortField_BP_SORT</td>
 <td>Sort Field</td>
+<td></td>
 </tr>
 <tr>
 <td>BankCountryKey_KBANKS</td>
 <td>Bank Country Key</td>
+<td></td>
 </tr>
 <tr>
 <td>BankKeys_KBANKL</td>
 <td>Bank Keys</td>
+<td></td>
 </tr>
 <tr>
 <td>BPAddressNumber_ADDRNUMBER</td>
 <td>BP Address Number</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_AddressIsStandardAddress_XDFADR</td>
-<td>Indicator</td>
+<td>Indicator Address Is Standard Address</td>
+<td></td>
 </tr>
 <tr>
 <td>AddressNumberInExternalSystem_ADEXT</td>
-<td>Address Number In External System</td>
+<td>Address Number in External System</td>
+<td></td>
 </tr>
 <tr>
 <td>UuidInCharacterForm_GUID</td>
 <td>Uuid In Character Form</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfMoveTargetAddressForAddressMoves_MOVE_ADDR</td>
-<td>Number Of Move Target Address For Address Moves</td>
+<td>Number of Move Target Address for Address Moves</td>
+<td></td>
 </tr>
 <tr>
 <td>DateObsolete_DATE_FROM</td>
 <td>Date Obsolete</td>
+<td></td>
 </tr>
 <tr>
 <td>GuidOfABusinessPARTNERAddress_ADDRESS_GUID</td>
-<td>Guid Of A Business PARTNER Address</td>
+<td>Guid of a Business Partner Address</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidityStartOfABusinessPARTNERAddress_ADDR_VALID_FROM</td>
-<td>Validity Start Of A Business PARTNER Address</td>
+<td>Validity Start of a Business Partner Address</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidityEnd_ADDR_VALID_TO</td>
 <td>Validity End</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOfMoveForAddressMoves_ADDR_MOVE_DATE</td>
-<td>Date Of Move For Address Moves</td>
+<td>Date of Move for Address Moves</td>
+<td></td>
 </tr>
 <tr>
 <td>Region_REGION</td>
 <td>Region</td>
+<td></td>
 </tr>
 <tr>
 <td>CountryKey_COUNTRY</td>
 <td>Country Key</td>
+<td></td>
 </tr>
 <tr>
 <td>CityPostalCode_POST_CODE1</td>
 <td>City Postal Code</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5750,11 +5858,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Esta página foi útil?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opinião!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opnião! Ajude-nos a melhorar esta página usando nosso sistema de comentários abaixo.   
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentários</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

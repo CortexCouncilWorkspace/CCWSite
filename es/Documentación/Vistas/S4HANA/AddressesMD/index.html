@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-FTV80RFCXY"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-FTV80RFCXY",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-FTV80RFCXY",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -5284,7 +5294,7 @@
 
 <h1 id="addressesmd">AddressesMD</h1>
 <h2 id="archivo-sql-de-origen-google-cloud-cortex-data-foundation">Archivo SQL de origen: Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/AddressesMD.sql">AddressesMD</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/AddressesMD.sql">AddressesMD</a></p>
 <h2 id="descripcion-general">Descripción general</h2>
 <p>Esta vista es una vista de informes para sistemas SAP que proporciona una vista completa de los datos de dirección. Combina datos de varias tablas para proporcionar una única fuente de verdad para la información de dirección.</p>
 <h2 id="fuentes-de-datos">Fuentes de datos</h2>
@@ -5357,436 +5367,554 @@
 <tr>
 <th>Campo</th>
 <th>Descripción del campo</th>
+<th>Descripción del Diccionario SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client</td>
-<td>Client (Mandant)</td>
+<td>Client number</td>
+<td></td>
 </tr>
 <tr>
 <td>AddressNumber_ADDRNUMBER</td>
-<td>Address Number</td>
+<td>Address number</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidFromDATE_FROM</td>
-<td>Valid From DATE</td>
+<td>Valid from date</td>
+<td></td>
 </tr>
 <tr>
 <td>VersionIdForInternationalAddresses_NATION</td>
-<td>Version Id For International Addresses</td>
+<td>Version ID for international addresses</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidToDate_DATE_TO</td>
-<td>Valid To Date</td>
+<td>Valid to date</td>
+<td></td>
 </tr>
 <tr>
 <td>FormOfAddressKey_TITLE</td>
-<td>Form Of Address Key</td>
+<td>Form of address key</td>
+<td></td>
 </tr>
 <tr>
 <td>Name1_NAME1</td>
-<td>Name1</td>
+<td>Name 1</td>
+<td></td>
 </tr>
 <tr>
 <td>Name2_NAME2</td>
-<td>Name2</td>
+<td>Name 2</td>
+<td></td>
 </tr>
 <tr>
 <td>Name3_NAME3</td>
-<td>Name3</td>
+<td>Name 3</td>
+<td></td>
 </tr>
 <tr>
 <td>Name4_NAME4</td>
-<td>Name4</td>
+<td>Name 4</td>
+<td></td>
 </tr>
 <tr>
 <td>ConvertedNameField__withFormOfAddress___NAME_TEXT</td>
-<td>Converted Name Field</td>
+<td>Converted name field with form of address</td>
+<td></td>
 </tr>
 <tr>
 <td>CoName_NAME_CO</td>
-<td>Co Name</td>
+<td>Company name</td>
+<td></td>
 </tr>
 <tr>
 <td>City_CITY1</td>
 <td>City</td>
+<td></td>
 </tr>
 <tr>
 <td>District_CITY2</td>
 <td>District</td>
+<td></td>
 </tr>
 <tr>
 <td>CityCodeForCitystreetFile_CITY_CODE</td>
-<td>City Code For Citystreet File</td>
+<td>City code for city street file</td>
+<td></td>
 </tr>
 <tr>
 <td>DistrictCodeForCityAndStreetFile_CITYP_CODE</td>
-<td>District Code For City And Street File</td>
+<td>District code for city and street file</td>
+<td></td>
 </tr>
 <tr>
 <td>City__differentFromPostalCity___HOME_CITY</td>
-<td>City</td>
+<td>City different from postal city</td>
+<td></td>
 </tr>
 <tr>
 <td>DifferentCityForCitystreetFile_CITYH_CODE</td>
-<td>Different City For Citystreet File</td>
+<td>Different city for city street file</td>
+<td></td>
 </tr>
 <tr>
 <td>CityFileTestStatus_CHCKSTATUS</td>
-<td>City File Test Status</td>
+<td>City file test status</td>
+<td></td>
 </tr>
 <tr>
 <td>RegionalStructureGrouping_REGIOGROUP</td>
-<td>Regional Structure Grouping</td>
+<td>Regional structure grouping</td>
+<td></td>
 </tr>
 <tr>
 <td>CityPostalCode_POST_CODE1</td>
-<td>City Postal Code</td>
+<td>City postal code</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxPostalCode_POST_CODE2</td>
-<td>Po Box Postal Code</td>
+<td>PO box postal code</td>
+<td></td>
 </tr>
 <tr>
 <td>CompanyPostalCode__forLargeCustomers___POST_CODE3</td>
-<td>Company Postal Code</td>
+<td>Company postal code for large customers</td>
+<td></td>
 </tr>
 <tr>
 <td>cityPostalCodeExtension_PCODE1_EXT</td>
-<td>city Postal Code Extension</td>
+<td>City postal code extension</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxPostalCodeExtension_PCODE2_EXT</td>
-<td>Po Box Postal Code Extension</td>
+<td>PO box postal code extension</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBox_PO_BOX</td>
-<td>Po Box</td>
+<td>PO box</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxAddressUndeliverableFlag_DONT_USE_P</td>
-<td>Po Box Address Undeliverable Flag</td>
+<td>PO box address undeliverable flag</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_PoBoxWithoutNumber_PO_BOX_NUM</td>
-<td>Flag</td>
+<td>Flag: PO box without number</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxCity_PO_BOX_LOC</td>
-<td>Po Box City</td>
+<td>PO box city</td>
+<td></td>
 </tr>
 <tr>
 <td>CityPoBoxCode__cityFile___CITY_CODE2</td>
-<td>City Po Box Code</td>
+<td>City PO box code (city file)</td>
+<td></td>
 </tr>
 <tr>
 <td>RegionForPoBox_PO_BOX_REG</td>
-<td>Region For Po Box</td>
+<td>Region for PO box</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxCountry_PO_BOX_CTY</td>
-<td>Po Box Country</td>
+<td>PO box country</td>
+<td></td>
 </tr>
 <tr>
 <td>TransportationZoneToOrFromWhichTheGoodsAreDelivered_TRANSPZONE</td>
-<td>Transportation Zone To Or From Which The Goods Are Delivered</td>
+<td>Transportation zone to or from which the goods are delivered</td>
+<td></td>
 </tr>
 <tr>
 <td>Street_STREET</td>
 <td>Street</td>
+<td></td>
 </tr>
 <tr>
 <td>StreetAddressUndeliverableFlag_DONT_USE_S</td>
-<td>Street Address Undeliverable Flag</td>
+<td>Street address undeliverable flag</td>
+<td></td>
 </tr>
 <tr>
 <td>StreetNumberForCitystreetFile_STREETCODE</td>
-<td>Street Number For Citystreet File</td>
+<td>Street number for city street file</td>
+<td></td>
 </tr>
 <tr>
 <td>HouseNumber_HOUSE_NUM1</td>
-<td>House Number</td>
+<td>House number</td>
+<td></td>
 </tr>
 <tr>
 <td>HouseNumberSupplement_HOUSE_NUM2</td>
-<td>House Number Supplement</td>
+<td>House number supplement</td>
+<td></td>
 </tr>
 <tr>
 <td>Street2_STR_SUPPL1</td>
-<td>Street2</td>
+<td>Street 2</td>
+<td></td>
 </tr>
 <tr>
 <td>Street3_STR_SUPPL2</td>
-<td>Street3</td>
+<td>Street 3</td>
+<td></td>
 </tr>
 <tr>
 <td>Street4_STR_SUPPL3</td>
-<td>Street4</td>
+<td>Street 4</td>
+<td></td>
 </tr>
 <tr>
 <td>Street5_LOCATION</td>
-<td>Street5</td>
+<td>Street 5</td>
+<td></td>
 </tr>
 <tr>
 <td>Building__numberOrCode___BUILDING</td>
-<td>Building</td>
+<td>Building (number or code)</td>
+<td></td>
 </tr>
 <tr>
 <td>FloorInBuilding_FLOOR</td>
-<td>Floor In Building</td>
+<td>Floor in building</td>
+<td></td>
 </tr>
 <tr>
 <td>RoomOrAppartmentNumber_ROOMNUMBER</td>
-<td>Room Or Appartment Number</td>
+<td>Room or appartment number</td>
+<td></td>
 </tr>
 <tr>
 <td>CountryKey_COUNTRY</td>
-<td>Country Key</td>
+<td>Country key</td>
+<td></td>
 </tr>
 <tr>
 <td>Language_LANGU</td>
 <td>Language</td>
+<td></td>
 </tr>
 <tr>
 <td>Region_REGION</td>
 <td>Region</td>
+<td></td>
 </tr>
 <tr>
 <td>AddressGroup__key<strong><em>_businessAddressServices</em></strong>ADDR_GROUP</td>
-<td>Address Group</td>
+<td>Address group (key) (business address services)</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_ThereAreMoreAddressGroupAssignments_FLAGGROUPS</td>
-<td>Flag</td>
+<td>Flag: There are more address group assignments</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_ThisIsAPersonalAddress_PERS_ADDR</td>
-<td>Flag</td>
+<td>Flag: This is a personal address</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchTerm1_SORT1</td>
-<td>Search Term1</td>
+<td>Search term 1</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchTerm2_SORT2</td>
-<td>Search Term2</td>
+<td>Search term 2</td>
+<td></td>
 </tr>
 <tr>
 <td>CommunicationMethod__key<strong><em>_businessAddressServices</em></strong>DEFLT_COMM</td>
-<td>Communication Method</td>
+<td>Communication method (key) (business address services)</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstTelephone_TEL_NUMBER</td>
-<td>First Telephone</td>
+<td>First telephone</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstExtension_TEL_EXTENS</td>
-<td>First Extension</td>
+<td>First extension</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstFaxNor_FAX_NUMBER</td>
-<td>First Fax Nor</td>
+<td>First fax nor</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstFax_FAX_EXTENS</td>
-<td>First Fax</td>
+<td>First fax</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_TelephoneNumber__s__Defined_FLAGCOMM2</td>
-<td>Flag</td>
+<td>Flag: Telephone number(s) defined</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_FaxNumber__s__Defined_FLAGCOMM3</td>
-<td>Flag</td>
+<td>Flag: Fax number(s) defined</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_TeletexNumber__s__Defined_FLAGCOMM4</td>
-<td>Flag</td>
+<td>Flag: Teletex number(s) defined</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_TelexNumber__s__Defined_FLAGCOMM5</td>
-<td>Flag</td>
+<td>Flag: Telex number(s) defined</td>
+<td></td>
 </tr>
 <tr>
 <td>EMailAddressX_FLAGCOMM6</td>
-<td>E Mail Address X</td>
+<td>EMail address X</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_Rml__remoteMail__Addresse__s__Defined_FLAGCOMM7</td>
-<td>Flag</td>
+<td>Flag: Rml (remote mail) addresse(s) defined</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_X400FLAGCOMM8</td>
-<td>Flag</td>
+<td>Flag: X400FLAGCOMM8</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_RfcDestination__s__Defined_FLAGCOMM9</td>
-<td>Flag</td>
+<td>Flag: Rfc destination(s) defined</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_PrinterDefined_FLAGCOMM10</td>
-<td>Flag</td>
+<td>Flag: Printer defined</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_SsfDefined_FLAGCOMM11</td>
-<td>Flag</td>
+<td>Flag: Ssf defined</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_UriftpAddressDefined_FLAGCOMM12</td>
-<td>Flag</td>
+<td>Flag: Uriftp address defined</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_PagerAddressDefined_FLAGCOMM13</td>
-<td>Flag</td>
+<td>Flag: Pager address defined</td>
+<td></td>
 </tr>
 <tr>
 <td>Name__fieldName1__InUppercaseForSearchHelp_MC_NAME1</td>
-<td>Name</td>
+<td>Name (field name 1) in uppercase for search help</td>
+<td></td>
 </tr>
 <tr>
 <td>CityNameInUppercaseForSearchHelp_MC_CITY1</td>
-<td>City Name In Uppercase For Search Help</td>
+<td>City name in uppercase for search help</td>
+<td></td>
 </tr>
 <tr>
 <td>StreetNameInUppercaseForSearchHelp_MC_STREET</td>
-<td>Street Name In Uppercase For Search Help</td>
+<td>Street name in uppercase for search help</td>
+<td></td>
 </tr>
 <tr>
 <td>AddressTimeZone_TIME_ZONE</td>
-<td>Address Time Zone</td>
+<td>Address time zone</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxJurisdiction_TAXJURCODE</td>
-<td>Tax Jurisdiction</td>
+<td>Tax jurisdiction</td>
+<td></td>
 </tr>
 <tr>
 <td>AddressRecordCreationOriginalLanguage_LANGU_CREA</td>
-<td>Address Record Creation Original Language</td>
+<td>Address record creation original language</td>
+<td></td>
 </tr>
 <tr>
 <td>UuidUsedInTheAddress_ADRC_UUID</td>
-<td>Uuid Used In The Address</td>
+<td>Uuid used in the address</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_UuidCreatedLater_UUID_BELATED</td>
-<td>Indicator</td>
+<td>Indicator: Uuid created later</td>
+<td></td>
 </tr>
 <tr>
 <td>CategoryOfAnAddressId_ID_CATEGORY</td>
-<td>Category Of An Address Id</td>
+<td>Category of an address ID</td>
+<td></td>
 </tr>
 <tr>
 <td>ErrorStatusOfAddress_ADRC_ERR_STATUS</td>
-<td>Error Status Of Address</td>
+<td>Error status of address</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxLobby_PO_BOX_LOBBY</td>
-<td>Po Box Lobby</td>
+<td>PO box lobby</td>
+<td></td>
 </tr>
 <tr>
 <td>TypeOfDeliveryService_DELI_SERV_TYPE</td>
-<td>Type Of Delivery Service</td>
+<td>Type of delivery service</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfDeliveryService_DELI_SERV_NUMBER</td>
-<td>Number Of Delivery Service</td>
+<td>Number of delivery service</td>
+<td></td>
 </tr>
 <tr>
 <td>CountyCodeForCounty_COUNTY_CODE</td>
-<td>County Code For County</td>
+<td>County code for county</td>
+<td></td>
 </tr>
 <tr>
 <td>County_COUNTY</td>
 <td>County</td>
+<td></td>
 </tr>
 <tr>
 <td>TownshipCodeForTownship_TOWNSHIP_CODE</td>
-<td>Township Code For Township</td>
+<td>Township code for township</td>
+<td></td>
 </tr>
 <tr>
 <td>Township_TOWNSHIP</td>
 <td>Township</td>
+<td></td>
 </tr>
 <tr>
 <td>CountyNameInUpperCaseForSearchHelp_MC_COUNTY</td>
-<td>County Name In Upper Case For Search Help</td>
+<td>County name in upper case for search help</td>
+<td></td>
 </tr>
 <tr>
 <td>TownshipNameInUpperCaseForSearchHelp_MC_TOWNSHIP</td>
-<td>Township Name In Upper Case For Search Help</td>
+<td>Township name in upper case for search help</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPurposeCompletedFlag_XPCPT</td>
-<td>Business Purpose Completed Flag</td>
+<td>Business purpose completed flag</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidFrom_DATE_FROM</td>
-<td>Valid From</td>
+<td>Valid from</td>
+<td></td>
 </tr>
 <tr>
 <td>VersionInternationalAddresses_NATION</td>
-<td>Version International Addresses</td>
+<td>Version international addresses</td>
+<td></td>
 </tr>
 <tr>
 <td>AddressNotes_REMARK</td>
-<td>Address Notes</td>
+<td>Address notes</td>
+<td></td>
 </tr>
 <tr>
 <td>PersonNumber_PERSNUMBER</td>
-<td>Person Number</td>
+<td>Person number</td>
+<td></td>
+</tr>
+<tr>
+<td>CommunicationMethod__key<strong><em>_businessAddressServices</em></strong>COMM_TYPE</td>
+<td>Communication method (key) (business address services)</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidFromDate_DATE_FROM</td>
-<td>Valid From Date</td>
+<td>Valid from date</td>
+<td></td>
 </tr>
 <tr>
 <td>SequenceNumber_CONSNUMBER</td>
-<td>Sequence Number</td>
+<td>Sequence number</td>
+<td></td>
+</tr>
+<tr>
+<td>CommunicationLinkNotes_REMARK</td>
+<td>Communication link notes</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_ThisAddressIsTheDefaultAddress_FLGDEFAULT</td>
-<td>Flag</td>
+<td>Flag: This address is the default address</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_ThisCommunicationNumberIsNotUsed_FLG_NOUSE</td>
-<td>Flag</td>
+<td>Flag: This communication number is not used</td>
+<td></td>
 </tr>
 <tr>
 <td>RecipientAddressInThisCommunicationType__mailSys_HOME_FLAG</td>
-<td>Recipient Address In This Communication Type</td>
+<td>Recipient address in this communication type (mail sys)</td>
+<td></td>
 </tr>
 <tr>
 <td>EMailAddress_SMTP_ADDR</td>
-<td>E Mail Address</td>
+<td>EMail address</td>
+<td></td>
 </tr>
 <tr>
 <td>EMailAddressSearchField_SMTP_SRCH</td>
-<td>E Mail Address Search Field</td>
+<td>EMail address search field</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_RecipientIsStandardRecipientForThisAddress_DFT_RECEIV</td>
-<td>Flag</td>
+<td>Flag: Recipient is standard recipient for this address</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_ConnectedToAnSapSystem_R3_USER</td>
-<td>Flag</td>
+<td>Flag: Connected to an SAP system</td>
+<td></td>
 </tr>
 <tr>
 <td>RequiredDataEncoding__eMail___ENCODE</td>
-<td>Required Data Encoding</td>
+<td>Required data encoding (eMail)</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_ReceiverCanReceiveTnefEncodingBySmtp_TNEF</td>
-<td>Flag</td>
+<td>Flag: Receiver can receive Tnef encoding by Smtp</td>
+<td></td>
 </tr>
 <tr>
 <td>CommunicationData_ValidFrom__yyyymmddhhmmss___VALID_FROM</td>
-<td>Communication Data</td>
+<td>Communication data valid from (yyyymmddhhmmss)</td>
+<td></td>
 </tr>
 <tr>
 <td>CommunicationData_ValidTo__yyyymmddhhmmss___VALID_TO</td>
-<td>Communication Data</td>
+<td>Communication data valid to (yyyymmddhhmmss)</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5797,11 +5925,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        ¿Fue útil esta página?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios! Ayúdanos a mejorar esta página utilizando nuestro sistema de comentarios a continuación.                                                    
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentarios</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

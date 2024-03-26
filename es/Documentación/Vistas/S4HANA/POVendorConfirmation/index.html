@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-FTV80RFCXY"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-FTV80RFCXY",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-FTV80RFCXY",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -5284,7 +5294,7 @@
 
 <h1 id="povendorconfirmation">POVendorConfirmation</h1>
 <h2 id="archivo-sql-de-origen-google-cloud-cortex-data-foundation">Archivo SQL de origen: Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/POVendorConfirmation.sql">POVendorConfirmation</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/POVendorConfirmation.sql">POVendorConfirmation</a></p>
 <h2 id="descripcion-general">Descripción general</h2>
 <p>Esta vista de informes proporciona información detallada sobre las confirmaciones de proveedores para documentos de compras en sistemas SAP. Combina datos de la tabla EKES, que almacena datos de confirmación de proveedores, con datos de las vistas PurchaseDocuments y VendorsMD, que proporcionan contexto adicional sobre los documentos de compras y los proveedores implicados.</p>
 <h2 id="fuentes-de-datos">Fuentes de datos</h2>
@@ -5362,152 +5372,189 @@
 <tr>
 <th>Campo</th>
 <th>Descripción del campo</th>
+<th>Descripción del Diccionario SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
 <td>PurchasingDocumentNumber_EBELN</td>
 <td>Purchasing Document Number</td>
+<td></td>
 </tr>
 <tr>
 <td>ItemNumberOfPurchasingDocument_EBELP</td>
-<td>Item Number Of Purchasing Document</td>
+<td>Item Number of Purchasing Document</td>
+<td></td>
 </tr>
 <tr>
 <td>SequentialNumberOfVendorConfirmation_ETENS</td>
-<td>Sequential Number Of Vendor Confirmation</td>
+<td>Sequential Number of Vendor Confirmation</td>
+<td></td>
 </tr>
 <tr>
 <td>ConfirmationCategory_EBTYP</td>
 <td>Confirmation Category</td>
+<td></td>
 </tr>
 <tr>
 <td>DeliveryDateOfVendorConfirmation_EINDT</td>
-<td>Delivery Date Of Vendor Confirmation</td>
+<td>Delivery Date of Vendor Confirmation</td>
+<td></td>
 </tr>
 <tr>
 <td>DateCategoryOfDeliveryDateInVendorConfirmation_LPEIN</td>
-<td>Date Category Of Delivery Date In Vendor Confirmation</td>
+<td>Date Category of Delivery Date in Vendor Confirmation</td>
+<td></td>
 </tr>
 <tr>
 <td>DeliveryDateTimeSpotInVendorConfirmation_UZEIT</td>
-<td>Delivery Date Time Spot In Vendor Confirmation</td>
+<td>Delivery Date/Time Spot in Vendor Confirmation</td>
+<td></td>
 </tr>
 <tr>
 <td>CreationDateOfConfirmation_ERDAT</td>
-<td>Creation Date Of Confirmation</td>
+<td>Creation Date of Confirmation</td>
+<td></td>
 </tr>
 <tr>
 <td>TimeAtWhichVendorConfirmationWasCreated_EZEIT</td>
-<td>Time At Which Vendor Confirmation Was Created</td>
+<td>Time at Which Vendor Confirmation Was Created</td>
+<td></td>
 </tr>
 <tr>
 <td>QuantityAsPerVendorConfirmation_MENGE</td>
 <td>Quantity As Per Vendor Confirmation</td>
+<td></td>
 </tr>
 <tr>
 <td>QuantityReduced__mrp___DABMG</td>
-<td>Quantity Reduced</td>
+<td>Quantity Reduced (MRP)</td>
+<td></td>
 </tr>
 <tr>
 <td>CreationIndicator_VendorConfirmation_ESTKZ</td>
-<td>Creation Indicator</td>
+<td>Creation Indicator (Vendor Confirmation)</td>
+<td></td>
 </tr>
 <tr>
 <td>VendorConfirmationDeletionIndicator_LOEKZ</td>
 <td>Vendor Confirmation Deletion Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_ConfirmationIsRelevantToMaterialsPlanning_KZDIS</td>
-<td>Indicator</td>
+<td>Indicator: Confirmation Is Relevant to Materials Planning</td>
+<td></td>
 </tr>
 <tr>
 <td>ReferenceDocumentNumber__forDependenciesSeeLongText___XBLNR</td>
-<td>Reference Document Number</td>
+<td>Reference Document Number (for Dependencies, See Long Text)</td>
+<td></td>
 </tr>
 <tr>
 <td>Delivery_VBELN</td>
 <td>Delivery</td>
+<td></td>
 </tr>
 <tr>
 <td>DeliveryItem_VBELP</td>
 <td>Delivery Item</td>
+<td></td>
 </tr>
 <tr>
 <td>MfrPartProfile_MPROF</td>
 <td>Mfr Part Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialNumberCorrespondingToManufacturerPartNumber_EMATN</td>
-<td>Material Number Corresponding To Manufacturer Part Number</td>
+<td>Material Number Corresponding to Manufacturer Part Number</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfRemindersexpediters_MAHNZ</td>
-<td>Number Of Remindersexpediters</td>
+<td>Number of Reminders/Expediters</td>
+<td></td>
 </tr>
 <tr>
 <td>BatchNumber_CHARG</td>
 <td>Batch Number</td>
+<td></td>
 </tr>
 <tr>
 <td>HigherLevelItemOfBatchSplitItem_UECHA</td>
-<td>Higher Level Item Of Batch Split Item</td>
+<td>Higher-Level Item of Batch Split Item</td>
+<td></td>
 </tr>
 <tr>
 <td>SequentialNumberOfVendorConfirmation_REF_ETENS</td>
-<td>Sequential Number Of Vendor Confirmation</td>
+<td>Sequential Number of Vendor Confirmation (REF)</td>
+<td></td>
 </tr>
 <tr>
 <td>DeliveryHasStatusinPlant_IMWRK</td>
-<td>Delivery Has Statusin Plant</td>
+<td>Delivery Has Status in Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>Delivery_VBELN_ST</td>
 <td>Delivery</td>
+<td></td>
 </tr>
 <tr>
 <td>DeliveryItem_VBELP_ST</td>
 <td>Delivery Item</td>
+<td></td>
 </tr>
 <tr>
 <td>HandoverDateAtTheHandoverLocation_HANDOVERDATE</td>
-<td>Handover Date At The Handover Location</td>
+<td>Handover Date at the Handover Location</td>
+<td></td>
 </tr>
 <tr>
 <td>HandoverTimeAtTheHandoverLocation_HANDOVERTIME</td>
-<td>Handover Time At The Handover Location</td>
+<td>Handover Time at the Handover Location</td>
+<td></td>
 </tr>
 <tr>
 <td>StockSegment_SGT_SCAT</td>
 <td>Stock Segment</td>
+<td></td>
 </tr>
 <tr>
 <td>AllocatedStockQuantity_FSH_SALLOC_QTY</td>
 <td>Allocated Stock Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>AccountNumberOfVendorOrCreditor_LIFNR</td>
-<td>Account Number Of Vendor Or Creditor</td>
+<td>Account Number of Vendor or Creditor</td>
+<td></td>
 </tr>
 <tr>
 <td>NAME1</td>
-<td>NAME1</td>
+<td>Vendor Name 1</td>
+<td></td>
 </tr>
 <tr>
 <td>NAME2</td>
-<td>NAME2</td>
+<td>Vendor Name 2</td>
+<td></td>
 </tr>
 <tr>
 <td>TermsPaymentKey_ZTERM</td>
-<td>Terms Payment Key</td>
+<td>Terms of Payment Key</td>
+<td></td>
 </tr>
 <tr>
 <td>DiscountDays1_ZBD1T</td>
-<td>Discount Days1</td>
+<td>Discount Days 1</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5518,11 +5565,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        ¿Fue útil esta página?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios! Ayúdanos a mejorar esta página utilizando nuestro sistema de comentarios a continuación.                                                    
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentarios</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

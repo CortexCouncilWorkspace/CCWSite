@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-FTV80RFCXY"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-FTV80RFCXY",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-FTV80RFCXY",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -5284,7 +5294,7 @@
 
 <h1 id="stock_perplant">Stock_PerPlant</h1>
 <h2 id="archivo-sql-de-origen-google-cloud-cortex-data-foundation">Archivo SQL de origen: Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/Stock_PerPlant.sql">Stock_PerPlant</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/Stock_PerPlant.sql">Stock_PerPlant</a></p>
 <h2 id="descripcion-general">Descripción general</h2>
 <p>Esta vista combina datos de las tablas MARC y MARA en el sistema SAP ERP para proporcionar una vista integral de informes de datos maestros de materiales. Incluye información sobre propiedades de materiales, datos específicos de planta y ajustes de gestión de compras e inventario.</p>
 <h2 id="fuentes-de-datos">Fuentes de datos</h2>
@@ -5359,988 +5369,1234 @@
 <tr>
 <th>Campo</th>
 <th>Descripción del campo</th>
+<th>Descripción del Diccionario SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialNumber_MATNR</td>
 <td>Material Number</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialText_MAKTX</td>
 <td>Material Text</td>
+<td></td>
 </tr>
 <tr>
 <td>Language_SPRAS</td>
 <td>Language</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductHierarchy_PRDHA</td>
 <td>Product Hierarchy</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseUnitOfMeasure_MEINS</td>
-<td>Base Unit Of Measure</td>
+<td>Base Unit of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialType_MTART</td>
 <td>Material Type</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialGroup_MATKL</td>
 <td>Material Group</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_WERKS</td>
 <td>Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_Name</td>
-<td>Plant</td>
+<td>Plant Name</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_Region</td>
-<td>Plant</td>
+<td>Plant Region</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_Country</td>
-<td>Plant</td>
+<td>Plant Country</td>
+<td></td>
 </tr>
 <tr>
 <td>MaintenanceStatus_PSTAT</td>
 <td>Maintenance Status</td>
+<td></td>
 </tr>
 <tr>
 <td>FlagMaterialForDeletionAtPlantLevel_LVORM</td>
 <td>Flag Material For Deletion At Plant Level</td>
+<td></td>
 </tr>
 <tr>
 <td>ValuationCategory_BWTTY</td>
 <td>Valuation Category</td>
+<td></td>
 </tr>
 <tr>
 <td>BatchManagementIndicator__internal___XCHAR</td>
-<td>Batch Management Indicator</td>
+<td>Batch Management Indicator (internal)</td>
+<td></td>
 </tr>
 <tr>
 <td>PlantSpecificMaterialStatus_MMSTA</td>
 <td>Plant Specific Material Status</td>
+<td></td>
 </tr>
 <tr>
 <td>DateFromWhichThePlantSpecificMaterialStatusIsValid_MMSTD</td>
 <td>Date From Which The Plant Specific Material Status Is Valid</td>
+<td></td>
 </tr>
 <tr>
 <td>AbcIndicator_MAABC</td>
 <td>Abc Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_CriticalPart_KZKRI</td>
-<td>Indicator</td>
+<td>Indicator Critical Part</td>
+<td></td>
 </tr>
 <tr>
 <td>PurchasingGroup_EKGRP</td>
 <td>Purchasing Group</td>
+<td></td>
 </tr>
 <tr>
 <td>UnitOfIssue_AUSME</td>
 <td>Unit Of Issue</td>
+<td></td>
 </tr>
 <tr>
 <td>Material_MrpProfile_DISPR</td>
-<td>Material</td>
+<td>Material Mrp Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>MrpType_DISMM</td>
 <td>Mrp Type</td>
+<td></td>
 </tr>
 <tr>
 <td>MrpController_DISPO</td>
 <td>Mrp Controller</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_MrpControllerIsBuyer__deactivated___KZDIE</td>
-<td>Indicator</td>
+<td>Indicator Mrp Controller Is Buyer (deactivated)</td>
+<td></td>
 </tr>
 <tr>
 <td>PlannedDeliveryTimeInDays_PLIFZ</td>
 <td>Planned Delivery Time In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsReceiptProcessingTimeInDays_WEBAZ</td>
 <td>Goods Receipt Processing Time In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>PeriodIndicator_PERKZ</td>
 <td>Period Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>AssemblyScrapInPercent_AUSSS</td>
 <td>Assembly Scrap In Percent</td>
+<td></td>
 </tr>
 <tr>
 <td>LotSize__materialsPlanning___DISLS</td>
-<td>Lot Size</td>
+<td>Lot Size (materials Planning)</td>
+<td></td>
 </tr>
 <tr>
 <td>ProcurementType_BESKZ</td>
 <td>Procurement Type</td>
+<td></td>
 </tr>
 <tr>
 <td>SpecialProcurementType_SOBSL</td>
 <td>Special Procurement Type</td>
+<td></td>
 </tr>
 <tr>
 <td>ReorderPoint_MINBE</td>
 <td>Reorder Point</td>
+<td></td>
 </tr>
 <tr>
 <td>SafetyStock_EISBE</td>
 <td>Safety Stock</td>
+<td></td>
 </tr>
 <tr>
 <td>MinimumLotSize_BSTMI</td>
 <td>Minimum Lot Size</td>
+<td></td>
 </tr>
 <tr>
 <td>MaximumLotSize_BSTMA</td>
 <td>Maximum Lot Size</td>
+<td></td>
 </tr>
 <tr>
 <td>FixedLotSize_BSTFE</td>
 <td>Fixed Lot Size</td>
+<td></td>
 </tr>
 <tr>
 <td>RoundingValueForPurchaseOrderQuantity_BSTRF</td>
 <td>Rounding Value For Purchase Order Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>MaximumStockLevel_MABST</td>
 <td>Maximum Stock Level</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderingCosts_LOSFX</td>
 <td>Ordering Costs</td>
+<td></td>
 </tr>
 <tr>
 <td>DependentRequirementsIndForIndividualAndCollReqmts_SBDKZ</td>
 <td>Dependent Requirements Ind For Individual And Coll Reqmts</td>
+<td></td>
 </tr>
 <tr>
 <td>StorageCostsIndicator_LAGPR</td>
 <td>Storage Costs Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>MethodForSelectingAlternativeBillsOfMaterial_ALTSL</td>
 <td>Method For Selecting Alternative Bills Of Material</td>
+<td></td>
 </tr>
 <tr>
 <td>DiscontinuationIndicator_KZAUS</td>
 <td>Discontinuation Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>EffectiveOutDate_AUSDT</td>
 <td>Effective Out Date</td>
+<td></td>
 </tr>
 <tr>
 <td>FollowUpMaterial_NFMAT</td>
 <td>Follow Up Material</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForRequirementsGrouping_KZBED</td>
 <td>Indicator For Requirements Grouping</td>
+<td></td>
 </tr>
 <tr>
 <td>MixedMrpIndicator_MISKZ</td>
 <td>Mixed Mrp Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>SchedulingMarginKeyForFloats_FHORI</td>
 <td>Scheduling Margin Key For Floats</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_AutomaticFixingOfPlannedOrders_PFREI</td>
-<td>Indicator</td>
+<td>Indicator Automatic Fixing Of Planned Orders</td>
+<td></td>
 </tr>
 <tr>
 <td>ReleaseIndicatorForProductionOrders_FFREI</td>
 <td>Release Indicator For Production Orders</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_Backflush_RGEKZ</td>
-<td>Indicator</td>
+<td>Indicator Backflush</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductionSupervisor_FEVOR</td>
 <td>Production Supervisor</td>
+<td></td>
 </tr>
 <tr>
 <td>ProcessingTime_BEARZ</td>
 <td>Processing Time</td>
+<td></td>
 </tr>
 <tr>
 <td>SetupAndTeardownTime_RUEZT</td>
 <td>Setup And Teardown Time</td>
+<td></td>
 </tr>
 <tr>
 <td>InteroperationTime_TRANZ</td>
 <td>Interoperation Time</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseQuantity_BASMG</td>
 <td>Base Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>InHouseProductionTime_DZEIT</td>
 <td>In House Production Time</td>
+<td></td>
 </tr>
 <tr>
 <td>MaximumStoragePeriod_MAXLZ</td>
 <td>Maximum Storage Period</td>
+<td></td>
 </tr>
 <tr>
 <td>UnitForMaximumStoragePeriod_LZEIH</td>
 <td>Unit For Maximum Storage Period</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_WithdrawalOfStockFromProductionBin_KZPRO</td>
-<td>Indicator</td>
+<td>Indicator Withdrawal Of Stock From Production Bin</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_MaterialIncludedInRoughCutPlanning_GPMKZ</td>
-<td>Indicator</td>
+<td>Indicator Material Included In Rough Cut Planning</td>
+<td></td>
 </tr>
 <tr>
 <td>OverdeliveryToleranceLimit_UEETO</td>
 <td>Overdelivery Tolerance Limit</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_UnlimitedOverdeliveryAllowed_UEETK</td>
-<td>Indicator</td>
+<td>Indicator Unlimited Overdelivery Allowed</td>
+<td></td>
 </tr>
 <tr>
 <td>UnderdeliveryToleranceLimit_UNETO</td>
 <td>Underdelivery Tolerance Limit</td>
+<td></td>
 </tr>
 <tr>
 <td>TotalReplenishmentLeadTime__inWorkdays___WZEIT</td>
-<td>Total Replenishment Lead Time</td>
+<td>Total Replenishment Lead Time (in Workdays)</td>
+<td></td>
 </tr>
 <tr>
 <td>ReplacementPart_ATPKZ</td>
 <td>Replacement Part</td>
+<td></td>
 </tr>
 <tr>
 <td>SurchargeFactorForCostInPercent_VZUSL</td>
 <td>Surcharge Factor For Cost In Percent</td>
+<td></td>
 </tr>
 <tr>
 <td>StateOfManufacture_HERBL</td>
 <td>State Of Manufacture</td>
+<td></td>
 </tr>
 <tr>
 <td>PostToInspectionStock_INSMK</td>
 <td>Post To Inspection Stock</td>
+<td></td>
 </tr>
 <tr>
 <td>SampleForQualityInspection__inpct<strong><em>_deactivated</em></strong>SPROZ</td>
-<td>Sample For Quality Inspection</td>
+<td>Sample For Quality Inspection (inpct) (deactivated)</td>
+<td></td>
 </tr>
 <tr>
 <td>QuarantinePeriod__deactivated___QUAZT</td>
-<td>Quarantine Period</td>
+<td>Quarantine Period (deactivated)</td>
+<td></td>
 </tr>
 <tr>
 <td>ControlKeyForQualityManagementInProcurement_SSQSS</td>
 <td>Control Key For Quality Management In Procurement</td>
+<td></td>
 </tr>
 <tr>
 <td>MeanInspectionDuration__deactivated___MPDAU</td>
-<td>Mean Inspection Duration</td>
+<td>Mean Inspection Duration (deactivated)</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForInspectionPlan__deactivated___KZPPV</td>
-<td>Indicator For Inspection Plan</td>
+<td>Indicator For Inspection Plan (deactivated)</td>
+<td></td>
 </tr>
 <tr>
 <td>DocumentationRequiredIndicator_KZDKZ</td>
 <td>Documentation Required Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>ActiveSubstanceContent__deactivated___WSTGH</td>
-<td>Active Substance Content</td>
+<td>Active Substance Content (deactivated)</td>
+<td></td>
 </tr>
 <tr>
 <td>IntervalUntilNextRecurringInspection_PRFRQ</td>
 <td>Interval Until Next Recurring Inspection</td>
+<td></td>
 </tr>
 <tr>
 <td>DateAccordingToCheckSamplingInspection__deactivated___NKMPR</td>
-<td>Date According To Check Sampling Inspection</td>
+<td>Date According To Check Sampling Inspection (deactivated)</td>
+<td></td>
 </tr>
 <tr>
 <td>StockInTransfer__plantToPlant___UMLMC</td>
-<td>Stock In Transfer</td>
+<td>Stock In Transfer (plant To Plant)</td>
+<td></td>
 </tr>
 <tr>
 <td>LoadingGroup_LADGR</td>
 <td>Loading Group</td>
+<td></td>
 </tr>
 <tr>
 <td>BatchManagementRequirementIndicator_XCHPF</td>
 <td>Batch Management Requirement Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>QuotaArrangementUsage_USEQU</td>
 <td>Quota Arrangement Usage</td>
+<td></td>
 </tr>
 <tr>
 <td>ServiceLevel_LGRAD</td>
 <td>Service Level</td>
+<td></td>
 </tr>
 <tr>
 <td>SplittingIndicator_AUFTL</td>
 <td>Splitting Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>PlanVersion_PLVAR</td>
 <td>Plan Version</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectType_OTYPE</td>
 <td>Object Type</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectId_OBJID</td>
 <td>Object Id</td>
+<td></td>
 </tr>
 <tr>
 <td>CheckingGroupForAvailabilityCheck_MTVFP</td>
 <td>Checking Group For Availability Check</td>
+<td></td>
 </tr>
 <tr>
 <td>FiscalYearVariant_PERIV</td>
 <td>Fiscal Year Variant</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_TakeCorrectionFactorsIntoAccount_KZKFK</td>
-<td>Indicator</td>
+<td>Indicator Take Correction Factors Into Account</td>
+<td></td>
 </tr>
 <tr>
 <td>ShippingSetupTime_VRVEZ</td>
 <td>Shipping Setup Time</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseQuantityForCapacityPlanningInShipping_VBAMG</td>
 <td>Base Quantity For Capacity Planning In Shipping</td>
+<td></td>
 </tr>
 <tr>
 <td>ShippingProcessingTime_VBEAZ</td>
 <td>Shipping Processing Time</td>
+<td></td>
 </tr>
 <tr>
 <td>Deactivated_LIZYK</td>
 <td>Deactivated</td>
+<td></td>
 </tr>
 <tr>
 <td>SourceOfSupply_BWSCL</td>
 <td>Source Of Supply</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_automaticPurchaseOrderAllowed_KAUTB</td>
-<td>Indicator</td>
+<td>Indicator automatic Purchase Order Allowed</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_SourceListRequirement_KORDB</td>
-<td>Indicator</td>
+<td>Indicator Source List Requirement</td>
+<td></td>
 </tr>
 <tr>
 <td>CommodityCodeimportCodeNumberForForeignTrade_STAWN</td>
 <td>Commodity Codeimport Code Number For Foreign Trade</td>
+<td></td>
 </tr>
 <tr>
 <td>CountryOfOriginOfMaterial__nonPreferentialOrigin___HERKL</td>
-<td>Country Of Origin Of Material</td>
+<td>Country Of Origin Of Material (non Preferential Origin)</td>
+<td></td>
 </tr>
 <tr>
 <td>RegionOfOriginOfMaterial__nonPreferentialOrigin___HERKR</td>
-<td>Region Of Origin Of Material</td>
+<td>Region Of Origin Of Material (non Preferential Origin)</td>
+<td></td>
 </tr>
 <tr>
 <td>UnitOfMeasureForCommodityCode__foreignTrade___EXPME</td>
-<td>Unit Of Measure For Commodity Code</td>
+<td>Unit Of Measure For Commodity Code (foreign Trade)</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialGroupExportForForeignTrade_MTVER</td>
 <td>Material Group Export For Foreign Trade</td>
+<td></td>
 </tr>
 <tr>
 <td>ProfitCenter_PRCTR</td>
 <td>Profit Center</td>
+<td></td>
 </tr>
 <tr>
 <td>StockInTransit_TRAME</td>
 <td>Stock In Transit</td>
+<td></td>
 </tr>
 <tr>
 <td>PpcPlanningCalendar_MRPPP</td>
 <td>Ppc Planning Calendar</td>
+<td></td>
 </tr>
 <tr>
 <td>Ind_RepetitiveMfgAllowed_SAUFT</td>
-<td>Ind</td>
+<td>Ind Repetitive Mfg Allowed</td>
+<td></td>
 </tr>
 <tr>
 <td>PlanningTimeFence_FXHOR</td>
 <td>Planning Time Fence</td>
+<td></td>
 </tr>
 <tr>
 <td>ConsumptionMode_VRMOD</td>
 <td>Consumption Mode</td>
+<td></td>
 </tr>
 <tr>
 <td>ConsumptionPeriod_Backward_VINT1</td>
-<td>Consumption Period</td>
+<td>Consumption Period Backward</td>
+<td></td>
 </tr>
 <tr>
 <td>ConsumptionPeriod_Forward_VINT2</td>
-<td>Consumption Period</td>
+<td>Consumption Period Forward</td>
+<td></td>
 </tr>
 <tr>
 <td>VersionIndicator_VERKZ</td>
 <td>Version Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>AlternativeBom_STLAL</td>
 <td>Alternative Bom</td>
+<td></td>
 </tr>
 <tr>
 <td>BomUsage_STLAN</td>
 <td>Bom Usage</td>
+<td></td>
 </tr>
 <tr>
 <td>KeyForTaskListGroup_PLNNR</td>
 <td>Key For Task List Group</td>
+<td></td>
 </tr>
 <tr>
 <td>GroupCounter_APLAL</td>
 <td>Group Counter</td>
+<td></td>
 </tr>
 <tr>
 <td>LotSizeForProductCosting_LOSGR</td>
 <td>Lot Size For Product Costing</td>
+<td></td>
 </tr>
 <tr>
 <td>SpecialProcurementTypeForCosting_SOBSK</td>
 <td>Special Procurement Type For Costing</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductionUnit_FRTME</td>
 <td>Production Unit</td>
+<td></td>
 </tr>
 <tr>
 <td>IssueStorageLocation_LGPRO</td>
 <td>Issue Storage Location</td>
+<td></td>
 </tr>
 <tr>
 <td>MrpGroup_DISGR</td>
 <td>Mrp Group</td>
+<td></td>
 </tr>
 <tr>
 <td>ComponentScrapInPercent_KAUSF</td>
 <td>Component Scrap In Percent</td>
+<td></td>
 </tr>
 <tr>
 <td>CertificateType_QZGTP</td>
 <td>Certificate Type</td>
+<td></td>
 </tr>
 <tr>
 <td>InspectionSetupExistsForMaterialplant_QMATV</td>
 <td>Inspection Setup Exists For Materialplant</td>
+<td></td>
 </tr>
 <tr>
 <td>TaktTime_TAKZT</td>
 <td>Takt Time</td>
+<td></td>
 </tr>
 <tr>
 <td>RangeOfCoverageProfile_RWPRO</td>
 <td>Range Of Coverage Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>LocalFieldNameForCopaLinkToSop_COPAM</td>
 <td>Local Field Name For Copa Link To Sop</td>
+<td></td>
 </tr>
 <tr>
 <td>PhysicalInventoryIndicatorForCycleCounting_ABCIN</td>
 <td>Physical Inventory Indicator For Cycle Counting</td>
+<td></td>
 </tr>
 <tr>
 <td>VarianceKey_AWSLS</td>
 <td>Variance Key</td>
+<td></td>
 </tr>
 <tr>
 <td>SerialNumberProfile_SERNP</td>
 <td>Serial Number Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>InternalObjectNumber_CUOBJ</td>
 <td>Internal Object Number</td>
+<td></td>
 </tr>
 <tr>
 <td>ConfigurableMaterial_STDPD</td>
 <td>Configurable Material</td>
+<td></td>
 </tr>
 <tr>
 <td>RepetitiveManufacturingProfile_SFEPR</td>
 <td>Repetitive Manufacturing Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>NegativeStocksAllowedInPlant_XMCNG</td>
 <td>Negative Stocks Allowed In Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>RequiredQmSystemForVendor_QSSYS</td>
 <td>Required Qm System For Vendor</td>
+<td></td>
 </tr>
 <tr>
 <td>PlanningCycle_LFRHY</td>
 <td>Planning Cycle</td>
+<td></td>
 </tr>
 <tr>
 <td>RoundingProfile_RDPRF</td>
 <td>Rounding Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>ReferenceMaterialForConsumption_VRBMT</td>
 <td>Reference Material For Consumption</td>
+<td></td>
 </tr>
 <tr>
 <td>ReferencePlantForConsumption_VRBWK</td>
 <td>Reference Plant For Consumption</td>
+<td></td>
 </tr>
 <tr>
 <td>ToDateOfTheMaterialToBeCopiedForConsumption_VRBDT</td>
 <td>To Date Of The Material To Be Copied For Consumption</td>
+<td></td>
 </tr>
 <tr>
 <td>MultiplierForReferenceMaterialForConsumption_VRBFK</td>
 <td>Multiplier For Reference Material For Consumption</td>
+<td></td>
 </tr>
 <tr>
 <td>ResetForecastModelAutomatically_AUTRU</td>
 <td>Reset Forecast Model Automatically</td>
+<td></td>
 </tr>
 <tr>
 <td>PreferenceIndicatorInExportimport_PREFE</td>
 <td>Preference Indicator In Exportimport</td>
+<td></td>
 </tr>
 <tr>
 <td>ExemptionCertificate_IndicatorForLegalControl_PRENC</td>
-<td>Exemption Certificate</td>
+<td>Exemption Certificate Indicator For Legal Control</td>
+<td></td>
 </tr>
 <tr>
 <td>ExemptionCertificateNumberForLegalControl_PRENO</td>
 <td>Exemption Certificate Number For Legal Control</td>
+<td></td>
 </tr>
 <tr>
 <td>ExemptionCertificate_IssueDateOfExemptionCertificate_PREND</td>
-<td>Exemption Certificate</td>
+<td>Exemption Certificate Issue Date Of Exemption Certificate</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_VendorDeclarationExists_PRENE</td>
-<td>Indicator</td>
+<td>Indicator Vendor Declaration Exists</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidityDateOfVendorDeclaration_PRENG</td>
 <td>Validity Date Of Vendor Declaration</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_MilitaryGoods_ITARK</td>
-<td>Indicator</td>
+<td>Indicator Military Goods</td>
+<td></td>
 </tr>
 <tr>
 <td>IsRServiceLevel_SERVG</td>
 <td>Is R Service Level</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_MaterialCanBeCoProduct_KZKUP</td>
-<td>Indicator</td>
+<td>Indicator Material Can Be Co Product</td>
+<td></td>
 </tr>
 <tr>
 <td>PlanningStrategyGroup_STRGR</td>
 <td>Planning Strategy Group</td>
+<td></td>
 </tr>
 <tr>
 <td>InternalObjectNumberOfConfigurableMaterialForPlanning_CUOBV</td>
 <td>Internal Object Number Of Configurable Material For Planning</td>
+<td></td>
 </tr>
 <tr>
 <td>DefaultStorageLocationForExternalProcurement_LGFSB</td>
 <td>Default Storage Location For External Procurement</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_BulkMaterial_SCHGT</td>
-<td>Indicator</td>
+<td>Indicator Bulk Material</td>
+<td></td>
 </tr>
 <tr>
 <td>CcIndicatorIsFixed_CCFIX</td>
 <td>Cc Indicator Is Fixed</td>
+<td></td>
 </tr>
 <tr>
 <td>StockDeterminationGroup_EPRIO</td>
 <td>Stock Determination Group</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialAuthorizationGroupForActivitiesInQm_QMATA</td>
 <td>Material Authorization Group For Activities In Qm</td>
+<td></td>
 </tr>
 <tr>
 <td>PeriodOfAdjustmentForPlannedIndependentRequirements_RESVP</td>
 <td>Period Of Adjustment For Planned Independent Requirements</td>
+<td></td>
 </tr>
 <tr>
 <td>TaskListType_PLNTY</td>
 <td>Task List Type</td>
+<td></td>
 </tr>
 <tr>
 <td>UnitOfMearsureGroup__oil_NaturalGas____UOMGR</td>
-<td>Unit Of Mearsure Group</td>
+<td>Unit Of Mearsure Group (oil Natural Gas)</td>
+<td></td>
 </tr>
 <tr>
 <td>ConversionGroup__oil_NaturalGas____UMRSL</td>
-<td>Conversion Group</td>
+<td>Conversion Group (oil Natural Gas)</td>
+<td></td>
 </tr>
 <tr>
 <td>AirBouyancyFactor_ABFAC</td>
 <td>Air Bouyancy Factor</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductionSchedulingProfile_SFCPF</td>
 <td>Production Scheduling Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>SafetyTimeIndicator__withOrWithoutSafetyTime___SHFLG</td>
-<td>Safety Time Indicator</td>
+<td>Safety Time Indicator (with Or Without Safety Time)</td>
+<td></td>
 </tr>
 <tr>
 <td>SafetyTime__inWorkdays___SHZET</td>
-<td>Safety Time</td>
+<td>Safety Time (in Workdays)</td>
+<td></td>
 </tr>
 <tr>
 <td>ActionControl_PlannedOrderProcessing_MDACH</td>
-<td>Action Control</td>
+<td>Action Control Planned Order Processing</td>
+<td></td>
 </tr>
 <tr>
 <td>DeterminationOfBatchEntryInTheProductionprocessOrder_KZECH</td>
 <td>Determination Of Batch Entry In The Productionprocess Order</td>
+<td></td>
 </tr>
 <tr>
 <td>UnitOfMeasureGroup_MEGRU</td>
 <td>Unit Of Measure Group</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialFreightGroup_MFRGR</td>
 <td>Material Freight Group</td>
+<td></td>
 </tr>
 <tr>
 <td>StockTransferSalesValue__plantToPlant__ForVoMaterial_VKUMC</td>
-<td>Stock Transfer Sales Value</td>
+<td>Stock Transfer Sales Value (plant To Plant) For Vo Material</td>
+<td></td>
 </tr>
 <tr>
 <td>TransitValueAtSalesPriceForValueOnlyMaterial_VKTRW</td>
 <td>Transit Value At Sales Price For Value Only Material</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_SmoothPromotionConsumption_KZAGL</td>
-<td>Indicator</td>
+<td>Indicator Smooth Promotion Consumption</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductionVersionToBeCosted_FVIDK</td>
 <td>Production Version To Be Costed</td>
+<td></td>
 </tr>
 <tr>
 <td>FixedPriceCoProduct_FXPRU</td>
 <td>Fixed Price Co Product</td>
+<td></td>
 </tr>
 <tr>
 <td>LogisticsHandlingGroupForWorkloadCalculation_LOGGR</td>
 <td>Logistics Handling Group For Workload Calculation</td>
+<td></td>
 </tr>
 <tr>
 <td>DistributionProfileOfMaterialInPlant_FPRFM</td>
 <td>Distribution Profile Of Material In Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>TiedEmptiesStock_GLGMG</td>
 <td>Tied Empties Stock</td>
+<td></td>
 </tr>
 <tr>
 <td>SalesValueOfTiedEmptiesStock_VKGLG</td>
 <td>Sales Value Of Tied Empties Stock</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialCfopCategory_INDUS</td>
 <td>Material Cfop Category</td>
+<td></td>
 </tr>
 <tr>
 <td>Cap_NumberOfCapProductsList_MOWNR</td>
-<td>Cap</td>
+<td>Cap Number Of Cap Products List</td>
+<td></td>
 </tr>
 <tr>
 <td>CommonAgriculturalPolicy_CapProductsGroupForeignTrade_MOGRU</td>
-<td>Common Agricultural Policy</td>
+<td>Common Agricultural Policy Cap Products Group Foreign Trade</td>
+<td></td>
 </tr>
 <tr>
 <td>CasNumberForPharmaceuticalProductsInForeignTrade_CASNR</td>
 <td>Cas Number For Pharmaceutical Products In Foreign Trade</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductionStatistics_ProdcomNumberForForeignTrade_GPNUM</td>
-<td>Production Statistics</td>
+<td>Production Statistics Prodcom Number For Foreign Trade</td>
+<td></td>
 </tr>
 <tr>
 <td>ControlCodeForConsumptionTaxesInForeignTrade_STEUC</td>
 <td>Control Code For Consumption Taxes In Foreign Trade</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_ItemRelevantToJitDeliverySchedules_FABKZ</td>
-<td>Indicator</td>
+<td>Indicator Item Relevant To Jit Delivery Schedules</td>
+<td></td>
 </tr>
 <tr>
 <td>GroupOfMaterialsForTransitionMatrix_MATGR</td>
 <td>Group Of Materials For Transition Matrix</td>
+<td></td>
 </tr>
 <tr>
 <td>ProposedSupplyAreaInMaterialMasterRecord_VSPVB</td>
 <td>Proposed Supply Area In Material Master Record</td>
+<td></td>
 </tr>
 <tr>
 <td>FairShareRule_DPLFS</td>
 <td>Fair Share Rule</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_PushDistribution_DPLPU</td>
-<td>Indicator</td>
+<td>Indicator Push Distribution</td>
+<td></td>
 </tr>
 <tr>
 <td>DeploymentHorizonInDays_DPLHO</td>
 <td>Deployment Horizon In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>MinimumLotSizeForSupplyDemandMatch_MINLS</td>
 <td>Minimum Lot Size For Supply Demand Match</td>
+<td></td>
 </tr>
 <tr>
 <td>MaximumLotSizeForSupplyDemandMatch_MAXLS</td>
 <td>Maximum Lot Size For Supply Demand Match</td>
+<td></td>
 </tr>
 <tr>
 <td>FixedLotSizeForSupplyDemandMatch_FIXLS</td>
 <td>Fixed Lot Size For Supply Demand Match</td>
+<td></td>
 </tr>
 <tr>
 <td>LotSizeIncrementForSupplyDemandMatch_LTINC</td>
 <td>Lot Size Increment For Supply Demand Match</td>
+<td></td>
 </tr>
 <tr>
 <td>ThisFieldIsNoLongerUsed_COMPL</td>
 <td>This Field Is No Longer Used</td>
+<td></td>
 </tr>
 <tr>
 <td>ConversionTypesForProductionFigures_CONVT</td>
 <td>Conversion Types For Production Figures</td>
+<td></td>
 </tr>
 <tr>
 <td>PeriodProfileForSafetyTime_SHPRO</td>
 <td>Period Profile For Safety Time</td>
+<td></td>
 </tr>
 <tr>
 <td>MrpRelevancyForDependentRequirements_AHDIS</td>
 <td>Mrp Relevancy For Dependent Requirements</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_MrpAreaExists_DIBER</td>
-<td>Indicator</td>
+<td>Indicator Mrp Area Exists</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForCrossProjectMaterial_KZPSP</td>
 <td>Indicator For Cross Project Material</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallProfileForOrderChangeManagement_OCMPF</td>
 <td>Overall Profile For Order Change Management</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_IsMaterialRelevantForApo_APOKZ</td>
-<td>Indicator</td>
+<td>Indicator Is Material Relevant For Apo</td>
+<td></td>
 </tr>
 <tr>
 <td>MardhRecAlreadyExistsForPerBeforeLastOfMardPer_MCRUE</td>
 <td>Mardh Rec Already Exists For Per Before Last Of Mard Per</td>
+<td></td>
 </tr>
 <tr>
 <td>CurrentPeriod__postingPeriod___LFMON</td>
-<td>Current Period</td>
+<td>Current Period (posting Period)</td>
+<td></td>
 </tr>
 <tr>
 <td>FiscalYearOfCurrentPeriod_LFGJA</td>
 <td>Fiscal Year Of Current Period</td>
+<td></td>
 </tr>
 <tr>
 <td>MinimumSafetyStock_EISLO</td>
 <td>Minimum Safety Stock</td>
+<td></td>
 </tr>
 <tr>
 <td>DoNotCost_NCOST</td>
 <td>Do Not Cost</td>
+<td></td>
 </tr>
 <tr>
 <td>StrategyForPutawayAndStockRemoval_ROTATION_DATE</td>
 <td>Strategy For Putaway And Stock Removal</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForOriginalBatchManagement_UCHKZ</td>
 <td>Indicator For Original Batch Management</td>
+<td></td>
 </tr>
 <tr>
 <td>ReferenceMaterialForOriginalBatches_UCMAT</td>
 <td>Reference Material For Original Batches</td>
+<td></td>
 </tr>
 <tr>
 <td>ValuatedGoodsReceiptBlockedStock_BWESB</td>
 <td>Valuated Goods Receipt Blocked Stock</td>
+<td></td>
 </tr>
 <tr>
 <td>SegmentationStrategy_SGT_COVS</td>
 <td>Segmentation Strategy</td>
+<td></td>
 </tr>
 <tr>
 <td>SegmentationStatus_SGT_STATC</td>
 <td>Segmentation Status</td>
+<td></td>
 </tr>
 <tr>
 <td>SegmentationStrategyScope_SGT_SCOPE</td>
 <td>Segmentation Strategy Scope</td>
+<td></td>
 </tr>
 <tr>
 <td>SortStockBasedOnSegment_SGT_MRPSI</td>
 <td>Sort Stock Based On Segment</td>
+<td></td>
 </tr>
 <tr>
 <td>ConsumptionPriority_SGT_PRCM</td>
 <td>Consumption Priority</td>
+<td></td>
 </tr>
 <tr>
 <td>DiscreteBatchNumber_SGT_CHINT</td>
 <td>Discrete Batch Number</td>
+<td></td>
 </tr>
 <tr>
 <td>StockProtectionIndicator_SGT_STK_PRT</td>
 <td>Stock Protection Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>DefaultStockSegmentValue_SGT_DEFSC</td>
 <td>Default Stock Segment Value</td>
+<td></td>
 </tr>
 <tr>
 <td>AtpmrpStatusForMaterialAndSegment_SGT_MRP_ATP_STATUS</td>
 <td>Atpmrp Status For Material And Segment</td>
+<td></td>
 </tr>
 <tr>
 <td>DateFromWhichThePlantSpecificMaterialStatusIsValid_SGT_MMSTD</td>
 <td>Date From Which The Plant Specific Material Status Is Valid</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderAllocationRun_FSH_MG_ARUN_REQ</td>
 <td>Order Allocation Run</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_SeasonActiveInInventoryManagement_FSH_SEAIM</td>
-<td>Indicator</td>
+<td>Indicator Season Active In Inventory Management</td>
+<td></td>
 </tr>
 <tr>
 <td>VariantGroup_FSH_VAR_GROUP</td>
 <td>Variant Group</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_BatchAssignmentDuringTrToToConversion_FSH_KZECH</td>
-<td>Indicator</td>
+<td>Indicator Batch Assignment During Tr To To Conversion</td>
+<td></td>
 </tr>
 <tr>
 <td>CalendarGroup_FSH_CALENDAR_GROUP</td>
 <td>Calendar Group</td>
+<td></td>
 </tr>
 <tr>
 <td>AdvancedPlanning_PPSKZ</td>
 <td>Advanced Planning</td>
+<td></td>
 </tr>
 <tr>
 <td>PercentageTolerancePlus_SAPMP_TOLPRPL</td>
 <td>Percentage Tolerance Plus</td>
+<td></td>
 </tr>
 <tr>
 <td>PercentageToleranceMinus_SAPMP_TOLPRMI</td>
 <td>Percentage Tolerance Minus</td>
+<td></td>
 </tr>
 <tr>
 <td>PackingGroupOfTheMaterial__vso___VSO_R_PKGRP</td>
-<td>Packing Group Of The Material</td>
+<td>Packing Group Of The Material (vso)</td>
+<td></td>
 </tr>
 <tr>
 <td>LineWithinTheAutomaticPickingZone__vso___VSO_R_LANE_NUM</td>
-<td>Line Within The Automatic Picking Zone</td>
+<td>Line Within The Automatic Picking Zone (vso)</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialNoOfThePackagingMaterialOfTheVendor__vso___VSO_R_PAL_VEND</td>
-<td>Material No Of The Packaging Material Of The Vendor</td>
+<td>Material No Of The Packaging Material Of The Vendor (vso)</td>
+<td></td>
 </tr>
 <tr>
 <td>PickPackagingMaterialsOnlyLengthwise__vso___VSO_R_FORK_DIR</td>
-<td>Pick Packaging Materials Only Lengthwise</td>
+<td>Pick Packaging Materials Only Lengthwise (vso)</td>
+<td></td>
 </tr>
 <tr>
 <td>IuidRelevant_IUID_RELEVANT</td>
 <td>Iuid Relevant</td>
+<td></td>
 </tr>
 <tr>
 <td>StructureTypeOfUii_IUID_TYPE</td>
 <td>Structure Type Of Uii</td>
+<td></td>
 </tr>
 <tr>
 <td>ExternalAllocationOfUii_UID_IEA</td>
 <td>External Allocation Of Uii</td>
+<td></td>
 </tr>
 <tr>
 <td>ConsignmentControl_CONS_PROCG</td>
 <td>Consignment Control</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsIssueProcessingTimeInDays_GI_PR_TIME</td>
 <td>Goods Issue Processing Time In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>PurchasingAcrossPurchasingGroup_MULTIPLE_EKGRP</td>
 <td>Purchasing Across Purchasing Group</td>
+<td></td>
 </tr>
 <tr>
 <td>ReferenceDeterminationSchema_REF_SCHEMA</td>
 <td>Reference Determination Schema</td>
+<td></td>
 </tr>
 <tr>
 <td>MinimumTargetRangeOfCoverage_MIN_TROC</td>
 <td>Minimum Target Range Of Coverage</td>
+<td></td>
 </tr>
 <tr>
 <td>MaximumTargetRangeOfCoverage_MAX_TROC</td>
 <td>Maximum Target Range Of Coverage</td>
+<td></td>
 </tr>
 <tr>
 <td>TargetStock_TARGET_STOCK</td>
 <td>Target Stock</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -6351,11 +6607,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        ¿Fue útil esta página?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              ¡Gracias por tus comentarios! Ayúdanos a mejorar esta página utilizando nuestro sistema de comentarios a continuación.                                                    
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentarios</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

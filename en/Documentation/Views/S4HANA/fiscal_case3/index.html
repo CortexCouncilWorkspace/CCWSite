@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-CKB6DG2VCB"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-CKB6DG2VCB",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-CKB6DG2VCB",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -5284,7 +5294,7 @@
 
 <h1 id="fiscal_case3">fiscal_case3</h1>
 <h2 id="source-sql-file-google-cloud-cortex-data-foundation">Source SQL File - Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/fiscal_case3.sql">fiscal_case3</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/fiscal_case3.sql">fiscal_case3</a></p>
 <h2 id="overview">Overview</h2>
 <p>This reporting view provides a consolidated view of data from the SAP table t009b, which contains information about posting periods and fiscal years. It calculates the minimum value of a concatenated string that includes the posting period, fiscal year, and document number for each combination of client, controlling area, and fiscal year.</p>
 <h2 id="data-sources">Data Sources</h2>
@@ -5332,108 +5342,79 @@
 <tr>
 <th>Field</th>
 <th>Field Description</th>
+<th>Description in SAP Dictionary (Comming soon)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
-<td>SalesDocument_VBELN</td>
-<td>Sales Document</td>
+<td>MaterialGroup_MATKL</td>
+<td>Material Group</td>
+<td></td>
 </tr>
 <tr>
-<td>Item_POSNR</td>
-<td>Item</td>
+<td>Division_SPART</td>
+<td>Division</td>
+<td></td>
 </tr>
 <tr>
-<td>PartnerFunction_PARVW</td>
-<td>Partner Function</td>
+<td>ReferenceGroupRefMaterial_WWGDA</td>
+<td>Reference Group Ref Material</td>
+<td></td>
 </tr>
 <tr>
-<td>Customer_KUNNR</td>
-<td>Customer</td>
+<td>GroupMaterial_WWGPA</td>
+<td>Group Material</td>
+<td></td>
 </tr>
 <tr>
-<td>Vendor_LIFNR</td>
-<td>Vendor</td>
+<td>DepartmentNumber_ABTNR</td>
+<td>Department Number</td>
+<td></td>
 </tr>
 <tr>
-<td>PersonnelNumber_PERNR</td>
-<td>Personnel Number</td>
+<td>AuthorizationGroup_BEGRU</td>
+<td>Authorization Group</td>
+<td></td>
 </tr>
 <tr>
-<td>NumberOfContactPerson_PARNR</td>
-<td>Number Of Contact Person</td>
+<td>DefaultUnitofWeight_GEWEI</td>
+<td>Default Unit of Weight</td>
+<td></td>
 </tr>
 <tr>
-<td>Address_ADRNR</td>
-<td>Address</td>
+<td>ValuationClass_BKLAS</td>
+<td>Valuation Class</td>
+<td></td>
 </tr>
 <tr>
-<td>UnloadingPoint_ABLAD</td>
-<td>Unloading Point</td>
+<td>PurchasingValueKey_EKWSL</td>
+<td>Purchasing Value Key</td>
+<td></td>
 </tr>
 <tr>
-<td>Country_LAND1</td>
-<td>Country</td>
+<td>AssetClass_ANLKL</td>
+<td>Asset Class</td>
+<td></td>
 </tr>
 <tr>
-<td>AddressIndicator_ADRDA</td>
-<td>Address Indicator</td>
+<td>PriceLevelGroup_PRICE_GROUP</td>
+<td>Price Level Group</td>
+<td></td>
 </tr>
 <tr>
-<td>IndicatorOneTimeAccount_XCPDK</td>
-<td>Indicator One Time Account</td>
+<td>MaterialGroupName_WGBEZ</td>
+<td>Material Group Name</td>
+<td></td>
 </tr>
 <tr>
-<td>CustomerHierarchyType_HITYP</td>
-<td>Customer Hierarchy Type</td>
-</tr>
-<tr>
-<td>RelevantForPriceDeterminationID_PRFRE</td>
-<td>Relevant For Price Determination ID</td>
-</tr>
-<tr>
-<td>IndicatorCustomerToReceiveRebates_BOKRE</td>
-<td>Indicator Customer To Receive Rebates</td>
-</tr>
-<tr>
-<td>LevelNumberWithinHierarchy_HISTUNR</td>
-<td>Level Number Within Hierarchy</td>
-</tr>
-<tr>
-<td>CustomerDescriptionOfPartner_KNREF</td>
-<td>Customer Description Of Partner</td>
-</tr>
-<tr>
-<td>TransportationZone_LZONE</td>
-<td>Transportation Zone</td>
-</tr>
-<tr>
-<td>AssignmentToHierarchy_HZUOR</td>
-<td>Assignment To Hierarchy</td>
-</tr>
-<tr>
-<td>VATRegistrationNumber_STCEG</td>
-<td>VAT Registration Number</td>
-</tr>
-<tr>
-<td>IndicatorFurtherPartners_PARVW_FF</td>
-<td>Indicator Further Partners</td>
-</tr>
-<tr>
-<td>PersonNumber_ADRNP</td>
-<td>Person Number</td>
-</tr>
-<tr>
-<td>MaintainAppointmentsInCalendar_KALE</td>
-<td>Maintain Appointments In Calendar</td>
-</tr>
-<tr>
-<td>DummyFunctionInLength1_DUMMY_SDDOCPARTNER_INCL_EEW_PS</td>
-<td>Dummy Function In Length1</td>
+<td>Language_SPRAS</td>
+<td>Language</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5444,11 +5425,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our comment system bellow.                                            
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

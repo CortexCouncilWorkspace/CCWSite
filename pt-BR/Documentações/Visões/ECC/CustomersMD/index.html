@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-39G1K9GM1S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-39G1K9GM1S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-39G1K9GM1S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -992,18 +1002,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -1028,9 +1038,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#campos-da-tabelavisao-ainda-disponivel-apenas-em-ingles" class="md-nav__link">
+  <a href="#campos-da-tabelavisao" class="md-nav__link">
     <span class="md-ellipsis">
-      Campos da Tabela/Visão - (Ainda disponível apenas em inglês)
+      Campos da Tabela/Visão
     </span>
   </a>
   
@@ -5220,18 +5230,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5256,9 +5266,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#campos-da-tabelavisao-ainda-disponivel-apenas-em-ingles" class="md-nav__link">
+  <a href="#campos-da-tabelavisao" class="md-nav__link">
     <span class="md-ellipsis">
-      Campos da Tabela/Visão - (Ainda disponível apenas em inglês)
+      Campos da Tabela/Visão
     </span>
   </a>
   
@@ -5306,7 +5316,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="key-use-cases">Key Use Cases</h2>
+<h2 id="casos-de-uso">Casos de Uso</h2>
 <ul>
 <li>Gerenciamento de Relacionamento com o Cliente (CRM)</li>
 <li>Vendas e Distribuição (SD)</li>
@@ -5314,7 +5324,7 @@
 <li>Controladoria (CO)</li>
 <li>Gestão de Materiais (MM)</li>
 </ul>
-<h2 id="query-logic">Query Logic</h2>
+<h2 id="logica-da-query">Lógica da Query</h2>
 <p>A visão combina dados das tabelas KNA1 e ADRC usando um LEFT OUTER JOIN no campo ADRNR. A condição de junção garante que os dados do cliente de KNA1 sejam correspondidos com as informações de endereço mais atualizadas de ADRC, onde o campo date_to é definido como '9999-12-31'. O conjunto de dados resultante fornece uma visão abrangente das informações do cliente, incluindo dados mestres e detalhes do endereço.</p>
 <h2 id="possivel-relacao-com-transacoes-sap">Possível relação com transações SAP</h2>
 <table>
@@ -5345,930 +5355,1160 @@
 </table>
 <h2 id="linhagem-de-dados">Linhagem de dados</h2>
 <p>Em desenvolvimento</p>
-<h2 id="campos-da-tabelavisao-ainda-disponivel-apenas-em-ingles">Campos da Tabela/Visão - (Ainda disponível apenas em inglês)</h2>
+<h2 id="campos-da-tabelavisao">Campos da Tabela/Visão</h2>
 <table>
 <thead>
 <tr>
 <th>Campo</th>
 <th>Descrição do Campo</th>
+<th>Descrição no Dicionário SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
 <td>Client number</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerNumber_KUNNR</td>
 <td>Customer number</td>
+<td></td>
 </tr>
 <tr>
 <td>CountryKey_LAND1</td>
 <td>Country key</td>
+<td></td>
 </tr>
 <tr>
 <td>Name1_NAME1</td>
 <td>Name 1</td>
+<td></td>
 </tr>
 <tr>
 <td>Name2_NAME2</td>
 <td>Name 2</td>
+<td></td>
 </tr>
 <tr>
 <td>City_ORT01</td>
 <td>City</td>
+<td></td>
 </tr>
 <tr>
 <td>PostalCode_PSTLZ</td>
 <td>Postal code</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerRegion_REGIO</td>
 <td>Customer region</td>
+<td></td>
 </tr>
 <tr>
 <td>SortField_SORTL</td>
 <td>Sort field</td>
+<td></td>
 </tr>
 <tr>
 <td>StreetAndNumber_STRAS</td>
 <td>Street and number</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstTelephoneNumber_TELF1</td>
 <td>First telephone number</td>
+<td></td>
 </tr>
 <tr>
 <td>FaxNumber_TELFX</td>
 <td>Fax number</td>
+<td></td>
 </tr>
 <tr>
 <td>OneTimeAccount_XCPDK</td>
 <td>One-time account</td>
+<td></td>
 </tr>
 <tr>
 <td>Address_ADRNR</td>
 <td>Address number</td>
+<td></td>
 </tr>
 <tr>
 <td>MatchcodeSearch_MCOD1</td>
 <td>Matchcode search 1</td>
+<td></td>
 </tr>
 <tr>
 <td>MatchcodeSearch_MCOD2</td>
 <td>Matchcode search 2</td>
+<td></td>
 </tr>
 <tr>
 <td>MatchcodeSearch_MCOD3</td>
 <td>Matchcode search 3</td>
+<td></td>
 </tr>
 <tr>
 <td>Title_ANRED</td>
 <td>Title</td>
+<td></td>
 </tr>
 <tr>
 <td>CentralOrderBlockForCustomer_AUFSD</td>
 <td>Central order block for customer</td>
+<td></td>
 </tr>
 <tr>
 <td>ExpressTrainStation_BAHNE</td>
 <td>Express train station</td>
+<td></td>
 </tr>
 <tr>
 <td>TrainStation_BAHNS</td>
 <td>Train station</td>
+<td></td>
 </tr>
 <tr>
 <td>InternationalLocationNumber_BBBNR</td>
 <td>International location number</td>
+<td></td>
 </tr>
 <tr>
 <td>InternationalLocationNumber_BBSNR</td>
 <td>International location number</td>
+<td></td>
 </tr>
 <tr>
 <td>AuthorizationGroup_BEGRU</td>
 <td>Authorization group</td>
+<td></td>
 </tr>
 <tr>
 <td>IndustryKey_BRSCH</td>
 <td>Industry key</td>
+<td></td>
 </tr>
 <tr>
 <td>CheckDigitForTheInternationalLocationNumber_BUBKZ</td>
 <td>Check digit for the international location number</td>
+<td></td>
 </tr>
 <tr>
 <td>DataCommunicationLineNo_DATLT</td>
 <td>Data communication line no</td>
+<td></td>
 </tr>
 <tr>
 <td>DateCreated_ERDAT</td>
 <td>Date created</td>
+<td></td>
 </tr>
 <tr>
 <td>CreatedBy_ERNAM</td>
 <td>Created by</td>
+<td></td>
 </tr>
 <tr>
 <td>UnloadingPointsExist_EXABL</td>
 <td>Unloading points exist</td>
+<td></td>
 </tr>
 <tr>
 <td>CentralBillingBlock_FAKSD</td>
 <td>Central billing block</td>
+<td></td>
 </tr>
 <tr>
 <td>AccountNumberFiscalAddress_FISKN</td>
 <td>Account number fiscal address</td>
+<td></td>
 </tr>
 <tr>
 <td>WorkingTimeCalendar_KNAZK</td>
 <td>Working time calendar</td>
+<td></td>
 </tr>
 <tr>
 <td>AlternativePayer_KNRZA</td>
 <td>Alternative payer</td>
+<td></td>
 </tr>
 <tr>
 <td>GroupKey_KONZS</td>
 <td>Group key</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerAccountGroup_KTOKD</td>
 <td>Customer account group</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerClassification_KUKLA</td>
 <td>Customer classification</td>
+<td></td>
 </tr>
 <tr>
 <td>AccountNumberOfVendorOrCreditor_LIFNR</td>
 <td>Account number of vendor or creditor</td>
+<td></td>
 </tr>
 <tr>
 <td>CentralDeliveryBlockForTheCustomer_LIFSD</td>
 <td>Central delivery block for the customer</td>
+<td></td>
 </tr>
 <tr>
 <td>CityCoordinates_LOCCO</td>
 <td>City coordinates</td>
+<td></td>
 </tr>
 <tr>
 <td>CentralDeletionFlagForMasterRecord_LOEVM</td>
 <td>Central deletion flag for master record</td>
+<td></td>
 </tr>
 <tr>
 <td>Name3_NAME3</td>
 <td>Name 3</td>
+<td></td>
 </tr>
 <tr>
 <td>Name4_NAME4</td>
 <td>Name 4</td>
+<td></td>
 </tr>
 <tr>
 <td>NielsenId_NIELS</td>
 <td>Nielsen ID</td>
+<td></td>
 </tr>
 <tr>
 <td>District_ORT02</td>
 <td>District</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBox_PFACH</td>
 <td>PO box</td>
+<td></td>
 </tr>
 <tr>
 <td>POBoxPostalCode_PSTL2</td>
 <td>PO box postal code</td>
+<td></td>
 </tr>
 <tr>
 <td>CountyCode_COUNC</td>
 <td>County code</td>
+<td></td>
 </tr>
 <tr>
 <td>CityCode_CITYC</td>
 <td>City code</td>
+<td></td>
 </tr>
 <tr>
 <td>RegionalMarket_RPMKR</td>
 <td>Regional market</td>
+<td></td>
 </tr>
 <tr>
 <td>CentralPostingBlock_SPERR</td>
 <td>Central posting block</td>
+<td></td>
 </tr>
 <tr>
 <td>LanguageKey_SPRAS</td>
 <td>Language key</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxNumber1_STCD1</td>
 <td>Tax number 1</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxNumber2_STCD2</td>
 <td>Tax number 2</td>
+<td></td>
 </tr>
 <tr>
 <td>SubjectToEqualizationTax_STKZA</td>
 <td>Subject to equalization tax</td>
+<td></td>
 </tr>
 <tr>
 <td>LiableForVat_STKZU</td>
 <td>Liable for VAT</td>
+<td></td>
 </tr>
 <tr>
 <td>TeleboxNumber_TELBX</td>
 <td>Telebox number</td>
+<td></td>
 </tr>
 <tr>
 <td>SecondTelephoneNumber_TELF2</td>
 <td>Second telephone number</td>
+<td></td>
 </tr>
 <tr>
 <td>TeletexNumber_TELTX</td>
 <td>Teletex number</td>
+<td></td>
 </tr>
 <tr>
 <td>TelexNumber_TELX1</td>
 <td>Telex number</td>
+<td></td>
 </tr>
 <tr>
 <td>TransportationZone_LZONE</td>
 <td>Transportation zone</td>
+<td></td>
 </tr>
 <tr>
 <td>AlternativePayerAllowed_XZEMP</td>
 <td>Alternative payer allowed</td>
+<td></td>
 </tr>
 <tr>
 <td>CompanyIdOfTradingPartner_VBUND</td>
 <td>Company ID of trading partner</td>
+<td></td>
 </tr>
 <tr>
 <td>VatRegistrationNumber_STCEG</td>
 <td>VAT registration number</td>
+<td></td>
 </tr>
 <tr>
 <td>Competitor_DEAR1</td>
 <td>Competitor</td>
+<td></td>
 </tr>
 <tr>
 <td>SalesPartner_DEAR2</td>
 <td>Sales partner</td>
+<td></td>
 </tr>
 <tr>
 <td>SalesProspect_DEAR3</td>
 <td>Sales prospect</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerType4_DEAR4</td>
 <td>Customer type 4</td>
+<td></td>
 </tr>
 <tr>
 <td>IdForDefaultSoldToParty_DEAR5</td>
 <td>ID for default sold-to party</td>
+<td></td>
 </tr>
 <tr>
 <td>LegalStatus_GFORM</td>
 <td>Legal status</td>
+<td></td>
 </tr>
 <tr>
 <td>IndustryCode1_BRAN1</td>
 <td>Industry code 1</td>
+<td></td>
 </tr>
 <tr>
 <td>IndustryCode2_BRAN2</td>
 <td>Industry code 2</td>
+<td></td>
 </tr>
 <tr>
 <td>IndustryCode3_BRAN3</td>
 <td>Industry code 3</td>
+<td></td>
 </tr>
 <tr>
 <td>IndustryCode4_BRAN4</td>
 <td>Industry code 4</td>
+<td></td>
 </tr>
 <tr>
 <td>IndustryCode5_BRAN5</td>
 <td>Industry code 5</td>
+<td></td>
 </tr>
 <tr>
 <td>InitialContact_EKONT</td>
 <td>Initial contact</td>
+<td></td>
 </tr>
 <tr>
 <td>AnnualSales_UMSAT</td>
 <td>Annual sales</td>
+<td></td>
 </tr>
 <tr>
 <td>YearForWhichSalesAreGiven_UMJAH</td>
 <td>Year for which sales are given</td>
+<td></td>
 </tr>
 <tr>
 <td>CurrencyOfSalesFigure_UWAER</td>
 <td>Currency of sales figure</td>
+<td></td>
 </tr>
 <tr>
 <td>YearlyNumberOfEmployees_JMZAH</td>
 <td>Yearly number of employees</td>
+<td></td>
 </tr>
 <tr>
 <td>YearForWhichTheNumberOfEmployeesIsGiven_JMJAH</td>
 <td>Year for which the number of employees is given</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute1_KATR1</td>
 <td>Attribute 1</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute2_KATR2</td>
 <td>Attribute 2</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute3_KATR3</td>
 <td>Attribute 3</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute4_KATR4</td>
 <td>Attribute 4</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute5_KATR5</td>
 <td>Attribute 5</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute6_KATR6</td>
 <td>Attribute 6</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute7_KATR7</td>
 <td>Attribute 7</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute8_KATR8</td>
 <td>Attribute 8</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute9_KATR9</td>
 <td>Attribute 9</td>
+<td></td>
 </tr>
 <tr>
 <td>Attribute10_KATR10</td>
 <td>Attribute 10</td>
+<td></td>
 </tr>
 <tr>
 <td>NaturalPerson_STKZN</td>
 <td>Natural person</td>
+<td></td>
 </tr>
 <tr>
 <td>AnnualSales_UMSA1</td>
 <td>Annual sales</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxJurisdiction_TXJCD</td>
 <td>Tax jurisdiction</td>
+<td></td>
 </tr>
 <tr>
 <td>FiscalYearVariant_PERIV</td>
 <td>Fiscal year variant</td>
+<td></td>
 </tr>
 <tr>
 <td>UsageIndicator_ABRVW</td>
 <td>Usage indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>InspectionCarriedOutByCustomer_INSPBYDEBI</td>
 <td>Inspection carried out by customer</td>
+<td></td>
 </tr>
 <tr>
 <td>InspectionForADeliveryNote_INSPATDEBI</td>
 <td>Inspection for a delivery note</td>
+<td></td>
 </tr>
 <tr>
 <td>ReferenceAccountGroup_KTOCD</td>
 <td>Reference account group</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxCity_PFORT</td>
 <td>PO box city</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_WERKS</td>
 <td>Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>ReportKeyForDataMediumExchange_DTAMS</td>
 <td>Report key for data medium exchange</td>
+<td></td>
 </tr>
 <tr>
 <td>InstructionKeyForDataMediumExchange_DTAWS</td>
 <td>Instruction key for data medium exchange</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfDataTransferIntoSubsequentRelease_DUEFL</td>
 <td>Status of data transfer into subsequent release</td>
+<td></td>
 </tr>
 <tr>
 <td>AssignmentToHierarchy_HZUOR</td>
 <td>Assignment to hierarchy</td>
+<td></td>
 </tr>
 <tr>
 <td>PaymentBlock_SPERZ</td>
 <td>Payment block</td>
+<td></td>
 </tr>
 <tr>
 <td>RLabeling_CustomerplantGroup_ETIKG</td>
 <td>R labeling - customer plant group</td>
+<td></td>
 </tr>
 <tr>
 <td>IdNonMilitaryUse_CIVVE</td>
 <td>ID non-military use</td>
+<td></td>
 </tr>
 <tr>
 <td>IdForMilitaryUse_MILVE</td>
 <td>ID for military use</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionGroup1_KDKG1</td>
 <td>Condition group 1</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionGroup2_KDKG2</td>
 <td>Condition group 2</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionGroup3_KDKG3</td>
 <td>Condition group 3</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionGroup4_KDKG4</td>
 <td>Condition group 4</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionGroup5_KDKG5</td>
 <td>Condition group 5</td>
+<td></td>
 </tr>
 <tr>
 <td>AlternativePayerUsingAccountNumber_XKNZA</td>
 <td>Alternative payer using account number</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxType_FITYP</td>
 <td>Tax type</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxNumberType_STCDT</td>
 <td>Tax number type</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxNumber3_STCD3</td>
 <td>Tax number 3</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxNumber4_STCD4</td>
 <td>Tax number 4</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxNumber5_STCD5</td>
 <td>Tax number 5</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerIsIcmsExempt_XICMS</td>
 <td>Customer is ICMS exempt</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerIsIpiExempt_XXIPI</td>
 <td>Customer is IPI exempt</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerGroupForSubstituicaoTributariaCalculation_XSUBT</td>
 <td>Customer group for substituicao tributaria calculation</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerCfopCategory_CFOPC</td>
 <td>Customer CFOP category</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxLaw_Icms_TXLW1</td>
 <td>Tax law - ICMS</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxLaw_Ipi_TXLW2</td>
 <td>Tax law - IPI</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForBiochemicalWarfare_CCC01</td>
 <td>Indicator for biochemical warfare</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForNuclearNonproliferation_CCC02</td>
 <td>Indicator for nuclear nonproliferation</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForNationalSecurity_CCC03</td>
 <td>Indicator for national security</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForMissileTechnology_CCC04</td>
 <td>Indicator for missile technology</td>
+<td></td>
 </tr>
 <tr>
 <td>CentralSalesBlock_CASSD</td>
 <td>Central sales block</td>
+<td></td>
 </tr>
 <tr>
 <td>UniformResourceLocator_KNURL</td>
 <td>Uniform resource locator</td>
+<td></td>
 </tr>
 <tr>
 <td>NameOfRepresentative_J_1KFREPRE</td>
 <td>Name of representative</td>
+<td></td>
 </tr>
 <tr>
 <td>TypeOfBusiness_J_1KFTBUS</td>
 <td>Type of business</td>
+<td></td>
 </tr>
 <tr>
 <td>TypeOfIndustry_J_1KFTIND</td>
 <td>Type of industry</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfChangeAuthorization_CONFS</td>
 <td>Status of change authorization</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOnWhichTheChangesWereConfirmed_UPDAT</td>
 <td>Date on which the changes were confirmed</td>
+<td></td>
 </tr>
 <tr>
 <td>TimeOfLastChangeConfirmation_UPTIM</td>
 <td>Time of last change confirmation</td>
+<td></td>
 </tr>
 <tr>
 <td>CentralDeletionBlockForMasterRecord_NODEL</td>
 <td>Central deletion block for master record</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_Consumer_DEAR6</td>
 <td>Indicator - consumer</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPurposeCompletedFlag_CVP_XBLCK</td>
 <td>Business purpose completed flag</td>
+<td></td>
 </tr>
 <tr>
 <td>SuframaCode_SUFRAMA</td>
 <td>Suframa code</td>
+<td></td>
 </tr>
 <tr>
 <td>RgNumber_RG</td>
 <td>RG number</td>
+<td></td>
 </tr>
 <tr>
 <td>IssuedBy_EXP</td>
 <td>Issued by</td>
+<td></td>
 </tr>
 <tr>
 <td>State_UF</td>
 <td>State</td>
+<td></td>
 </tr>
 <tr>
 <td>RgIssuingDate_RGDATE</td>
 <td>RG issuing date</td>
+<td></td>
 </tr>
 <tr>
 <td>RicNumber_RIC</td>
 <td>RIC number</td>
+<td></td>
 </tr>
 <tr>
 <td>ForeignNationalRegistration_RNE</td>
 <td>Foreign national registration</td>
+<td></td>
 </tr>
 <tr>
 <td>RneIssuingDate_RNEDATE</td>
 <td>RNE issuing date</td>
+<td></td>
 </tr>
 <tr>
 <td>Cnae_CNAE</td>
 <td>CNAE</td>
+<td></td>
 </tr>
 <tr>
 <td>LegalNature_LEGALNAT</td>
 <td>Legal nature</td>
+<td></td>
 </tr>
 <tr>
 <td>CrtNumber_CRTN</td>
 <td>CRT number</td>
+<td></td>
 </tr>
 <tr>
 <td>IcmsTaxpayer_ICMSTAXPAY</td>
 <td>ICMS taxpayer</td>
+<td></td>
 </tr>
 <tr>
 <td>IndustryMainType_INDTYP</td>
 <td>Industry main type</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxDeclarationType_TDT</td>
 <td>Tax declaration type</td>
+<td></td>
 </tr>
 <tr>
 <td>CompanySize_COMSIZE</td>
 <td>Company size</td>
+<td></td>
 </tr>
 <tr>
 <td>DeclarationRegimenForPiscofins_DECREGPC</td>
 <td>Declaration regimen for piscofins</td>
+<td></td>
 </tr>
 <tr>
 <td>AgencyLocationCode_ALC</td>
 <td>Agency location code</td>
+<td></td>
 </tr>
 <tr>
 <td>PaymentOffice_PMT_OFFICE</td>
 <td>Payment office</td>
+<td></td>
 </tr>
 <tr>
 <td>FeeSchedule_FEE_SCHEDULE</td>
 <td>Fee schedule</td>
+<td></td>
 </tr>
 <tr>
 <td>DunsNumber_DUNS</td>
 <td>DUNS number</td>
+<td></td>
 </tr>
 <tr>
 <td>Duns4_DUNS4</td>
 <td>DUNS4</td>
+<td></td>
 </tr>
 <tr>
 <td>ProcessorGroup_PSOFG</td>
 <td>Processor group</td>
+<td></td>
 </tr>
 <tr>
 <td>SubledgerAcctPreprocessingProcedure_PSOIS</td>
 <td>Subledger acct preprocessing procedure</td>
+<td></td>
 </tr>
 <tr>
 <td>Name1_PSON1</td>
 <td>Name 1</td>
+<td></td>
 </tr>
 <tr>
 <td>Name2_PSON2</td>
 <td>Name 2</td>
+<td></td>
 </tr>
 <tr>
 <td>Name3_PSON3</td>
 <td>Name 3</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstName_PSOVN</td>
 <td>First name</td>
+<td></td>
 </tr>
 <tr>
 <td>Title_PSOTL</td>
 <td>Title</td>
+<td></td>
 </tr>
 <tr>
 <td>Description_PSOO1</td>
 <td>Description 1</td>
+<td></td>
 </tr>
 <tr>
 <td>Description_PSOO2</td>
 <td>Description 2</td>
+<td></td>
 </tr>
 <tr>
 <td>Description_PSOO3</td>
 <td>Description 3</td>
+<td></td>
 </tr>
 <tr>
 <td>Description_PSOO4</td>
 <td>Description 4</td>
+<td></td>
 </tr>
 <tr>
 <td>Description_PSOO5</td>
 <td>Description 5</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidFromDate_DATE_FROM</td>
 <td>Valid from date</td>
+<td></td>
 </tr>
 <tr>
 <td>VersionIdForInternationalAddresses_NATION</td>
 <td>Version ID for international addresses</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidToDate_DATE_TO</td>
 <td>Valid to date</td>
+<td></td>
 </tr>
 <tr>
 <td>FormOfAddressKey_TITLE</td>
 <td>Form of address key</td>
+<td></td>
 </tr>
 <tr>
 <td>Addr_NAME1</td>
 <td>Address name 1</td>
+<td></td>
 </tr>
 <tr>
 <td>Addr_NAME2</td>
 <td>Address name 2</td>
+<td></td>
 </tr>
 <tr>
 <td>Addr_NAME3</td>
 <td>Address name 3</td>
+<td></td>
 </tr>
 <tr>
 <td>Addr_NAME4</td>
 <td>Address name 4</td>
+<td></td>
 </tr>
 <tr>
 <td>City_CITY1</td>
 <td>City 1</td>
+<td></td>
 </tr>
 <tr>
 <td>District_CITY2</td>
 <td>District 2</td>
+<td></td>
 </tr>
 <tr>
 <td>CityCodeForCitystreetFile_CITY_CODE</td>
 <td>City code for citystreet file</td>
+<td></td>
 </tr>
 <tr>
 <td>DistrictCodeForCityAndStreetFile_CITYP_CODE</td>
 <td>District code for city and street file</td>
+<td></td>
 </tr>
 <tr>
 <td>City_HOME_CITY</td>
 <td>City home city</td>
+<td></td>
 </tr>
 <tr>
 <td>DifferentCityForCitystreetFile_CITYH_CODE</td>
 <td>Different city for citystreet file</td>
+<td></td>
 </tr>
 <tr>
 <td>RegionalStructureGrouping_REGIOGROUP</td>
 <td>Regional structure grouping</td>
+<td></td>
 </tr>
 <tr>
 <td>CityPostalCode_POST_CODE1</td>
 <td>City postal code 1</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxPostalCode_POST_CODE2</td>
 <td>PO box postal code 2</td>
+<td></td>
 </tr>
 <tr>
 <td>CompanyPostalCode_POST_CODE3</td>
 <td>Company postal code 3</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBox_PO_BOX</td>
 <td>PO box</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxAddressUndeliverableFlag_DONT_USE_P</td>
 <td>PO box address undeliverable flag</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_PoBoxWithoutNumber_PO_BOX_NUM</td>
 <td>Flag - PO box without number</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxCity_PO_BOX_LOC</td>
 <td>PO box city</td>
+<td></td>
 </tr>
 <tr>
 <td>CityPoBoxCode_CityFile_CITY_CODE2</td>
 <td>City PO box code - city file</td>
+<td></td>
 </tr>
 <tr>
 <td>RegionForPoBox_PO_BOX_REG</td>
 <td>Region for PO box</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBoxCountry_PO_BOX_CTY</td>
 <td>PO box country</td>
+<td></td>
 </tr>
 <tr>
 <td>TransportationZoneToOrFromWhichTheGoodsAreDelivered_TRANSPZONE</td>
 <td>Transportation zone to or from which the goods are delivered</td>
+<td></td>
 </tr>
 <tr>
 <td>Street_STREET</td>
 <td>Street</td>
+<td></td>
 </tr>
 <tr>
 <td>StreetAddressUndeliverableFlag_DONT_USE_S</td>
 <td>Street address undeliverable flag</td>
+<td></td>
 </tr>
 <tr>
 <td>StreetNumberForCitystreetFile_STREETCODE</td>
 <td>Street number for citystreet file</td>
+<td></td>
 </tr>
 <tr>
 <td>HouseNumber_HOUSE_NUM1</td>
 <td>House number 1</td>
+<td></td>
 </tr>
 <tr>
 <td>HouseNumberSupplement_HOUSE_NUM2</td>
 <td>House number supplement</td>
+<td></td>
 </tr>
 <tr>
 <td>Street2_STR_SUPPL1</td>
 <td>Street 2</td>
+<td></td>
 </tr>
 <tr>
 <td>Street3_STR_SUPPL2</td>
 <td>Street 3</td>
+<td></td>
 </tr>
 <tr>
 <td>Street4_STR_SUPPL3</td>
 <td>Street 4</td>
+<td></td>
 </tr>
 <tr>
 <td>Street5_LOCATION</td>
 <td>Street 5</td>
+<td></td>
 </tr>
 <tr>
 <td>Building_NumberOrCode_BUILDING</td>
 <td>Building - number or code</td>
+<td></td>
 </tr>
 <tr>
 <td>FloorInBuilding_FLOOR</td>
 <td>Floor in building</td>
+<td></td>
 </tr>
 <tr>
 <td>RoomOrAppartmentNumber_ROOMNUMBER</td>
 <td>Room or appartment number</td>
+<td></td>
 </tr>
 <tr>
 <td>CountryKey_COUNTRY</td>
 <td>Country key</td>
+<td></td>
 </tr>
 <tr>
 <td>Language_LANGU</td>
 <td>Language</td>
+<td></td>
 </tr>
 <tr>
 <td>Region__REGION</td>
 <td>Region</td>
+<td></td>
 </tr>
 <tr>
 <td>AddressGroup_Key_BusinessAddressServices_ADDR_GROUP</td>
 <td>Address group - key - business address services</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_ThereAreMoreAddressGroupAssignments_FLAGGROUPS</td>
 <td>Flag - there are more address group assignments</td>
+<td></td>
 </tr>
 <tr>
 <td>Flag_ThisIsAPersonalAddress_PERS_ADDR</td>
 <td>Flag - this is a personal address</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchTerm1_SORT1</td>
 <td>Search term 1</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchTerm2_SORT2</td>
 <td>Search term 2</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstTelephoneNo_DiallingCodenumber_TEL_NUMBER</td>
 <td>First telephone no - dialling codenumber</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstTelephoneNo_Extension_TEL_EXTENS</td>
 <td>First telephone no - extension</td>
+<td></td>
 </tr>
 <tr>
 <td>CountyCodeForCounty_COUNTY_CODE</td>
 <td>County code for county</td>
+<td></td>
 </tr>
 <tr>
 <td>County_COUNTY</td>
 <td>County</td>
+<td></td>
 </tr>
 <tr>
 <td>TownshipCodeForTownship_TOWNSHIP_CODE</td>
 <td>Township code for township</td>
+<td></td>
 </tr>
 <tr>
 <td>Township_TOWNSHIP</td>
 <td>Township</td>
+<td></td>
 </tr>
 <tr>
 <td>CountyNameInUpperCaseForSearchHelp_MC_COUNTY</td>
 <td>County name in upper case for search help</td>
+<td></td>
 </tr>
 <tr>
 <td>TownshipNameInUpperCaseForSearchHelp_MC_TOWNSHIP</td>
 <td>Township name in upper case for search help</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessPurposeCompletedFlag_XPCPT</td>
 <td>Business purpose completed flag</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -6279,11 +6519,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Esta página foi útil?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opinião!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opnião! Ajude-nos a melhorar esta página usando nosso sistema de comentários abaixo.   
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentários</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

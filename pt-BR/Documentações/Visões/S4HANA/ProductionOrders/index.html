@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-39G1K9GM1S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-39G1K9GM1S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-39G1K9GM1S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -4040,18 +4050,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5220,18 +5230,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5284,7 +5294,7 @@
 
 <h1 id="productionorders">ProductionOrders</h1>
 <h2 id="arquivo-sql-de-origem-google-cloud-cortex-data-foundation">Arquivo SQL de origem - Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/ProductionOrders.sql">ProductionOrders</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/ProductionOrders.sql">ProductionOrders</a></p>
 <h2 id="visao-geral">Visão geral</h2>
 <p>Esta visão fornece uma visão geral abrangente das ordens de produção SAP e seus itens associados. Ela combina dados das tabelas AFKO, AFPO, AUFK, JEST e TJ02T para fornecer uma visão holística das informações relacionadas à ordem, incluindo status da ordem, detalhes de programação, requisitos de material e informações de custo.</p>
 <h2 id="fontes-de-dados">Fontes de Dados</h2>
@@ -5318,7 +5328,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="key-use-cases">Key Use Cases</h2>
+<h2 id="casos-de-uso">Casos de Uso</h2>
 <ul>
 <li>Monitorar o status e o progresso da ordem de produção</li>
 <li>Analisar o planejamento da ordem e o planejamento da capacidade</li>
@@ -5326,7 +5336,7 @@
 <li>Revisar estimativas de custo e custos reais</li>
 <li>Identificar gargalos e áreas para melhoria</li>
 </ul>
-<h2 id="query-logic">Query Logic</h2>
+<h2 id="logica-da-query">Lógica da Query</h2>
 <p>A visão combina dados de várias tabelas usando INNER JOINs para criar um conjunto de dados abrangente. A lógica da consulta garante que apenas dados relevantes sejam incluídos e que os relacionamentos entre as tabelas sejam mantidos.</p>
 <h2 id="possivel-relacao-com-transacoes-sap">Possível relação com transações SAP</h2>
 <table>
@@ -5367,1488 +5377,1874 @@
 <tr>
 <th>Campo</th>
 <th>Descrição do Campo</th>
+<th>Descrição no Dicionário SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderNumber_AUFNR</td>
 <td>Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>BasicFinishDate_GLTRP</td>
 <td>Basic Finish Date</td>
+<td></td>
 </tr>
 <tr>
 <td>BasicStartDate_GSTRP</td>
 <td>Basic Start Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledReleaseDate_FTRMS</td>
 <td>Scheduled Release Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledFinish_GLTRS</td>
 <td>Scheduled Finish</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledStart_GSTRS</td>
 <td>Scheduled Start</td>
+<td></td>
 </tr>
 <tr>
 <td>ActualStartDate_GSTRI</td>
 <td>Actual Start Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ConfirmedOrderFinishDate_GETRI</td>
 <td>Confirmed Order Finish Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ActualFinishDate_GLTRI</td>
 <td>Actual Finish Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ActualReleaseDate_FTRMI</td>
 <td>Actual Release Date</td>
+<td></td>
 </tr>
 <tr>
 <td>PlannedReleaseDate_FTRMP</td>
 <td>Planned Release Date</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfReservationdependentRequirements_RSNUM</td>
-<td>Number Of Reservationdependent Requirements</td>
+<td>Number Of Reservation-dependent Requirements</td>
+<td></td>
 </tr>
 <tr>
 <td>TotalScrapQuantityInTheOrder_GASMG</td>
 <td>Total Scrap Quantity In The Order</td>
+<td></td>
 </tr>
 <tr>
 <td>TotalOrderQuantity_GAMNG</td>
 <td>Total Order Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseUnitOfMeasure_GMEIN</td>
 <td>Base Unit Of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialNumber_PLNBEZ</td>
 <td>Material Number</td>
+<td></td>
 </tr>
 <tr>
 <td>TaskListType_PLNTY</td>
 <td>Task List Type</td>
+<td></td>
 </tr>
 <tr>
 <td>KeyForTaskListGroup_PLNNR</td>
 <td>Key For Task List Group</td>
+<td></td>
 </tr>
 <tr>
 <td>ApplicationOfTheTaskList_PLNAW</td>
 <td>Application Of The Task List</td>
+<td></td>
 </tr>
 <tr>
 <td>GroupCounter_PLNAL</td>
 <td>Group Counter</td>
+<td></td>
 </tr>
 <tr>
 <td>TaskListUsage_PVERW</td>
 <td>Task List Usage</td>
+<td></td>
 </tr>
 <tr>
 <td>DateForRoutingExplosion_PLAUF</td>
 <td>Date For Routing Explosion</td>
+<td></td>
 </tr>
 <tr>
 <td>ToLotSize_PLSVB</td>
 <td>To Lot Size</td>
+<td></td>
 </tr>
 <tr>
 <td>TaskListUnitOfMeasure_PLNME</td>
 <td>Task List Unit Of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>FromLotSize_PLSVN</td>
 <td>From Lot Size</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidFromDate_PDATV</td>
 <td>Valid From Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ChangeNumber_PAENR</td>
 <td>Change Number</td>
+<td></td>
 </tr>
 <tr>
 <td>ResponsiblePlannerGroupdepartment_PLGRP</td>
-<td>Responsible Planner Groupdepartment</td>
+<td>Responsible Planner Group/department</td>
+<td></td>
 </tr>
 <tr>
 <td>LotSizeDivisor_LODIV</td>
 <td>Lot Size Divisor</td>
+<td></td>
 </tr>
 <tr>
 <td>BomCategory_STLTY</td>
 <td>Bom Category</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialNumber_STLBEZ</td>
 <td>Material Number</td>
+<td></td>
 </tr>
 <tr>
 <td>BomStatus_STLST</td>
 <td>Bom Status</td>
+<td></td>
 </tr>
 <tr>
 <td>BillOfMaterial_STLNR</td>
 <td>Bill Of Material</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidFromDate_SDATV</td>
 <td>Valid From Date</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseQuantity_SBMNG</td>
 <td>Base Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseUnitOfMeasure_SBMEH</td>
 <td>Base Unit Of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>ChangeNumber_SAENR</td>
 <td>Change Number</td>
+<td></td>
 </tr>
 <tr>
 <td>AlternativeBom_STLAL</td>
 <td>Alternative Bom</td>
+<td></td>
 </tr>
 <tr>
 <td>BomUsage_STLAN</td>
 <td>Bom Usage</td>
+<td></td>
 </tr>
 <tr>
 <td>FromLotSize_SLSVN</td>
 <td>From Lot Size</td>
+<td></td>
 </tr>
 <tr>
 <td>ToLotSize_SLSBS</td>
 <td>To Lot Size</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOfBomExplosionroutingTransfer_AUFLD</td>
-<td>Date Of Bom Explosionrouting Transfer</td>
+<td>Date Of Bom Explosion/routing Transfer</td>
+<td></td>
 </tr>
 <tr>
 <td>MrpControllerForTheOrder_DISPO</td>
 <td>Mrp Controller For The Order</td>
+<td></td>
 </tr>
 <tr>
 <td>RoutingNumberOfOperationsInTheOrder_AUFPL</td>
 <td>Routing Number Of Operations In The Order</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductionSupervisor_FEVOR</td>
 <td>Production Supervisor</td>
+<td></td>
 </tr>
 <tr>
 <td>SchedulingMarginKeyForFloats_FHORI</td>
 <td>Scheduling Margin Key For Floats</td>
+<td></td>
 </tr>
 <tr>
 <td>SchedulingType_TERKZ</td>
 <td>Scheduling Type</td>
+<td></td>
 </tr>
 <tr>
 <td>ReductionIndicatorForScheduling_REDKZ</td>
 <td>Reduction Indicator For Scheduling</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderPriority_APRIO</td>
 <td>Order Priority</td>
+<td></td>
 </tr>
 <tr>
 <td>SuperiorNetworkNumber_NTZUE</td>
 <td>Superior Network Number</td>
+<td></td>
 </tr>
 <tr>
 <td>SuperiorActivity_VORUE</td>
 <td>Superior Activity</td>
+<td></td>
 </tr>
 <tr>
 <td>NetworkProfile_PROFID</td>
 <td>Network Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>FloatBeforeProductionInDays_VORGZ</td>
 <td>Float Before Production In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>FloatAfterProductionInDays_SICHZ</td>
 <td>Float After Production In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>ReleasePeriodInDays_FREIZ</td>
 <td>Release Period In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_ChangeToScheduledDates_UPTER</td>
-<td>Indicator</td>
+<td>Indicator: Change To Scheduled Dates</td>
+<td></td>
 </tr>
 <tr>
 <td>IdOfTheCapacityRequirementsRecord_BEDID</td>
 <td>Id Of The Capacity Requirements Record</td>
+<td></td>
 </tr>
 <tr>
 <td>ProjectDefinition_PRONR</td>
 <td>Project Definition</td>
+<td></td>
 </tr>
 <tr>
 <td>InternalCounter_ZAEHL</td>
 <td>Internal Counter</td>
+<td></td>
 </tr>
 <tr>
 <td>InternalCounter_MZAEHL</td>
 <td>Internal Counter</td>
+<td></td>
 </tr>
 <tr>
 <td>CounterForAdditionalCriteria_ZKRIZ</td>
 <td>Counter For Additional Criteria</td>
+<td></td>
 </tr>
 <tr>
 <td>InspectionLotNumber_PRUEFLOS</td>
 <td>Inspection Lot Number</td>
+<td></td>
 </tr>
 <tr>
 <td>CostingVariantForPlannedCosts_KLVARP</td>
 <td>Costing Variant For Planned Costs</td>
+<td></td>
 </tr>
 <tr>
 <td>CostingVariantForActualCosts_KLVARI</td>
 <td>Costing Variant For Actual Costs</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_BackflushingForOrder_RGEKZ</td>
-<td>Indicator</td>
+<td>Indicator: Backflushing For Order</td>
+<td></td>
 </tr>
 <tr>
 <td>BasisForScheduling_PLART</td>
 <td>Basis For Scheduling</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_Relationships_FLG_AOB</td>
-<td>Indicator</td>
+<td>Indicator: Relationships</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_DefaultValueWorkIsRelevant_FLG_ARBEI</td>
-<td>Indicator</td>
+<td>Indicator: Default Value Work Is Relevant</td>
+<td></td>
 </tr>
 <tr>
 <td>FinishDate__forecast___GLTPP</td>
-<td>Finish Date</td>
+<td>Finish Date (forecast)</td>
+<td></td>
 </tr>
 <tr>
 <td>ForecastStartDate_GSTPP</td>
 <td>Forecast Start Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledForecastFinish_GLTPS</td>
 <td>Scheduled Forecast Finish</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledForecastStart_GSTPS</td>
 <td>Scheduled Forecast Start</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledReleaseDate__forecast___FTRPS</td>
-<td>Scheduled Release Date</td>
+<td>Scheduled Release Date (forecast)</td>
+<td></td>
 </tr>
 <tr>
 <td>ReductionIndicatorForScheduling__forecast___RDKZP</td>
-<td>Reduction Indicator For Scheduling</td>
+<td>Reduction Indicator For Scheduling (forecast)</td>
+<td></td>
 </tr>
 <tr>
 <td>SchedulingType__forecast___TRKZP</td>
-<td>Scheduling Type</td>
+<td>Scheduling Type (forecast)</td>
+<td></td>
 </tr>
 <tr>
 <td>CompletionConfirmationNumberForTheOperation_RUECK</td>
 <td>Completion Confirmation Number For The Operation</td>
+<td></td>
 </tr>
 <tr>
 <td>InternalCounter_RMZHL</td>
 <td>Internal Counter</td>
+<td></td>
 </tr>
 <tr>
 <td>YieldConfirmedFromOrderConfirmation_IGMNG</td>
 <td>Yield Confirmed From Order Confirmation</td>
+<td></td>
 </tr>
 <tr>
 <td>IdOfTheCapacityRequirementsRecord_RATID</td>
 <td>Id Of The Capacity Requirements Record</td>
+<td></td>
 </tr>
 <tr>
 <td>IdOfTheCapacityRequirementsRecord_GROID</td>
 <td>Id Of The Capacity Requirements Record</td>
+<td></td>
 </tr>
 <tr>
 <td>Configuration__internalObjectNumber___CUOBJ</td>
-<td>Configuration</td>
+<td>Configuration (internal Object Number)</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledFinish__time___GLUZS</td>
-<td>Scheduled Finish</td>
+<td>Scheduled Finish (time)</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledStart__time___GSUZS</td>
-<td>Scheduled Start</td>
+<td>Scheduled Start (time)</td>
+<td></td>
 </tr>
 <tr>
 <td>RevisionLevel_REVLV</td>
 <td>Revision Level</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectTypesOfTheCimResource_RSHTY</td>
 <td>Object Types Of The Cim Resource</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectIdOfTheResource_RSHID</td>
 <td>Object Id Of The Resource</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectTypesOfTheCimResource_RSNTY</td>
 <td>Object Types Of The Cim Resource</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectIdOfTheResource_RSNID</td>
 <td>Object Id Of The Resource</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_DoNotScheduleAutomatically_NAUTERM</td>
-<td>Indicator</td>
+<td>Indicator: Do Not Schedule Automatically</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_DoNotCostAutomatically_NAUCOST</td>
-<td>Indicator</td>
+<td>Indicator: Do Not Cost Automatically</td>
+<td></td>
 </tr>
 <tr>
 <td>Level__inMultiLevelBomExplosions___STUFE</td>
-<td>Level</td>
+<td>Level (in Multi-Level Bom Explosions)</td>
+<td></td>
 </tr>
 <tr>
 <td>Path__forMultiLevelBomExplosions___WEGXX</td>
-<td>Path</td>
+<td>Path (for Multi-Level Bom Explosions)</td>
+<td></td>
 </tr>
 <tr>
 <td>Path__forMultiLevelBomExplosions___VWEGX</td>
-<td>Path</td>
+<td>Path (for Multi-Level Bom Explosions)</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfReservationdependentRequirements_ARSNR</td>
-<td>Number Of Reservationdependent Requirements</td>
+<td>Number Of Reservation-dependent Requirements</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderItemNumber_ARSPS</td>
 <td>Order Item Number</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfSuperiorOrder_MAUFNR</td>
 <td>Number Of Superior Order</td>
+<td></td>
 </tr>
 <tr>
 <td>LeftNodeInCollectiveOrder_LKNOT</td>
 <td>Left Node In Collective Order</td>
+<td></td>
 </tr>
 <tr>
 <td>RightNodeOfACollectiveOrder_RKNOT</td>
 <td>Right Node Of A Collective Order</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_OrderIsPartOfCollectiveOrder_PRODNET</td>
-<td>Indicator</td>
+<td>Indicator: Order Is Part Of Collective Order</td>
+<td></td>
 </tr>
 <tr>
 <td>ScrapConfirmedForOrder_IASMG</td>
 <td>Scrap Confirmed For Order</td>
+<td></td>
 </tr>
 <tr>
 <td>Confirmation_DegreeOfProcessing_ABARB</td>
-<td>Confirmation</td>
+<td>Confirmation: Degree Of Processing</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfSuperiorNetwork_AUFNT</td>
 <td>Number Of Superior Network</td>
+<td></td>
 </tr>
 <tr>
 <td>RoutingNumberOfOperationsInTheOrder_AUFPT</td>
 <td>Routing Number Of Operations In The Order</td>
+<td></td>
 </tr>
 <tr>
 <td>GeneralCounterForOrder_APLZT</td>
 <td>General Counter For Order</td>
+<td></td>
 </tr>
 <tr>
 <td>EffectiveForMaterialsPlanning_NO_DISP</td>
 <td>Effective For Materials Planning</td>
+<td></td>
 </tr>
 <tr>
 <td>ApportionmentStructure_CSPLIT</td>
 <td>Apportionment Structure</td>
+<td></td>
 </tr>
 <tr>
 <td>ChangeNumber_AENNR</td>
 <td>Change Number</td>
+<td></td>
 </tr>
 <tr>
 <td>SeqNumberOrder_CY_SEQNR</td>
 <td>Seq Number Order</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_SchedulingAllowingForBreaks_BREAKS</td>
-<td>Indicator</td>
+<td>Indicator: Scheduling Allowing For Breaks</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledFloatBeforeProductionInDays_VORGZ_TRM</td>
 <td>Scheduled Float Before Production In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledFloatAfterProductionInDays_SICHZ_TRM</td>
 <td>Scheduled Float After Production In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOfTheLastScheduling_TRMDT</td>
 <td>Date Of The Last Scheduling</td>
+<td></td>
 </tr>
 <tr>
 <td>BasicFinish__time___GLUZP</td>
-<td>Basic Finish</td>
+<td>Basic Finish (time)</td>
+<td></td>
 </tr>
 <tr>
 <td>BasicStart__time___GSUZP</td>
-<td>Basic Start</td>
+<td>Basic Start (time)</td>
+<td></td>
 </tr>
 <tr>
 <td>ActualStartTime_GSUZI</td>
 <td>Actual Start Time</td>
+<td></td>
 </tr>
 <tr>
 <td>ConfirmedOrderFinish__time___GEUZI</td>
-<td>Confirmed Order Finish</td>
+<td>Confirmed Order Finish (time)</td>
+<td></td>
 </tr>
 <tr>
 <td>ForecastFinish__time___GLUPP</td>
-<td>Forecast Finish</td>
+<td>Forecast Finish (time)</td>
+<td></td>
 </tr>
 <tr>
 <td>ForecastStart__time___GSUPP</td>
-<td>Forecast Start</td>
+<td>Forecast Start (time)</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledForecastFinishTime_GLUPS</td>
 <td>Scheduled Forecast Finish Time</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledStartTime__forecast___GSUPS</td>
-<td>Scheduled Start Time</td>
+<td>Scheduled Start Time (forecast)</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchProcedureForBatchDetermination_CHSCH</td>
 <td>Search Procedure For Batch Determination</td>
+<td></td>
 </tr>
 <tr>
 <td>Float__befProduction__RemainingAfterFiniteScheduling_KAPT_VORGZ</td>
-<td>Float</td>
+<td>Float (bef. Production) Remaining After Finite Scheduling</td>
+<td></td>
 </tr>
 <tr>
 <td>RemainingFloatAfterFiniteScheduling_KAPT_SICHZ</td>
 <td>Remaining Float After Finite Scheduling</td>
+<td></td>
 </tr>
 <tr>
 <td>LeadingOrderInCurrentProcessing_LEAD_AUFNR</td>
 <td>Leading Order In Current Processing</td>
+<td></td>
 </tr>
 <tr>
 <td>OutlineStartOfCollectiveOrder__date___PNETSTARTD</td>
-<td>Outline Start Of Collective Order</td>
+<td>Outline Start Of Collective Order (date)</td>
+<td></td>
 </tr>
 <tr>
 <td>OutlineStartOfCollectiveOrder__time___PNETSTARTT</td>
-<td>Outline Start Of Collective Order</td>
+<td>Outline Start Of Collective Order (time)</td>
+<td></td>
 </tr>
 <tr>
 <td>OutlineFinishOfCollectiveOrder__date___PNETENDD</td>
-<td>Outline Finish Of Collective Order</td>
+<td>Outline Finish Of Collective Order (date)</td>
+<td></td>
 </tr>
 <tr>
 <td>OutlineFinishOfCollectiveOrder__time___PNETENDT</td>
-<td>Outline Finish Of Collective Order</td>
+<td>Outline Finish Of Collective Order (time)</td>
+<td></td>
 </tr>
 <tr>
 <td>Ind_DoNotCreateCapacityRequirements_KBED</td>
-<td>Ind</td>
+<td>Ind: Do Not Create Capacity Requirements</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_ComponentsWillNotBeCosted_KKALKR</td>
-<td>Indicator</td>
+<td>Indicator: Components Will Not Be Costed</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductionSchedulingProfile_SFCPF</td>
 <td>Production Scheduling Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>TotalConfirmedReworkQuantity_RMNGA</td>
 <td>Total Confirmed Rework Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallCommitmentDate_GSBTR</td>
 <td>Overall Commitment Date</td>
+<td></td>
 </tr>
 <tr>
 <td>CommittedQuantityForOrderAfterAtpCheckComponents_VFMNG</td>
 <td>Committed Quantity For Order After Atp Check Components</td>
+<td></td>
 </tr>
 <tr>
 <td>DoNotCalculatePlannedCostsForOrder_NOPCOST</td>
 <td>Do Not Calculate Planned Costs For Order</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForTheAccountAssignmentOfANetwork__hdract___NETZKONT</td>
-<td>Indicator For The Account Assignment Of A Network</td>
+<td>Indicator For The Account Assignment Of A Network (hdract)</td>
+<td></td>
 </tr>
 <tr>
 <td>RequestId_ATRKZ</td>
 <td>Request Id</td>
+<td></td>
 </tr>
 <tr>
 <td>ChangeIndicator_OBJTYPE</td>
 <td>Change Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>ProcessThatHasLeadToTheChangeOfAnObject_CH_PROC</td>
 <td>Process That Has Lead To The Change Of An Object</td>
+<td></td>
 </tr>
 <tr>
 <td>VersionOfAvailableCapacity_KAPVERSA</td>
 <td>Version Of Available Capacity</td>
+<td></td>
 </tr>
 <tr>
 <td>CollectiveOrderWithwithoutAutomaticGoodsMovement_COLORDPROC</td>
-<td>Collective Order Withwithout Automatic Goods Movement</td>
+<td>Collective Order With/without Automatic Goods Movement</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_ProjectSummarizationViaMasterDataCharact_KZERB</td>
-<td>Indicator</td>
+<td>Indicator: Project Summarization Via Master Data Charact</td>
+<td></td>
 </tr>
 <tr>
 <td>IdenticalObject_CONF_KEY</td>
 <td>Identical Object</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectId_ST_ARBID</td>
 <td>Object Id</td>
+<td></td>
 </tr>
 <tr>
 <td>SalesDocumentVersionNumber_VSNMR_V</td>
 <td>Sales Document Version Number</td>
+<td></td>
 </tr>
 <tr>
 <td>SchedulingNoteFromOrderScheduling_TERHW</td>
 <td>Scheduling Note From Order Scheduling</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfAnOrderInASplitHierarchy_SPLSTAT</td>
 <td>Status Of An Order In A Split Hierarchy</td>
+<td></td>
 </tr>
 <tr>
 <td>CostsAreUpdated_COSTUPD</td>
 <td>Costs Are Updated</td>
+<td></td>
 </tr>
 <tr>
 <td>MaximumValueOfTotalOrderQuantityAfterDistribution_MAX_GAMNG</td>
 <td>Maximum Value Of Total Order Quantity After Distribution</td>
+<td></td>
 </tr>
 <tr>
 <td>KeyOfARoutingFromAnMeSystem_MES_ROUTINGID</td>
 <td>Key Of A Routing From An Me System</td>
+<td></td>
 </tr>
 <tr>
 <td>PmpsReferenceElement_ADPSP</td>
 <td>Pmps Reference Element</td>
+<td></td>
 </tr>
 <tr>
 <td>SalesAndDistributionDocumentNumber_RMANR</td>
 <td>Sales And Distribution Document Number</td>
+<td></td>
 </tr>
 <tr>
 <td>ItemNumberOfTheSdDocument_POSNR_RMA</td>
 <td>Item Number Of The Sd Document</td>
+<td></td>
 </tr>
 <tr>
 <td>ItemNumberOfTheSdDocument_POSNV_RMA</td>
 <td>Item Number Of The Sd Document</td>
+<td></td>
 </tr>
 <tr>
 <td>MaximumStoragePeriod_CFB_MAXLZ</td>
 <td>Maximum Storage Period</td>
+<td></td>
 </tr>
 <tr>
 <td>UnitForMaximumStoragePeriod_CFB_LZEIH</td>
 <td>Unit For Maximum Storage Period</td>
+<td></td>
 </tr>
 <tr>
 <td>AdditionalDays_CFB_ADTDAYS</td>
 <td>Additional Days</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOfManufacture_CFB_DATOFM</td>
 <td>Date Of Manufacture</td>
+<td></td>
 </tr>
 <tr>
 <td>BestBeforeDate__bbd__ShelfLifeExpirationDate__sled___CFB_BBDPI</td>
-<td>Best Before Date</td>
+<td>Best Before Date (bbd) / Shelf Life Expiration Date (sled)</td>
+<td></td>
 </tr>
 <tr>
 <td>ExciseDutyHandlingType_OIHANTYP</td>
 <td>Excise Duty Handling Type</td>
+<td></td>
 </tr>
 <tr>
 <td>MasterProductionOrderNumber_FSH_MPROD_ORD</td>
 <td>Master Production Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatesBundleInformationMaintained_FLG_BUNDLE</td>
 <td>Indicates Bundle Information Maintained</td>
+<td></td>
 </tr>
 <tr>
 <td>FactorForQuantityBasedSettlement_MILL_RATIO</td>
-<td>Factor For Quantity Based Settlement</td>
+<td>Factor For Quantity-Based Settlement</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseUnitOfMeasure_BMEINS</td>
 <td>Base Unit Of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseQuantity_BMENGE</td>
 <td>Base Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>CombinationIndicator_MILL_OC_ZUSKZ</td>
 <td>Combination Indicator</td>
-</tr>
-<tr>
-<td>OrderItemNumber_POSNR</td>
-<td>Order Item Number</td>
+<td></td>
 </tr>
 <tr>
 <td>SpecialProcurementType_PSOBS</td>
 <td>Special Procurement Type</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfQuotaArrangement_QUNUM</td>
 <td>Number Of Quota Arrangement</td>
+<td></td>
 </tr>
 <tr>
 <td>QuotaArrangementItem_QUPOS</td>
 <td>Quota Arrangement Item</td>
+<td></td>
 </tr>
 <tr>
 <td>WorkBreakdownStructureElement__wbsElement___PROJN</td>
-<td>Work Breakdown Structure Element</td>
+<td>Work Breakdown Structure Element (wbsElement)</td>
+<td></td>
 </tr>
 <tr>
 <td>PlannedOrderNumber_PLNUM</td>
 <td>Planned Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>StartDateOfPlannedOrder_STRMP</td>
 <td>Start Date Of Planned Order</td>
+<td></td>
 </tr>
 <tr>
 <td>OpeningDateOfThePlannedOrder_ETRMP</td>
 <td>Opening Date Of The Planned Order</td>
+<td></td>
 </tr>
 <tr>
 <td>SalesOrderNumber_KDAUF</td>
 <td>Sales Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>SalesOrderItem_KDPOS</td>
 <td>Sales Order Item</td>
+<td></td>
 </tr>
 <tr>
 <td>DeliveryScheduleForSalesOrder_KDEIN</td>
 <td>Delivery Schedule For Sales Order</td>
+<td></td>
 </tr>
 <tr>
 <td>ProcurementType_BESKZ</td>
 <td>Procurement Type</td>
+<td></td>
 </tr>
 <tr>
 <td>ScrapQuantityInItem_PSAMG</td>
 <td>Scrap Quantity In Item</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderItemQuantity_PSMNG</td>
 <td>Order Item Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>QuantityOfGoodsReceivedForTheOrderItem_WEMNG</td>
 <td>Quantity Of Goods Received For The Order Item</td>
+<td></td>
 </tr>
 <tr>
 <td>ExpectedSurplusdeficitForGoodsReceipt_IAMNG</td>
-<td>Expected Surplusdeficit For Goods Receipt</td>
+<td>Expected Surplus/deficit For Goods Receipt</td>
+<td></td>
 </tr>
 <tr>
 <td>UnitOfMeasureForInHouseProduction_AMEIN</td>
-<td>Unit Of Measure For In House Production</td>
+<td>Unit Of Measure For In-House Production</td>
+<td></td>
 </tr>
 <tr>
 <td>BaseUnitOfMeasure_MEINS</td>
 <td>Base Unit Of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>MaterialNumberForOrder_MATNR</td>
 <td>Material Number For Order</td>
+<td></td>
 </tr>
 <tr>
 <td>FixedQuantityOfScrapFromProduction_PAMNG</td>
 <td>Fixed Quantity Of Scrap From Production</td>
+<td></td>
 </tr>
 <tr>
 <td>TotalPlannedOrderQuantity_PGMNG</td>
 <td>Total Planned Order Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>AccountAssignmentCategory_KNTTP</td>
 <td>Account Assignment Category</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_PartialConversion_TPAUF</td>
-<td>Indicator</td>
+<td>Indicator: Partial Conversion</td>
+<td></td>
 </tr>
 <tr>
 <td>ActualDeliveryfinishDate_LTRMI</td>
-<td>Actual Deliveryfinish Date</td>
+<td>Actual Delivery/finish Date</td>
+<td></td>
 </tr>
 <tr>
 <td>DelivDateFrPlannedOrd_LTRMP</td>
-<td>Deliv Date Fr Planned Ord</td>
+<td>Deliv. Date Fr Planned Ord</td>
+<td></td>
 </tr>
 <tr>
 <td>CostEstimateNumberForCostEstWoQtyStructure_KALNR</td>
 <td>Cost Estimate Number For Cost Est Wo Qty Structure</td>
+<td></td>
 </tr>
 <tr>
 <td>OverdeliveryToleranceLimit_UEBTO</td>
 <td>Overdelivery Tolerance Limit</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_UnlimitedOverdeliveryAllowed_UEBTK</td>
-<td>Indicator</td>
+<td>Indicator: Unlimited Overdelivery Allowed</td>
+<td></td>
 </tr>
 <tr>
 <td>UnderdeliveryToleranceLimit_UNTTO</td>
 <td>Underdelivery Tolerance Limit</td>
+<td></td>
 </tr>
 <tr>
 <td>StockType_INSMK</td>
 <td>Stock Type</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsReceiptIndicator_WEPOS</td>
 <td>Goods Receipt Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>ValuationType_BWTAR</td>
 <td>Valuation Type</td>
+<td></td>
 </tr>
 <tr>
 <td>ValuationCategory_BWTTY</td>
 <td>Valuation Category</td>
+<td></td>
 </tr>
 <tr>
 <td>PlanningPlantForTheOrder_PWERK</td>
 <td>Planning Plant For The Order</td>
+<td></td>
 </tr>
 <tr>
 <td>StorageLocation_LGORT</td>
 <td>Storage Location</td>
+<td></td>
 </tr>
 <tr>
 <td>NumeratorForConversionToBaseUnitsOfMeasure_UMREZ</td>
 <td>Numerator For Conversion To Base Units Of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>DenominatorForConversionToBaseUnitsOfMeasure_UMREN</td>
 <td>Denominator For Conversion To Base Units Of Measure</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsReceiptProcessingTimeInDays_WEBAZ</td>
 <td>Goods Receipt Processing Time In Days</td>
+<td></td>
 </tr>
 <tr>
 <td>deliveryCompletedIndicator_ELIKZ</td>
-<td>delivery Completed Indicator</td>
+<td>deliveryCompletedIndicator</td>
+<td></td>
 </tr>
 <tr>
 <td>RunScheduleHeaderNumber_SAFNR</td>
 <td>Run Schedule Header Number</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductionVersion_VERID</td>
 <td>Production Version</td>
+<td></td>
 </tr>
 <tr>
 <td>BomExplosionNumber_SERNR</td>
 <td>Bom Explosion Number</td>
+<td></td>
 </tr>
 <tr>
 <td>ParameterVariantstandardVariant_TECHS</td>
-<td>Parameter Variantstandard Variant</td>
+<td>Parameter Variant/standard Variant</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_DWERK</td>
 <td>Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderCategory_DAUTY</td>
 <td>Order Category</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderType_DAUAT</td>
 <td>Order Type</td>
+<td></td>
 </tr>
 <tr>
 <td>BasicFinishDate_DGLTP</td>
 <td>Basic Finish Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ScheduledFinish_DGLTS</td>
 <td>Scheduled Finish</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_OrderReleasedpartiallyReleased__forMrp___DFREI</td>
-<td>Indicator</td>
+<td>Indicator: Order Released/partially Released (for Mrp)</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_OrderItemNotRelevantForMrp_DNREL</td>
-<td>Indicator</td>
+<td>Indicator: Order Item Not Relevant For Mrp</td>
+<td></td>
 </tr>
 <tr>
 <td>MrpDistributionKey_VERTO</td>
 <td>Mrp Distribution Key</td>
+<td></td>
 </tr>
 <tr>
 <td>SpecialStockIndicator_SOBKZ</td>
 <td>Special Stock Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>ConsumptionPosting_KZVBR</td>
 <td>Consumption Posting</td>
+<td></td>
 </tr>
 <tr>
 <td>ValueOfGoodsReceivedInLocalCurrency_WEWRT</td>
 <td>Value Of Goods Received In Local Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsReceipt_NonValuated_WEUNB</td>
-<td>Goods Receipt</td>
+<td>Goods Receipt (Non-Valuated)</td>
+<td></td>
 </tr>
 <tr>
 <td>UnloadingPoint_ABLAD</td>
 <td>Unloading Point</td>
+<td></td>
 </tr>
 <tr>
 <td>GoodsRecipient_WEMPF</td>
 <td>Goods Recipient</td>
+<td></td>
 </tr>
 <tr>
 <td>BatchNumber_CHARG</td>
 <td>Batch Number</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessArea_GSBER</td>
 <td>Business Area</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_GoodsReceiptIndicatorCanBeChanged_WEAED</td>
-<td>Indicator</td>
+<td>Indicator: Goods Receipt Indicator Can Be Changed</td>
+<td></td>
 </tr>
 <tr>
 <td>KanbanIndicator_KBNKZ</td>
 <td>Kanban Indicator</td>
+<td></td>
+</tr>
+<tr>
+<td>SettlementReservationNumber_ARSNR</td>
+<td>Settlement Reservation Number</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemNumberOfTheSettlementReservation_ARSPS</td>
+<td>Item Number Of The Settlement Reservation</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfReservationdependentRequirements_KRSNR</td>
-<td>Number Of Reservationdependent Requirements</td>
+<td>Number Of Reservation-dependent Requirements</td>
+<td></td>
 </tr>
 <tr>
 <td>ItemNumberOfReservationDependentRequirements_KRSPS</td>
 <td>Item Number Of Reservation Dependent Requirements</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorKey_KCKEY</td>
 <td>Cost Collector Key</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorForRepetitiveManufacturing_RTP01</td>
 <td>Cost Collector For Repetitive Manufacturing</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorForKanban_RTP02</td>
 <td>Cost Collector For Kanban</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorForValuatedSalesOrderStock_RTP03</td>
 <td>Cost Collector For Valuated Sales Order Stock</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorForExternalPpc_RTP04</td>
 <td>Cost Collector For External Ppc</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorValidFrom_KSVON</td>
 <td>Cost Collector Valid From</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorValidTo_KSBIS</td>
 <td>Cost Collector Valid To</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectNumber_OBJNP</td>
 <td>Object Number</td>
+<td></td>
 </tr>
 <tr>
 <td>Ind_MaterialInOrderItemIsNotRelevantForMrp_NDISR</td>
-<td>Ind</td>
+<td>Ind: Material In Order Item Is Not Relevant For Mrp</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForTypeOfAvailabilityCheck_KZAVC</td>
 <td>Indicator For Type Of Availability Check</td>
+<td></td>
 </tr>
 <tr>
 <td>ValuationOfSpecialStock_KZBWS</td>
 <td>Valuation Of Special Stock</td>
+<td></td>
 </tr>
 <tr>
 <td>DeletionFlag_XLOEK</td>
 <td>Deletion Flag</td>
+<td></td>
 </tr>
 <tr>
 <td>SerialNumberProfile_SERNP</td>
 <td>Serial Number Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfSerialNumbers_ANZSN</td>
 <td>Number Of Serial Numbers</td>
+<td></td>
 </tr>
 <tr>
 <td>FixedPriceCoProduct_FXPRU</td>
-<td>Fixed Price Co Product</td>
+<td>Fixed Price Co-Product</td>
+<td></td>
 </tr>
 <tr>
 <td>Configuration__internalObjectNumber___CUOBJ_ROOT</td>
-<td>Configuration</td>
+<td>Configuration (internal Object Number)</td>
+<td></td>
 </tr>
 <tr>
 <td>MrpArea_BERID</td>
 <td>Mrp Area</td>
+<td></td>
 </tr>
 <tr>
 <td>ParameterVariantstandardVariant_TECHS_COPY</td>
-<td>Parameter Variantstandard Variant</td>
+<td>Parameter Variant/standard Variant</td>
+<td></td>
 </tr>
 <tr>
 <td>StockSegment_SGT_SCAT</td>
 <td>Stock Segment</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerNumber_KUNNR2</td>
 <td>Customer Number</td>
+<td></td>
 </tr>
 <tr>
 <td>SeasonYear_FSH_SEASON_YEAR</td>
 <td>Season Year</td>
+<td></td>
 </tr>
 <tr>
 <td>Season_FSH_SEASON</td>
 <td>Season</td>
+<td></td>
 </tr>
 <tr>
 <td>FashionCollection_FSH_COLLECTION</td>
 <td>Fashion Collection</td>
+<td></td>
 </tr>
 <tr>
 <td>FashionTheme_FSH_THEME</td>
 <td>Fashion Theme</td>
+<td></td>
 </tr>
 <tr>
 <td>AllocatedStockQuantity_FSH_SALLOC_QTY</td>
 <td>Allocated Stock Quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfOriginalOrder_MILL_OC_AUFNR_U</td>
 <td>Number Of Original Order</td>
+<td></td>
 </tr>
 <tr>
 <td>ConfirmedQuantityForItem_MILL_OC_RUMNG</td>
 <td>Confirmed Quantity For Item</td>
+<td></td>
 </tr>
 <tr>
 <td>ItemSequence_MILL_OC_SORT</td>
 <td>Item Sequence</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderType_AUART</td>
 <td>Order Type</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderCategory_AUTYP</td>
 <td>Order Category</td>
+<td></td>
 </tr>
 <tr>
 <td>ReferenceOrderNumber_REFNR</td>
 <td>Reference Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>EnteredBy_ERNAM</td>
 <td>Entered By</td>
+<td></td>
 </tr>
 <tr>
 <td>CreatedOn_ERDAT</td>
 <td>Created On</td>
+<td></td>
 </tr>
 <tr>
 <td>LastChangedBy_AENAM</td>
 <td>Last Changed By</td>
+<td></td>
 </tr>
 <tr>
 <td>ChangeDateForOrderMaster_AEDAT</td>
 <td>Change Date For Order Master</td>
+<td></td>
 </tr>
 <tr>
 <td>Description_KTEXT</td>
 <td>Description</td>
+<td></td>
 </tr>
 <tr>
 <td>LongTextExists_LTEXT</td>
 <td>Long Text Exists</td>
+<td></td>
 </tr>
 <tr>
 <td>CompanyCode_BUKRS</td>
 <td>Company Code</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_WERKS</td>
 <td>Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>ControllingArea_KOKRS</td>
 <td>Controlling Area</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorKey_CCKEY</td>
 <td>Cost Collector Key</td>
+<td></td>
 </tr>
 <tr>
 <td>ResponsibleCostCenter_KOSTV</td>
 <td>Responsible Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>Location_STORT</td>
 <td>Location</td>
+<td></td>
 </tr>
 <tr>
 <td>LocationPlant_SOWRK</td>
 <td>Location Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>IdentifierForStatisticalOrder_ASTKZ</td>
 <td>Identifier For Statistical Order</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderCurrency_WAERS</td>
 <td>Order Currency</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderStatus_ASTNR</td>
 <td>Order Status</td>
+<td></td>
 </tr>
 <tr>
 <td>DateOfLastStatusChange_STDAT</td>
 <td>Date Of Last Status Change</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusReachedSoFar_ESTNR</td>
 <td>Status Reached So Far</td>
+<td></td>
 </tr>
 <tr>
 <td>PhaseorderCreated_PHAS0</td>
-<td>Phaseorder Created</td>
+<td>Phase/order Created</td>
+<td></td>
 </tr>
 <tr>
 <td>PhaseorderReleased_PHAS1</td>
-<td>Phaseorder Released</td>
+<td>Phase/order Released</td>
+<td></td>
 </tr>
 <tr>
 <td>PhaseorderCompleted_PHAS2</td>
-<td>Phaseorder Completed</td>
+<td>Phase/order Completed</td>
+<td></td>
 </tr>
 <tr>
 <td>PhaseorderClosed_PHAS3</td>
-<td>Phaseorder Closed</td>
+<td>Phase/order Closed</td>
+<td></td>
 </tr>
 <tr>
 <td>PlannedReleaseDate_PDAT1</td>
 <td>Planned Release Date</td>
+<td></td>
 </tr>
 <tr>
 <td>PlannedCompletionDate_PDAT2</td>
 <td>Planned Completion Date</td>
+<td></td>
 </tr>
 <tr>
 <td>PlannedClosingDate_PDAT3</td>
 <td>Planned Closing Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ReleaseDate_IDAT1</td>
 <td>Release Date</td>
+<td></td>
 </tr>
 <tr>
 <td>TechnicalCompletionDate_IDAT2</td>
 <td>Technical Completion Date</td>
+<td></td>
 </tr>
 <tr>
 <td>CloseDate_IDAT3</td>
 <td>Close Date</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectId_OBJID</td>
 <td>Object Id</td>
+<td></td>
 </tr>
 <tr>
 <td>GroupOfDisallowedTransactions_VOGRP</td>
 <td>Group Of Disallowed Transactions</td>
+<td></td>
 </tr>
 <tr>
 <td>DeletionFlag_LOEKZ</td>
 <td>Deletion Flag</td>
+<td></td>
 </tr>
 <tr>
 <td>IdentifierForPlanningWithLineItems_PLGKZ</td>
 <td>Identifier For Planning With Line Items</td>
+<td></td>
 </tr>
 <tr>
 <td>UsageOfTheConditionTable_KVEWE</td>
 <td>Usage Of The Condition Table</td>
+<td></td>
 </tr>
 <tr>
 <td>Application_KAPPL</td>
 <td>Application</td>
+<td></td>
 </tr>
 <tr>
 <td>CostingSheet_KALSM</td>
 <td>Costing Sheet</td>
+<td></td>
 </tr>
 <tr>
 <td>OverheadKey_ZSCHL</td>
 <td>Overhead Key</td>
+<td></td>
 </tr>
 <tr>
 <td>ProcessingGroup_ABKRS</td>
 <td>Processing Group</td>
+<td></td>
 </tr>
 <tr>
 <td>SettlementCostElement_KSTAR</td>
 <td>Settlement Cost Element</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCenterForBasicSettlement_KOSTL</td>
 <td>Cost Center For Basic Settlement</td>
+<td></td>
 </tr>
 <tr>
 <td>GlAccountForBasicSettlement_SAKNR</td>
 <td>Gl Account For Basic Settlement</td>
+<td></td>
 </tr>
 <tr>
 <td>AllocationSet_SETNM</td>
 <td>Allocation Set</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCenterToWhichCostsAreActuallyPosted_CYCLE</td>
 <td>Cost Center To Which Costs Are Actually Posted</td>
+<td></td>
 </tr>
 <tr>
 <td>StartDate_SDATE</td>
 <td>Start Date</td>
+<td></td>
 </tr>
 <tr>
 <td>SequenceNumber_SEQNR</td>
 <td>Sequence Number</td>
+<td></td>
 </tr>
 <tr>
 <td>Applicant_USER0</td>
 <td>Applicant</td>
+<td></td>
 </tr>
 <tr>
 <td>ApplicantsTelephoneNumber_USER1</td>
-<td>Applicants Telephone Number</td>
+<td>Applicant's Telephone Number</td>
+<td></td>
 </tr>
 <tr>
 <td>PersonResponsible_USER2</td>
 <td>Person Responsible</td>
+<td></td>
 </tr>
 <tr>
 <td>TelephoneNumberOfPersonInCharge_USER3</td>
 <td>Telephone Number Of Person In Charge</td>
+<td></td>
 </tr>
 <tr>
 <td>EstimatedTotalCostsOfOrder_USER4</td>
 <td>Estimated Total Costs Of Order</td>
+<td></td>
 </tr>
 <tr>
 <td>ApplicationDate_USER5</td>
 <td>Application Date</td>
+<td></td>
 </tr>
 <tr>
 <td>Department_USER6</td>
 <td>Department</td>
+<td></td>
 </tr>
 <tr>
 <td>WorkStart_USER7</td>
 <td>Work Start</td>
+<td></td>
 </tr>
 <tr>
 <td>EndOfWork_USER8</td>
 <td>End Of Work</td>
+<td></td>
 </tr>
 <tr>
 <td>IdentifierForWorkPermitIssued_USER9</td>
 <td>Identifier For Work Permit Issued</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectNumber_OBJNR</td>
 <td>Object Number</td>
+<td></td>
 </tr>
 <tr>
 <td>ProfitCenter_PRCTR</td>
 <td>Profit Center</td>
+<td></td>
 </tr>
 <tr>
 <td>WorkBreakdownStructureElement__wbsElement___PSPEL</td>
-<td>Work Breakdown Structure Element</td>
+<td>Work Breakdown Structure Element (wbsElement)</td>
+<td></td>
 </tr>
 <tr>
 <td>VarianceKey_AWSLS</td>
 <td>Variance Key</td>
+<td></td>
 </tr>
 <tr>
 <td>ResultsAnalysisKey_ABGSL</td>
 <td>Results Analysis Key</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxJurisdiction_TXJCD</td>
 <td>Tax Jurisdiction</td>
+<td></td>
 </tr>
 <tr>
 <td>FunctionalArea_FUNC_AREA</td>
 <td>Functional Area</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectClass_SCOPE</td>
 <td>Object Class</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForIntegratedPlanning_PLINT</td>
 <td>Indicator For Integrated Planning</td>
+<td></td>
+</tr>
+<tr>
+<td>ItemNumberInSalesOrder_KDPOS</td>
+<td>Item Number In Sales Order</td>
+<td></td>
 </tr>
 <tr>
 <td>ExternalOrderNumber_AUFEX</td>
 <td>External Order Number</td>
+<td></td>
 </tr>
 <tr>
 <td>InvestmentMeasureProfile_IVPRO</td>
 <td>Investment Measure Profile</td>
+<td></td>
 </tr>
 <tr>
 <td>LogicalSystem_LOGSYSTEM</td>
 <td>Logical System</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderWithMultipleItems_FLG_MLTPS</td>
 <td>Order With Multiple Items</td>
+<td></td>
 </tr>
 <tr>
 <td>RequestingCompanyCode_ABUKR</td>
 <td>Requesting Company Code</td>
+<td></td>
 </tr>
 <tr>
 <td>RequestingCostCenter_AKSTL</td>
 <td>Requesting Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>ScaleOfInvestmentObjects_SIZECL</td>
 <td>Scale Of Investment Objects</td>
+<td></td>
 </tr>
 <tr>
 <td>ReasonForInvestment_IZWEK</td>
 <td>Reason For Investment</td>
+<td></td>
 </tr>
 <tr>
 <td>ReasonForEnvironmentalInvestment_UMWKZ</td>
 <td>Reason For Environmental Investment</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_DirectCostCollector_KSTEMPF</td>
-<td>Indicator</td>
+<td>Indicator: Direct Cost Collector</td>
+<td></td>
 </tr>
 <tr>
 <td>InterestProfileForProjectorderInterestCalculation_ZSCHM</td>
-<td>Interest Profile For Projectorder Interest Calculation</td>
+<td>Interest Profile For Project/order Interest Calculation</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorForProductionProcessProcnr_PKOSA</td>
 <td>Cost Collector For Production Process Procnr</td>
+<td></td>
 </tr>
 <tr>
 <td>RequestingOrder_ANFAUFNR</td>
 <td>Requesting Order</td>
+<td></td>
 </tr>
 <tr>
 <td>ProductionProcess_PROCNR</td>
 <td>Production Process</td>
+<td></td>
 </tr>
 <tr>
 <td>ProcessCategory__procurementconsumption___PROTY</td>
-<td>Process Category</td>
+<td>Process Category (procurement/consumption)</td>
+<td></td>
 </tr>
 <tr>
 <td>RefurbishmentOrderIndicator__pm___RSORD</td>
-<td>Refurbishment Order Indicator</td>
+<td>Refurbishment Order Indicator (pm)</td>
+<td></td>
 </tr>
 <tr>
 <td>AccountingIndicator_BEMOT</td>
 <td>Accounting Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>AddressNumber_ADRNRA</td>
 <td>Address Number</td>
+<td></td>
 </tr>
 <tr>
 <td>TimeCreated_ERFZEIT</td>
 <td>Time Created</td>
+<td></td>
 </tr>
 <tr>
 <td>ChangedAt_AEZEIT</td>
 <td>Changed At</td>
+<td></td>
 </tr>
 <tr>
 <td>CostingVariant_CSTG_VRNT</td>
 <td>Costing Variant</td>
+<td></td>
 </tr>
 <tr>
 <td>CostEstimateNumberForCostEstWoQtyStructure_COSTESTNR</td>
 <td>Cost Estimate Number For Cost Est Wo Qty Structure</td>
+<td></td>
 </tr>
 <tr>
 <td>PersonResponsibleForCoInternalOrder_VERAA_USER</td>
-<td>Person Responsible For Co Internal Order</td>
+<td>Person Responsible For Co-Internal Order</td>
+<td></td>
 </tr>
 <tr>
 <td>JointVenture_VNAME</td>
 <td>Joint Venture</td>
+<td></td>
 </tr>
 <tr>
 <td>RecoveryIndicator_RECID</td>
 <td>Recovery Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>EquityType_ETYPE</td>
 <td>Equity Type</td>
+<td></td>
 </tr>
 <tr>
 <td>JointVentureObjectType_OTYPE</td>
 <td>Joint Venture Object Type</td>
+<td></td>
 </tr>
 <tr>
 <td>JibjibeClass_JV_JIBCL</td>
 <td>Jibjibe Class</td>
+<td></td>
 </tr>
 <tr>
 <td>JibjibeSubclassA_JV_JIBSA</td>
 <td>Jibjibe Subclass A</td>
+<td></td>
 </tr>
 <tr>
 <td>JvOriginalCostObject_JV_OCO</td>
 <td>Jv Original Cost Object</td>
+<td></td>
 </tr>
 <tr>
 <td>Cu_OrderIsUsedForCompatibleUnits_CUM_INDCU</td>
-<td>Cu</td>
+<td>Cu: Order Is Used For Compatible Units</td>
+<td></td>
 </tr>
 <tr>
 <td>Cu_ConstructionMeasureNumber_CUM_CMNUM</td>
-<td>Cu</td>
+<td>Cu: Construction Measure Number</td>
+<td></td>
 </tr>
 <tr>
 <td>Cu_AutomaticCopyOfEstimatedCosts_CUM_AUEST</td>
-<td>Cu</td>
+<td>Cu: Automatic Copy Of Estimated Costs</td>
+<td></td>
 </tr>
 <tr>
 <td>Cu_DesignNumber_CUM_DESNUM</td>
-<td>Cu</td>
+<td>Cu: Design Number</td>
+<td></td>
 </tr>
 <tr>
 <td>MainWorkCenterForMaintenanceTasks_VAPLZ</td>
 <td>Main Work Center For Maintenance Tasks</td>
+<td></td>
 </tr>
 <tr>
 <td>PlantAssociatedWithMainWorkCenter_WAWRK</td>
 <td>Plant Associated With Main Work Center</td>
+<td></td>
 </tr>
 <tr>
 <td>RegulatoryIndicator_FERC_IND</td>
 <td>Regulatory Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>ClaimCreationControlIndicator_CLAIM_CONTROL</td>
 <td>Claim Creation Control Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>ClaimInconsistencyWithOrderIndicator_UPDATE_NEEDED</td>
 <td>Claim Inconsistency With Order Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>ClaimUpdateTriggerPointFromServiceOrder_UPDATE_CONTROL</td>
 <td>Claim Update Trigger Point From Service Order</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectStatus_STAT</td>
 <td>Object Status</td>
+<td></td>
 </tr>
 <tr>
 <td>Indicator_StatusIsInactive_INACT</td>
-<td>Indicator</td>
+<td>Indicator: Status Is Inactive</td>
+<td></td>
 </tr>
 <tr>
 <td>ChangeNumber_CHGNR</td>
 <td>Change Number</td>
+<td></td>
 </tr>
 <tr>
 <td>DataFilterValueForDataAging__DATAAGING</td>
 <td>Data Filter Value For Data Aging</td>
+<td></td>
 </tr>
 <tr>
-<td>LanguageKey_SPRAS</td>
-<td>Language Key</td>
+<td>SystemStatus_ISTAT</td>
+<td>System Status</td>
+<td></td>
+</tr>
+<tr>
+<td>IndividualStatusOfAnObject__shortForm___TXT04</td>
+<td>Individual Status Of An Object (short Form)</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectStatus_TXT30</td>
 <td>Object Status</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -6859,11 +7255,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Esta página foi útil?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opinião!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opnião! Ajude-nos a melhorar esta página usando nosso sistema de comentários abaixo.   
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentários</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

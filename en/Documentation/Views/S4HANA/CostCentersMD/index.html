@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-CKB6DG2VCB"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-CKB6DG2VCB",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-CKB6DG2VCB",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -5284,7 +5294,7 @@
 
 <h1 id="costcentersmd">CostCentersMD</h1>
 <h2 id="source-sql-file-google-cloud-cortex-data-foundation">Source SQL File - Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/CostCentersMD.sql">CostCentersMD</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/CostCentersMD.sql">CostCentersMD</a></p>
 <h2 id="overview">Overview</h2>
 <p>This view is a reporting view for SAP systems that provides information about cost centers.</p>
 <h2 id="data-sources">Data Sources</h2>
@@ -5345,324 +5355,404 @@
 <tr>
 <th>Field</th>
 <th>Field Description</th>
+<th>Description in SAP Dictionary (Comming soon)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
 <td>ControllingArea_KOKRS</td>
 <td>Controlling Area</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCenter_KOSTL</td>
 <td>Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidTo_DATBI</td>
 <td>Valid To</td>
+<td></td>
 </tr>
 <tr>
 <td>ValidFromDate_DATAB</td>
 <td>Valid From Date</td>
+<td></td>
 </tr>
 <tr>
 <td>LockIndicatorForActualPrimaryPostings_BKZKP</td>
 <td>Lock Indicator For Actual Primary Postings</td>
+<td></td>
 </tr>
 <tr>
 <td>LockIndicatorForPlanPrimaryCosts_PKZKP</td>
 <td>Lock Indicator For Plan Primary Costs</td>
+<td></td>
 </tr>
 <tr>
 <td>CompanyCode_BUKRS</td>
 <td>Company Code</td>
+<td></td>
 </tr>
 <tr>
 <td>BusinessArea_GSBER</td>
 <td>Business Area</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCenterCategory_KOSAR</td>
 <td>Cost Center Category</td>
+<td></td>
 </tr>
 <tr>
 <td>PersonResponsible_VERAK</td>
 <td>Person Responsible</td>
+<td></td>
 </tr>
 <tr>
 <td>UserResponsible_VERAK_USER</td>
 <td>User Responsible</td>
+<td></td>
 </tr>
 <tr>
 <td>CurrencyKey_WAERS</td>
 <td>Currency Key</td>
+<td></td>
 </tr>
 <tr>
 <td>CostingSheet_KALSM</td>
 <td>Costing Sheet</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxJurisdiction_TXJCD</td>
 <td>Tax Jurisdiction</td>
+<td></td>
 </tr>
 <tr>
 <td>ProfitCenter_PRCTR</td>
 <td>Profit Center</td>
+<td></td>
 </tr>
 <tr>
 <td>Plant_WERKS</td>
 <td>Plant</td>
+<td></td>
 </tr>
 <tr>
 <td>LogicalSystem_LOGSYSTEM</td>
 <td>Logical System</td>
+<td></td>
 </tr>
 <tr>
 <td>CreatedOn_ERSDA</td>
 <td>Created On</td>
+<td></td>
 </tr>
 <tr>
 <td>EnteredBy_USNAM</td>
 <td>Entered By</td>
+<td></td>
 </tr>
 <tr>
 <td>LockIndicatorForActualSecondaryCosts_BKZKS</td>
 <td>Lock Indicator For Actual Secondary Costs</td>
+<td></td>
 </tr>
 <tr>
 <td>LockIndicatorForActualRevenuePostings_BKZER</td>
 <td>Lock Indicator For Actual Revenue Postings</td>
+<td></td>
 </tr>
 <tr>
 <td>LockIndicatorForCommitmentUpdate_BKZOB</td>
 <td>Lock Indicator For Commitment Update</td>
+<td></td>
 </tr>
 <tr>
 <td>LockIndicatorForPlanSecondaryCosts_PKZKS</td>
 <td>Lock Indicator For Plan Secondary Costs</td>
+<td></td>
 </tr>
 <tr>
 <td>LockIndicatorForPlanningRevenues_PKZER</td>
 <td>Lock Indicator For Planning Revenues</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForAllowedAllocationMethods_VMETH</td>
 <td>Indicator For Allowed Allocation Methods</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForRecordingConsumptionQuantities_MGEFL</td>
 <td>Indicator For Recording Consumption Quantities</td>
+<td></td>
 </tr>
 <tr>
 <td>Department_ABTEI</td>
 <td>Department</td>
+<td></td>
 </tr>
 <tr>
 <td>SubsequentCostCenter_NKOST</td>
 <td>Subsequent Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>UsageOfTheConditionTable_KVEWE</td>
 <td>Usage Of The Condition Table</td>
+<td></td>
 </tr>
 <tr>
 <td>Application_KAPPL</td>
 <td>Application</td>
+<td></td>
 </tr>
 <tr>
 <td>CoCcaOverheadKey_KOSZSCHL</td>
-<td>Co Cca Overhead Key</td>
+<td>CoCca Overhead Key</td>
+<td></td>
 </tr>
 <tr>
 <td>CountryKey_LAND1</td>
 <td>Country Key</td>
+<td></td>
 </tr>
 <tr>
 <td>Title_ANRED</td>
 <td>Title</td>
+<td></td>
 </tr>
 <tr>
 <td>Name1_NAME1</td>
 <td>Name1</td>
+<td></td>
 </tr>
 <tr>
 <td>Name2_NAME2</td>
 <td>Name2</td>
+<td></td>
 </tr>
 <tr>
 <td>Name3_NAME3</td>
 <td>Name3</td>
+<td></td>
 </tr>
 <tr>
 <td>Name4_NAME4</td>
 <td>Name4</td>
+<td></td>
 </tr>
 <tr>
 <td>City_ORT01</td>
 <td>City</td>
+<td></td>
 </tr>
 <tr>
 <td>District_ORT02</td>
 <td>District</td>
+<td></td>
 </tr>
 <tr>
 <td>StreetAndHouseNumber_STRAS</td>
 <td>Street And House Number</td>
+<td></td>
 </tr>
 <tr>
 <td>PoBox_PFACH</td>
 <td>Po Box</td>
+<td></td>
 </tr>
 <tr>
 <td>PostalCode_PSTLZ</td>
 <td>Postal Code</td>
+<td></td>
 </tr>
 <tr>
 <td>POBoxPostalCode_PSTL2</td>
 <td>PO Box Postal Code</td>
+<td></td>
 </tr>
 <tr>
 <td>Region_REGIO</td>
 <td>Region</td>
+<td></td>
 </tr>
 <tr>
 <td>LanguageKey_SPRAS</td>
 <td>Language Key</td>
+<td></td>
 </tr>
 <tr>
 <td>TeleboxNumber_TELBX</td>
 <td>Telebox Number</td>
+<td></td>
 </tr>
 <tr>
 <td>FirstTelephoneNumber_TELF1</td>
 <td>First Telephone Number</td>
+<td></td>
 </tr>
 <tr>
 <td>SecondTelephoneNumber_TELF2</td>
 <td>Second Telephone Number</td>
+<td></td>
 </tr>
 <tr>
 <td>FaxNumber_TELFX</td>
 <td>Fax Number</td>
+<td></td>
 </tr>
 <tr>
 <td>TeletexNumber_TELTX</td>
 <td>Teletex Number</td>
+<td></td>
 </tr>
 <tr>
 <td>TelexNumber_TELX1</td>
 <td>Telex Number</td>
+<td></td>
 </tr>
 <tr>
 <td>DataCommunicationLineNo_DATLT</td>
 <td>Data Communication Line No</td>
+<td></td>
 </tr>
 <tr>
 <td>PrinterDestinationForCctrReport_DRNAM</td>
 <td>Printer Destination For Cctr Report</td>
+<td></td>
 </tr>
 <tr>
 <td>StandardHierarchyArea_KHINR</td>
 <td>Standard Hierarchy Area</td>
+<td></td>
 </tr>
 <tr>
 <td>CostCollectorKey_CCKEY</td>
 <td>Cost Collector Key</td>
+<td></td>
 </tr>
 <tr>
 <td>CompletionFlagForTheCostCenterMasterRecord_KOMPL</td>
 <td>Completion Flag For The Cost Center Master Record</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorObjectIsStatistical_STAKZ</td>
 <td>Indicator Object Is Statistical</td>
+<td></td>
 </tr>
 <tr>
 <td>ObjectNumber_OBJNR</td>
 <td>Object Number</td>
+<td></td>
 </tr>
 <tr>
 <td>FunctionOfCostCenter_FUNKT</td>
 <td>Function Of Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>AlternativeFunctionOfCostCenter_AFUNK</td>
 <td>Alternative Function Of Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>TemplateForActivityIndependentFormulaPlanning_CPI_TEMPL</td>
 <td>Template For Activity Independent Formula Planning</td>
+<td></td>
 </tr>
 <tr>
 <td>TemplateForActivityDependentFormulaPlanning_CPD_TEMPL</td>
 <td>Template For Activity Dependent Formula Planning</td>
+<td></td>
 </tr>
 <tr>
 <td>FunctionalArea_FUNC_AREA</td>
 <td>Functional Area</td>
+<td></td>
 </tr>
 <tr>
 <td>Template_ActivityIndependentAllocationToCostCenter_SCI_TEMPL</td>
-<td>Template</td>
+<td>Template Activity Independent Allocation To Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>Template_ActivityDependentAllocationToCostCenter_SCD_TEMPL</td>
-<td>Template</td>
+<td>Template Activity Dependent Allocation To Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>Template_ActualStatisticalKeyFigureOnCostCenter_SKI_TEMPL</td>
-<td>Template</td>
+<td>Template Actual Statistical Key Figure On Cost Center</td>
+<td></td>
 </tr>
 <tr>
 <td>Template_ActStatKeyFigureCostCenteractivityType_SKD_TEMPL</td>
-<td>Template</td>
+<td>Template Act Stat Key Figure Cost Centeractivity Type</td>
+<td></td>
 </tr>
 <tr>
 <td>JointVenture_VNAME</td>
 <td>Joint Venture</td>
+<td></td>
 </tr>
 <tr>
 <td>RecoveryIndicator_RECID</td>
 <td>Recovery Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>EquityType_ETYPE</td>
 <td>Equity Type</td>
+<td></td>
 </tr>
 <tr>
 <td>JointVentureObjectType_JV_OTYPE</td>
 <td>Joint Venture Object Type</td>
+<td></td>
 </tr>
 <tr>
 <td>JibjibeClass_JV_JIBCL</td>
 <td>Jibjibe Class</td>
+<td></td>
 </tr>
 <tr>
 <td>JibjibeSubclassA_JV_JIBSA</td>
 <td>Jibjibe Subclass A</td>
+<td></td>
 </tr>
 <tr>
 <td>RegulatoryIndicator_FERC_IND</td>
 <td>Regulatory Indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>Language_SPRAS</td>
 <td>Language</td>
+<td></td>
 </tr>
 <tr>
 <td>GeneralName_KTEXT</td>
 <td>General Name</td>
+<td></td>
 </tr>
 <tr>
 <td>Description_LTEXT</td>
 <td>Description</td>
+<td></td>
 </tr>
 <tr>
 <td>SearchTermForMatchcodeUse_MCTXT</td>
 <td>Search Term For Matchcode Use</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5673,11 +5763,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our comment system bellow.                                            
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

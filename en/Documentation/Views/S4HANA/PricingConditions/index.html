@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-CKB6DG2VCB"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-CKB6DG2VCB",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-CKB6DG2VCB",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -5284,7 +5294,7 @@
 
 <h1 id="pricingconditions">PricingConditions</h1>
 <h2 id="source-sql-file-google-cloud-cortex-data-foundation">Source SQL File - Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/PricingConditions.sql">PricingConditions</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/PricingConditions.sql">PricingConditions</a></p>
 <h2 id="overview">Overview</h2>
 <p>This view is a reporting view for SAP systems. It provides access to data from the prcd_elements table, which contains information about pricing conditions for sales and purchasing documents.</p>
 <h2 id="data-sources">Data Sources</h2>
@@ -5365,312 +5375,414 @@
 <tr>
 <th>Field</th>
 <th>Field Description</th>
+<th>Description in SAP Dictionary (Comming soon)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfTheDocumentCondition_KNUMV</td>
-<td>Number Of The Document Condition</td>
+<td>Number of the document condition</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionItemNumber_KPOSN</td>
-<td>Condition Item Number</td>
+<td>Condition item number</td>
+<td></td>
 </tr>
 <tr>
 <td>StepNumber_STUNR</td>
-<td>Step Number</td>
+<td>Step number</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionCounter_ZAEHK</td>
-<td>Condition Counter</td>
+<td>Condition counter</td>
+<td></td>
 </tr>
 <tr>
 <td>Application_KAPPL</td>
 <td>Application</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionType_KSCHL</td>
-<td>Condition Type</td>
+<td>Condition type</td>
+<td></td>
 </tr>
 <tr>
 <td>CalculationTypeForCondition_KRECH</td>
-<td>Calculation Type For Condition</td>
+<td>Calculation type for condition</td>
+<td></td>
 </tr>
 <tr>
 <td>Checkbox_KAWRT</td>
 <td>Checkbox</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionAmountOrPercentage_KBETR</td>
-<td>Condition Amount Or Percentage</td>
+<td>Condition amount or percentage</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionExchangeRateForConversionToLocalCurrency_KKURS</td>
-<td>Condition Exchange Rate For Conversion To Local Currency</td>
+<td>Condition exchange rate for conversion to local currency</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionPricingUnit_KPEIN</td>
-<td>Condition Pricing Unit</td>
+<td>Condition pricing unit</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionUnitInTheDocument_KMEIN</td>
-<td>Condition Unit In The Document</td>
+<td>Condition unit in the document</td>
+<td></td>
 </tr>
 <tr>
 <td>NumeratorForConvertingConditionUnitsToBaseUnits_KUMZA</td>
-<td>Numerator For Converting Condition Units To Base Units</td>
+<td>Numerator for converting condition units to base units</td>
+<td></td>
 </tr>
 <tr>
 <td>DenominatorForConvertingConditionUnitsToBaseUnits_KUMNE</td>
-<td>Denominator For Converting Condition Units To Base Units</td>
+<td>Denominator for converting condition units to base units</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionCategory_KNTYP</td>
-<td>Condition Category</td>
+<td>Condition category</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionIsUsedForStatistics_KSTAT</td>
-<td>Condition Is Used For Statistics</td>
+<td>Condition is used for statistics</td>
+<td></td>
 </tr>
 <tr>
 <td>ScaleType_KNPRS</td>
-<td>Scale Type</td>
+<td>Scale type</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionIsRelevantForAccrual_KRUEK</td>
-<td>Condition Is Relevant For Accrual</td>
+<td>Condition is relevant for accrual</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionForInvoiceList_KRELI</td>
-<td>Condition For Invoice List</td>
+<td>Condition for invoice list</td>
+<td></td>
 </tr>
 <tr>
 <td>OriginOfTheCondition_KHERK</td>
-<td>Origin Of The Condition</td>
+<td>Origin of the condition</td>
+<td></td>
 </tr>
 <tr>
 <td>GroupCondition_KGRPE</td>
-<td>Group Condition</td>
+<td>Group condition</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionUpdate_KOUPD</td>
-<td>Condition Update</td>
+<td>Condition update</td>
+<td></td>
 </tr>
 <tr>
 <td>AccessSequenceAccessNumber_KOLNR</td>
-<td>Access Sequence Access Number</td>
+<td>Access sequence access number</td>
+<td></td>
 </tr>
 <tr>
 <td>NumberOfConditionRecordFromBatchDetermination_KNUMH</td>
-<td>Number Of Condition Record From Batch Determination</td>
+<td>Number of condition record from batch determination</td>
+<td></td>
 </tr>
 <tr>
 <td>SequentialNumberOfTheCondition_KOPOS</td>
-<td>Sequential Number Of The Condition</td>
+<td>Sequential number of the condition</td>
+<td></td>
 </tr>
 <tr>
 <td>AccountKey_KVSL1</td>
-<td>Account Key</td>
+<td>Account key</td>
+<td></td>
 </tr>
 <tr>
 <td>GLAccountNumber_SAKN1</td>
-<td>GL Account Number</td>
+<td>GL account number</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxOnSalesPurchasesCode_MWSK1</td>
-<td>Tax On Sales Purchases Code</td>
+<td>Tax on sales/purchases code</td>
+<td></td>
 </tr>
 <tr>
 <td>AccountKeyAccrualsProvisions_KVSL2</td>
-<td>Account Key Accruals Provisions</td>
+<td>Account key accruals/provisions</td>
+<td></td>
 </tr>
 <tr>
 <td>GLAccountNumber_SAKN2</td>
-<td>GL Account Number</td>
+<td>GL account number</td>
+<td></td>
 </tr>
 <tr>
 <td>WithholdingTaxCode_MWSK2</td>
-<td>Withholding Tax Code</td>
+<td>Withholding tax code</td>
+<td></td>
 </tr>
 <tr>
 <td>AccountNumberOfVendorORCreditor_LIFNR</td>
-<td>Account Number Of Vendor OR Creditor</td>
+<td>Account number of vendor or creditor</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerNumber_KUNNR</td>
-<td>Customer Number</td>
+<td>Customer number</td>
+<td></td>
 </tr>
 <tr>
 <td>RoundingOffDifferenceOfTheCondition_KDIFF</td>
-<td>Rounding Off Difference Of The Condition</td>
+<td>Rounding off difference of the condition</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionControl_KSTEU</td>
-<td>Condition Control</td>
+<td>Condition control</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionIsInactive_KINAK</td>
-<td>Condition Is Inactive</td>
+<td>Condition is inactive</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionClass_KOAID</td>
-<td>Condition Class</td>
+<td>Condition class</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionCounter_ZAEKO</td>
-<td>Condition Counter</td>
+<td>Condition counter</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForMaximumConditionBaseValue_KMXAW</td>
-<td>Indicator For Maximum Condition Base Value</td>
+<td>Indicator for maximum condition base value</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorForMaximumConditionAmount_KMXWR</td>
-<td>Indicator For Maximum Condition Amount</td>
+<td>Indicator for maximum condition amount</td>
+<td></td>
 </tr>
 <tr>
 <td>FactorForConditionBaseValue_KFAKTOR</td>
-<td>Factor For Condition Base Value</td>
+<td>Factor for condition base value</td>
+<td></td>
 </tr>
 <tr>
 <td>StructureCondition_KDUPL</td>
-<td>Structure Condition</td>
+<td>Structure condition</td>
+<td></td>
 </tr>
 <tr>
 <td>FactorForConditionBasis_KFAKTOR1</td>
-<td>Factor For Condition Basis</td>
+<td>Factor for condition basis</td>
+<td></td>
 </tr>
 <tr>
 <td>ScaleBasisIndicator_KZBZG</td>
-<td>Scale Basis Indicator</td>
+<td>Scale basis indicator</td>
+<td></td>
 </tr>
 <tr>
 <td>ScaleBaseValueOfTheCondition_KSTBS</td>
-<td>Scale Base Value Of The Condition</td>
+<td>Scale base value of the condition</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionScaleUnitOfMeasure_KONMS</td>
-<td>Condition Scale Unit Of Measure</td>
+<td>Condition scale unit of measure</td>
+<td></td>
 </tr>
 <tr>
 <td>ScaleCurrency_KONWS</td>
-<td>Scale Currency</td>
+<td>Scale currency</td>
+<td></td>
 </tr>
 <tr>
 <td>UpdatedInformationInRelatedUserDataField_KAWRT_K</td>
-<td>Updated Information In Related User Data Field</td>
+<td>Updated information in related user data field</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionCurrency_KWAEH</td>
-<td>Condition Currency</td>
+<td>Condition currency</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionValue_KWERT_K</td>
-<td>Condition Value</td>
+<td>Condition value</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionForIntercompanyBilling_KFKIV</td>
-<td>Condition For Intercompany Billing</td>
+<td>Condition for intercompany billing</td>
+<td></td>
 </tr>
 <tr>
 <td>VariantCond_KVARC</td>
-<td>Variant Cond</td>
+<td>Variant condition</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionChangedManually_KMPRS</td>
-<td>Condition Changed Manually</td>
+<td>Condition changed manually</td>
+<td></td>
 </tr>
 <tr>
 <td>PriceSource_PRSQU</td>
-<td>Price Source</td>
+<td>Price source</td>
+<td></td>
 </tr>
 <tr>
 <td>VariantCondition_VARCOND</td>
-<td>Variant Condition</td>
+<td>Variant condition</td>
+<td></td>
 </tr>
 <tr>
 <td>RelevanceForAccountAssignment_KTREL</td>
-<td>Relevance For Account Assignment</td>
+<td>Relevance for account assignment</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorMatrixMaintenance_MDFLG</td>
-<td>Indicator Matrix Maintenance</td>
+<td>Indicator matrix maintenance</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxJurisdictionCodeLevel_TXJLV</td>
-<td>Tax Jurisdiction Code Level</td>
+<td>Tax jurisdiction code level</td>
+<td></td>
 </tr>
 <tr>
 <td>BitEncryptedFlagsInPricing_KBFLAG</td>
-<td>Bit Encrypted Flags In Pricing</td>
+<td>Bit encrypted flags in pricing</td>
+<td></td>
 </tr>
 <tr>
 <td>IdentifierOfCPFFormulaInDocument_CPF_GUID</td>
-<td>Identifier Of CPF Formula In Document</td>
+<td>Identifier of CPF formula in document</td>
+<td></td>
 </tr>
 <tr>
 <td>AdjustedQuantity_KAQTY</td>
-<td>Adjusted Quantity</td>
+<td>Adjusted quantity</td>
+<td></td>
 </tr>
 <tr>
 <td>YearOfChangeDate_KDATU</td>
-<td>Year Of Change Date</td>
+<td>Year of change date</td>
+<td></td>
 </tr>
 <tr>
 <td>MonthOfChangeDate_KDATU</td>
-<td>Month Of Change Date</td>
+<td>Month of change date</td>
+<td></td>
 </tr>
 <tr>
 <td>WeekOfChangeDate_KDATU</td>
-<td>Week Of Change Date</td>
+<td>Week of change date</td>
+<td></td>
 </tr>
 <tr>
 <td>QuarterOfChangeDate_KDATU</td>
-<td>Quarter Of Change Date</td>
+<td>Quarter of change date</td>
+<td></td>
 </tr>
 <tr>
 <td>Checkbox_KDATU</td>
 <td>Checkbox</td>
+<td></td>
 </tr>
 <tr>
 <td>Level_STUFE</td>
 <td>Level</td>
+<td></td>
 </tr>
 <tr>
 <td>Path_WEGXX</td>
 <td>Path</td>
+<td></td>
 </tr>
 <tr>
 <td>AccessSequenceAccessNumber_KOLNR3</td>
-<td>Access Sequence Access Number</td>
+<td>Access sequence access number</td>
+<td></td>
+</tr>
+<tr>
+<td>ExchangeRate_UKURS</td>
+<td>Exchange rate</td>
+<td></td>
+</tr>
+<tr>
+<td>Conversion_date</td>
+<td>Conversion date</td>
+<td></td>
+</tr>
+<tr>
+<td>TargetCurrency_TCURR</td>
+<td>Target currency</td>
+<td></td>
+</tr>
+<tr>
+<td>ConditionValueInTargetCurrency_KWERT</td>
+<td>Condition value in target currency</td>
+<td></td>
 </tr>
 <tr>
 <td>ProcessConditionsWithValueEqualToZero_VAL_ZERO</td>
-<td>Process Conditions With Value Equal To Zero</td>
+<td>Process conditions with value equal to zero</td>
+<td></td>
 </tr>
 <tr>
 <td>StatisticalAndRelevantForAccountDetermination_IS_ACCT_DETN_RELEVANT</td>
-<td>Statistical And Relevant For Account Determination</td>
+<td>Statistical and relevant for account determination</td>
+<td></td>
 </tr>
 <tr>
 <td>TaxReportingCountry_TAX_COUNTRY</td>
-<td>Tax Reporting Country</td>
+<td>Tax reporting country</td>
+<td></td>
 </tr>
 <tr>
 <td>SDDocumentCurrency_WAERK</td>
-<td>SD Document Currency</td>
+<td>SD document currency</td>
+<td></td>
+</tr>
+<tr>
+<td>DataFilterValueForDataAging_DATAAGING</td>
+<td>Data filter value for data aging</td>
+<td></td>
 </tr>
 <tr>
 <td>CurrencyKey_WAERS</td>
-<td>Currency Key</td>
+<td>Currency key</td>
+<td></td>
 </tr>
 <tr>
 <td>ConditionValue_KWERT</td>
-<td>Condition Value</td>
+<td>Condition value</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5681,11 +5793,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our comment system bellow.                                            
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>

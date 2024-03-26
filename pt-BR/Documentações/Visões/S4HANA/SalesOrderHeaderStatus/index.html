@@ -50,6 +50,16 @@
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-39G1K9GM1S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-39G1K9GM1S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-39G1K9GM1S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -4418,18 +4428,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5220,18 +5230,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-use-cases" class="md-nav__link">
+  <a href="#casos-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Use Cases
+      Casos de Uso
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query-logic" class="md-nav__link">
+  <a href="#logica-da-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Query Logic
+      Lógica da Query
     </span>
   </a>
   
@@ -5284,7 +5294,7 @@
 
 <h1 id="salesorderheaderstatus">SalesOrderHeaderStatus</h1>
 <h2 id="arquivo-sql-de-origem-google-cloud-cortex-data-foundation">Arquivo SQL de origem - Google Cloud Cortex Data Foundation</h2>
-<p>Google Cloud Cortex Foudantion - Cortex Reporting - S4 - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/SalesOrderHeaderStatus.sql">SalesOrderHeaderStatus</a></p>
+<p>Google Cloud Cortex Foudantion - Cortex Reporting - (s4) - <a href="https://github.com/GoogleCloudPlatform/cortex-reporting/blob/b05a3345d55d5e196d8d636daf0c81541d0604e7/s4/SalesOrderHeaderStatus.sql">SalesOrderHeaderStatus</a></p>
 <h2 id="visao-geral">Visão geral</h2>
 <p>Esta visão de relatório fornece uma visão geral abrangente do status dos documentos de vendas nos sistemas SAP. Inclui informações sobre vários aspetos do processo de vendas, como confirmação de pedido, entrega, faturamento e verificações de crédito.</p>
 <h2 id="fontes-de-dados">Fontes de Dados</h2>
@@ -5302,14 +5312,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="key-use-cases">Key Use Cases</h2>
+<h2 id="casos-de-uso">Casos de Uso</h2>
 <ul>
 <li>Analisar o status dos documentos de vendas em tempo real.</li>
 <li>Identificar gargalos e atrasos no processo de vendas.</li>
 <li>Monitorar o progresso dos pedidos de vendas e entregas.</li>
 <li>Executar verificações de crédito e avaliar o risco associado aos clientes.</li>
 </ul>
-<h2 id="query-logic">Query Logic</h2>
+<h2 id="logica-da-query">Lógica da Query</h2>
 <p>A visão une a tabela vbak para recuperar dados sobre informações do cabeçalho do documento de vendas. Inclui campos que fornecem insights sobre o status do documento, como status de confirmação, status de entrega, status de faturamento e status de verificação de crédito.</p>
 <h2 id="possivel-relacao-com-transacoes-sap">Possível relação com transações SAP</h2>
 <table>
@@ -5370,344 +5380,429 @@
 <tr>
 <th>Campo</th>
 <th>Descrição do Campo</th>
+<th>Descrição no Dicionário SAP (Em breve)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Client_MANDT</td>
-<td>Client (Mandant)</td>
+<td>Client</td>
+<td></td>
 </tr>
 <tr>
 <td>SalesDocument_VBELN</td>
 <td>Sales Document</td>
+<td></td>
 </tr>
 <tr>
 <td>ReferenceDocumentHeaderStatus_RFSTK</td>
 <td>Reference Document Header Status</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallReferenceStatusAllItems_RFGSK</td>
 <td>Overall Reference Status All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>ConfirmationStatus_BESTK</td>
 <td>Confirmation Status</td>
+<td></td>
 </tr>
 <tr>
 <td>DeliveryStatus_LFSTK</td>
 <td>Delivery Status</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallDeliveryStatus_LFGSK</td>
 <td>Overall Delivery Status</td>
+<td></td>
 </tr>
 <tr>
 <td>TotalGoodsMovementStatus_WBSTK</td>
 <td>Total Goods Movement Status</td>
+<td></td>
 </tr>
 <tr>
 <td>BillingStatus_FKSTK</td>
 <td>Billing Status</td>
+<td></td>
 </tr>
 <tr>
 <td>OrderRelatedBillingStatusAllItems_FKSAK</td>
 <td>Order Related Billing Status All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>PostingStatusOfBillingDocument_BUCHK</td>
 <td>Posting Status Of Billing Document</td>
+<td></td>
 </tr>
 <tr>
 <td>RejectionsStatus_ABSTK</td>
 <td>Rejections Status</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallProcessingStatus_GBSTK</td>
 <td>Overall Processing Status</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallPickingPutawayStatus_KOSTK</td>
 <td>Overall Picking Putaway Status</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallStatusOfWarehouseManagementActivities_LVSTK</td>
 <td>Overall Status Of Warehouse Management Activities</td>
+<td></td>
 </tr>
 <tr>
 <td>IncompletionStatusAllItems_UVALS</td>
 <td>Incompletion Status All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>DeliveryIncompletionStatusAllItems_UVVLS</td>
 <td>Delivery Incompletion Status All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>BillingIncompletionStatusAllItems_UVFAS</td>
 <td>Billing Incompletion Status All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>IncompletionStatusHeader_UVALL</td>
 <td>Incompletion Status Header</td>
+<td></td>
 </tr>
 <tr>
 <td>DeliveryIncompletionStatusHeader_UVVLK</td>
 <td>Delivery Incompletion Status Header</td>
+<td></td>
 </tr>
 <tr>
 <td>BillingIncompletionStatusHeader_UVFAK</td>
 <td>Billing Incompletion Status Header</td>
+<td></td>
 </tr>
 <tr>
 <td>PricingIncompletionStatusAllItems_UVPRS</td>
 <td>Pricing Incompletion Status All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>DocumentCategory_VBTYP</td>
 <td>Document Category</td>
+<td></td>
 </tr>
 <tr>
 <td>SdDocumentObject_VBOBJ</td>
 <td>Sd Document Object</td>
+<td></td>
 </tr>
 <tr>
 <td>ChangedOn_AEDAT</td>
 <td>Changed On</td>
+<td></td>
 </tr>
 <tr>
 <td>BillingTotalsStatusForIntercompanyBilling_FKIVK</td>
 <td>Billing Totals Status For Intercompany Billing</td>
+<td></td>
 </tr>
 <tr>
 <td>InvoiceListStatusOfBillingDocument_RELIK</td>
 <td>Invoice List Status Of Billing Document</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerReserves1HeaderStatus_UVK01</td>
-<td>Customer Reserves1 Header Status</td>
+<td>Customer Reserves 1 Header Status</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerReserves2HeaderStatus_UVK02</td>
-<td>Customer Reserves2 Header Status</td>
+<td>Customer Reserves 2 Header Status</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerReserves3HeaderStatus_UVK03</td>
-<td>Customer Reserves3 Header Status</td>
+<td>Customer Reserves 3 Header Status</td>
+<td></td>
 </tr>
 <tr>
 <td>CustmerReserves4HeaderStatus_UVK04</td>
-<td>Custmer Reserves4 Header Status</td>
+<td>Custmer Reserves 4 Header Status</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerReserves5HeaderStatus_UVK05</td>
-<td>Customer Reserves5 Header Status</td>
+<td>Customer Reserves 5 Header Status</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerReserves1SumOfAllItems_UVS01</td>
-<td>Customer Reserves1 Sum Of All Items</td>
+<td>Customer Reserves 1 Sum Of All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerReserves2SumOfAllItems_UVS02</td>
-<td>Customer Reserves2 Sum Of All Items</td>
+<td>Customer Reserves 2 Sum Of All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerReserves3SumOfAllItems_UVS03</td>
-<td>Customer Reserves3 Sum Of All Items</td>
+<td>Customer Reserves 3 Sum Of All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerReserves4SumOfAllItems_UVS04</td>
-<td>Customer Reserves4 Sum Of All Items</td>
+<td>Customer Reserves 4 Sum Of All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>CustomerReserves5SumOfAllItems_UVS05</td>
-<td>Customer Reserves5 Sum Of All Items</td>
+<td>Customer Reserves 5 Sum Of All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallPackingStatusOfAllItems_PKSTK</td>
 <td>Overall Packing Status Of All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfStaticCreditLimitCheck_CMPSA</td>
 <td>Status Of Static Credit Limit Check</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfDynamicCreditLimitCheckInTheCreditHorizon_CMPSB</td>
 <td>Status Of Dynamic Credit Limit Check In The Credit Horizon</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckAgainstMaximumDocumentValue_CMPSC</td>
 <td>Status Of Credit Check Against Maximum Document Value</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckAgainstTermsOfPayment_CMPSD</td>
 <td>Status Of Credit Check Against Terms Of Payment</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckAgainstCustomerReviewDate_CMPSE</td>
 <td>Status Of Credit Check Against Customer Review Date</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckAgainstOpenItemsDue_CMPSF</td>
 <td>Status Of Credit Check Against Open Items Due</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckAgainstOldestOpenItems_CMPSG</td>
 <td>Status Of Credit Check Against Oldest Open Items</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckAgainstHighestDunningLevel_CMPSH</td>
 <td>Status Of Credit Check Against Highest Dunning Level</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckAgainstFinancialDocument_CMPSI</td>
 <td>Status Of Credit Check Against Financial Document</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckAgainstExportCreditInsurance_CMPSJ</td>
 <td>Status Of Credit Check Against Export Credit Insurance</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckAgainstPaymentCardAuthorization_CMPSK</td>
 <td>Status Of Credit Check Against Payment Card Authorization</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckOfReserves4_CMPSL</td>
-<td>Status Of Credit Check Of Reserves4</td>
+<td>Status Of Credit Check Of Reserves 4</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckForCustomerReserve1_CMPS0</td>
-<td>Status Of Credit Check For Customer Reserve1</td>
+<td>Status Of Credit Check For Customer Reserve 1</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckForCustomerReserve2_CMPS1</td>
-<td>Status Of Credit Check For Customer Reserve2</td>
+<td>Status Of Credit Check For Customer Reserve 2</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckForCustomerReserve3_CMPS2</td>
-<td>Status Of Credit Check For Customer Reserve3</td>
+<td>Status Of Credit Check For Customer Reserve 3</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallStatusOfCreditChecks_CMGST</td>
 <td>Overall Status Of Credit Checks</td>
+<td></td>
 </tr>
 <tr>
 <td>TransportationPlanningStatusHeader_TRSTA</td>
 <td>Transportation Planning Status Header</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfPickConfirmation_KOQUK</td>
 <td>Status Of Pick Confirmation</td>
+<td></td>
 </tr>
 <tr>
 <td>ConfirmationStatusForAle_COSTA</td>
 <td>Confirmation Status For Ale</td>
+<td></td>
 </tr>
 <tr>
 <td>SapRelease_SAPRL</td>
 <td>Sap Release</td>
+<td></td>
 </tr>
 <tr>
 <td>TotalsIncompleteStatusForAllItemsPackaging_UVPAS</td>
 <td>Totals Incomplete Status For All Items Packaging</td>
+<td></td>
 </tr>
 <tr>
 <td>TotalsIncompleteStatusForAllItemsPicking_UVPIS</td>
 <td>Totals Incomplete Status For All Items Picking</td>
+<td></td>
 </tr>
 <tr>
 <td>TotalIncompleteStatusOfAllItemsPostGoodsMovement_UVWAS</td>
 <td>Total Incomplete Status Of All Items Post Goods Movement</td>
+<td></td>
 </tr>
 <tr>
 <td>HeaderIncompleteStatusForPackaging_UVPAK</td>
 <td>Header Incomplete Status For Packaging</td>
+<td></td>
 </tr>
 <tr>
 <td>HeaderIncompleteStatusForPickingPutaway_UVPIK</td>
 <td>Header Incomplete Status For Picking Putaway</td>
+<td></td>
 </tr>
 <tr>
 <td>PostHeaderIncompleteStatusForGoodsMovement_UVWAK</td>
 <td>Post Header Incomplete Status For Goods Movement</td>
+<td></td>
 </tr>
 <tr>
 <td>Unused_UVGEK</td>
 <td>Unused</td>
+<td></td>
 </tr>
 <tr>
 <td>CreditCheckDataIsObsolete_CMPSM</td>
 <td>Credit Check Data Is Obsolete</td>
+<td></td>
 </tr>
 <tr>
 <td>DelayStatus_DCSTK</td>
 <td>Delay Status</td>
+<td></td>
 </tr>
 <tr>
 <td>HandlingUnitPlacedInStock_VESTK</td>
 <td>Handling Unit Placed In Stock</td>
+<td></td>
 </tr>
 <tr>
 <td>DistributionStatusDecentralizedWarehouseProcessing_VLSTK</td>
 <td>Distribution Status Decentralized Warehouse Processing</td>
+<td></td>
 </tr>
 <tr>
 <td>RevenueDeterminationStatus_RRSTA</td>
 <td>Revenue Determination Status</td>
+<td></td>
 </tr>
 <tr>
 <td>IndicatorDocumentPreselectedForArchiving_BLOCK</td>
 <td>Indicator Document Preselected For Archiving</td>
+<td></td>
 </tr>
 <tr>
 <td>BillingBlockStatus_FSSTK</td>
 <td>Billing Block Status</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallDeliveryBlockStatusAllItems_LSSTK</td>
 <td>Overall Delivery Block Status All Items</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallBlockStatusHeader_SPSTG</td>
 <td>Overall Block Status Header</td>
+<td></td>
 </tr>
 <tr>
 <td>PodStatusOnHeaderLevel_PDSTK</td>
 <td>Pod Status On Header Level</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusFundsManagement_FMSTK</td>
 <td>Status Funds Management</td>
+<td></td>
 </tr>
 <tr>
 <td>ManualCompletionOfContract_MANEK</td>
 <td>Manual Completion Of Contract</td>
+<td></td>
 </tr>
 <tr>
 <td>TemporaryInboundDelivery_SPE_TMPID</td>
 <td>Temporary Inbound Delivery</td>
+<td></td>
 </tr>
 <tr>
 <td>InboundDeliveryHeaderNotYetCompleteOnHold_HDALL</td>
 <td>Inbound Delivery Header Not Yet Complete On Hold</td>
+<td></td>
 </tr>
 <tr>
 <td>AtLeastOneOfIdItemsNotYetCompleteOnHold_HDALS</td>
 <td>At Least One Of Id Items Not Yet Complete On Hold</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfCreditCheckSapCreditManagement_CMPS_CM</td>
 <td>Status Of Credit Check Sap Credit Management</td>
+<td></td>
 </tr>
 <tr>
 <td>StatusOfTechnicalErrorSapCreditManagement_CMPS_TE</td>
 <td>Status Of Technical Error Sap Credit Management</td>
+<td></td>
 </tr>
 <tr>
 <td>ExtensionOfSdDocumentCategory_VBTYP_EXT</td>
 <td>Extension Of Sd Document Category</td>
+<td></td>
 </tr>
 <tr>
 <td>OverallAllocationStatusSalesDocumentHeader_FSH_AR_STAT_HDR</td>
 <td>Overall Allocation Status Sales Document Header</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -5718,11 +5813,134 @@
 
 
 
+  
+  
 
 
 
+  
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Esta página foi útil?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opinião!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Obrigado pelo sua opnião! Ajude-nos a melhorar esta página usando nosso sistema de comentários abaixo.   
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+  <h2 id="__comments">Comentários</h2>
+  <!-- Insert generated snippet here -->
+    <script src="https://giscus.app/client.js"
+        data-repo="CortexCouncilWorkspace/CCWSite"
+        data-repo-id="R_kgDOLkRYyA"
+        data-category="General"
+        data-category-id="DIC_kwDOLkRYyM4CePsO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="pt"
+        crossorigin="anonymous"
+        async>
+    </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+
+<!-- Comment system -->
                 
               </article>
             </div>
